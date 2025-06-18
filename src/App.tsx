@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 
 interface Question {
@@ -433,104 +434,115 @@ const questions: Question[] = [
   }
 ];
 
-function App() {
+function HomePage() {
+  return (
+    <div className="home-container">
+      <h1>Hale'nin Ders Notları</h1>
+      <p>Sevgilim, aşağıdaki derslerden birine tıklayarak o dersin sorularına ulaşabilirsin 💝</p>
+      <div className="courses-grid">
+        <Link to="/devlet-toplum-din" className="course-card">
+          <h2>Devlet, Toplum ve Din</h2>
+          <p>Uluslararası İlişkiler bağlamında din ve toplum ilişkisi üzerine sorular.</p>
+          <span className="question-count">30 Soru</span>
+        </Link>
+        {/* Diğer dersler buraya eklenecek */}
+      </div>
+    </div>
+  );
+}
+
+function QuizApp() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState("");
-  const [showResult, setShowResult] = useState(false);
-  const [score, setScore] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showExplanation, setShowExplanation] = useState(false);
+  const [score, setScore] = useState(0);
+  const [quizCompleted, setQuizCompleted] = useState(false);
 
   const handleAnswerSelect = (answer: string) => {
+    if (selectedAnswer) return;
     setSelectedAnswer(answer);
-    setShowResult(true);
+    setShowExplanation(true);
     if (answer === questions[currentQuestionIndex].correctAnswer) {
       setScore(score + 1);
     }
-    setShowExplanation(true);
   };
 
   const handleNextQuestion = () => {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setSelectedAnswer("");
-      setShowResult(false);
+      setSelectedAnswer(null);
       setShowExplanation(false);
+    } else {
+      setQuizCompleted(true);
     }
   };
 
   const handleRestart = () => {
     setCurrentQuestionIndex(0);
-    setSelectedAnswer("");
-    setShowResult(false);
-    setScore(0);
+    setSelectedAnswer(null);
     setShowExplanation(false);
+    setScore(0);
+    setQuizCompleted(false);
   };
+
+  if (quizCompleted) {
+    return (
+      <div className="quiz-container">
+        <h2>Quiz Tamamlandı!</h2>
+        <p>Toplam Skor: {score} / {questions.length}</p>
+        <button onClick={handleRestart}>Yeniden Başla</button>
+        <Link to="/" className="home-button">Ana Sayfaya Dön</Link>
+      </div>
+    );
+  }
 
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Aşkım için Sınav Hazırlık 💝</h1>
-        <div className="score-container">
-          <p>Soru {currentQuestionIndex + 1} / {questions.length}</p>
-          <p>Puan: {score}</p>
+    <div className="quiz-container">
+      <h2>Soru {currentQuestionIndex + 1} / {questions.length}</h2>
+      <p className="question-text">{currentQuestion.text}</p>
+      <div className="options-container">
+        {currentQuestion.options.map((option, index) => (
+          <button
+            key={index}
+            onClick={() => handleAnswerSelect(option.charAt(0))}
+            className={`option-button ${
+              selectedAnswer === option.charAt(0)
+                ? option.charAt(0) === currentQuestion.correctAnswer
+                  ? 'correct'
+                  : 'incorrect'
+                : ''
+            } ${selectedAnswer && option.charAt(0) === currentQuestion.correctAnswer ? 'correct' : ''}`}
+            disabled={!!selectedAnswer}
+          >
+            {option}
+          </button>
+        ))}
+      </div>
+      {showExplanation && (
+        <div className="explanation-container">
+          <p className="explanation">{currentQuestion.explanation}</p>
+          <p className="motivational-quote">{currentQuestion.motivationalQuote}</p>
+          <button onClick={handleNextQuestion}>
+            {currentQuestionIndex === questions.length - 1 ? 'Bitir' : 'Sonraki Soru'}
+          </button>
         </div>
-      </header>
-      <main className="quiz-container">
-        <div className="question">
-          <h2>{currentQuestion.text}</h2>
-          <div className="options">
-            {currentQuestion.options.map((option, index) => (
-              <button
-                key={index}
-                onClick={() => handleAnswerSelect(option.charAt(0))}
-                className={`option-button ${
-                  showResult
-                    ? option.charAt(0) === currentQuestion.correctAnswer
-                      ? "correct"
-                      : option.charAt(0) === selectedAnswer
-                      ? "wrong"
-                      : ""
-                    : ""
-                }`}
-                disabled={showResult}
-              >
-                {option}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {showExplanation && (
-          <div className="explanation">
-            <h3>{selectedAnswer === currentQuestion.correctAnswer ? "Harika! 🎉" : "Üzülme! 💪"}</h3>
-            <p>{currentQuestion.explanation}</p>
-            <div className="motivation-quote">
-              <p>"{currentQuestion.motivationalQuote}"</p>
-            </div>
-          </div>
-        )}
-
-        {showResult && (
-          <div className="navigation-buttons">
-            {currentQuestionIndex < questions.length - 1 ? (
-              <button onClick={handleNextQuestion} className="next-button">
-                Sonraki Soru ➡️
-              </button>
-            ) : (
-              <div className="final-score">
-                <h2>Quiz Tamamlandı! 🎉</h2>
-                <p>Toplam Puan: {score} / {questions.length}</p>
-                <button onClick={handleRestart} className="restart-button">
-                  Yeniden Başla 🔄
-                </button>
-              </div>
-            )}
-          </div>
-        )}
-      </main>
+      )}
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router basename="/halesinav">
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/devlet-toplum-din" element={<QuizApp />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
