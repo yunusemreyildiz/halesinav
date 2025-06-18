@@ -458,7 +458,7 @@ function HomePage() {
                 <h2>Ders Notları</h2>
                 <p>Derste işlenen konuların sesli anlatımı.</p>
                 <div className="course-card-footer">
-                  <span className="audio-count">5 Ses Kaydı</span>
+                  <span className="audio-count">1 Ses Kaydı</span>
                   <span className="start-listening">Dinlemeye Başla →</span>
                 </div>
               </div>
@@ -479,36 +479,8 @@ function LectureNotes() {
       id: 1,
       title: "Din ve Dış Politika İlişkisi",
       description: "Dinin dış politika üzerindeki etkisi ve uluslararası ilişkilerdeki rolü.",
-      duration: "15:30",
+      duration: "8:00",
       file: "/halesinav/audio/din-ve-dis-politika.mp3"
-    },
-    {
-      id: 2,
-      title: "Sekülerleşme ve Laiklik",
-      description: "Sekülerleşme süreci ve laiklik kavramının detaylı incelemesi.",
-      duration: "12:45",
-      file: "/halesinav/audio/sekulerlesme-ve-laiklik.mp3"
-    },
-    {
-      id: 3,
-      title: "Post-seküler Uluslararası İlişkiler",
-      description: "Post-seküler dönemde uluslararası ilişkilerin değişen dinamikleri.",
-      duration: "18:20",
-      file: "/halesinav/audio/post-sekuler-ui.mp3"
-    },
-    {
-      id: 4,
-      title: "İnanç Temelli Kuruluşlar",
-      description: "FBO'ların uluslararası sistemdeki yeri ve önemi.",
-      duration: "14:15",
-      file: "/halesinav/audio/inanc-temelli-kuruluslar.mp3"
-    },
-    {
-      id: 5,
-      title: "Din ve İklim Değişikliği",
-      description: "Dini grupların iklim değişikliği ile mücadeledeki rolü.",
-      duration: "16:40",
-      file: "/halesinav/audio/din-ve-iklim-degisikligi.mp3"
     }
   ];
 
