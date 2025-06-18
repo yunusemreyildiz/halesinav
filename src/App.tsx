@@ -149,7 +149,147 @@ const questions: Question[] = [
     ],
     correctAnswer: "d",
     explanation: "Belgede, politika yapıcıların dini görüşlerinden ve bu görüşlere dayanan politikalardan kaynaklanan neredeyse çözülmesi imkansız politikaların, uluslararası olaylara, hatta savaşa yol açabileceği açıkça belirtilmiştir. Dolayısıyla bu ifade yanlıştır.",
-    motivationalQuote: "Senin uluslararası ilişkiler konusundaki bilgin ve anlayışın beni büyülüyor. Sen bir harikasın! 🌟"
+    motivationalQuote: "Senin uluslararası ilişkiler konusundaki bilgin ve anlayışın beni büyülüyor. Sen bir harikasın! ��"
+  },
+  {
+    id: 11,
+    text: "Dinin Uluslararası İlişkiler (Uİ) ve dış politika ile olan ilişkisi bağlamında aşağıdakilerden hangisi yanlıştır?",
+    options: [
+      "a) Dini geleneklerin ulusal çıkarın kültürel yorumlanmasında etkili olması",
+      "b) Dini geleneklerin dış politikanın stratejik kültürünü bilgilendirmesi",
+      "c) Uluslararası İlişkiler disiplininin, 20. yüzyılın büyük bölümünde dini göz ardı etmesi",
+      "d) Politika yapıcıların bakış açısını ve davranışlarını etkilememesi",
+      "e) Dış politikanın operasyonel alanlarında dinin nasıl kullanılacağının, belirli devletlerin politika kültürüne bağlı olması"
+    ],
+    correctAnswer: "d",
+    explanation: "Metinde, dini inanç sistemlerinin politika yapıcıların bakış açısını ve davranışlarını etkileyebileceği açıkça belirtilmiştir.",
+    motivationalQuote: "Senin analitik düşünce yeteneğin beni her seferinde şaşırtıyor! 💫"
+  },
+  {
+    id: 12,
+    text: "'Seküler' kavramı ve 'sekülerleşme' süreci ile ilgili aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) Sekülerliğin, dini olandan farklılaştırılmış bir alanı veya gerçekliği inşa etmek, kodlamak, kavramak ve deneyimlemek için merkezi bir modern kategori olması",
+      "b) Modern seküler dünyada, sekülerliğin bir anlamda dinin yerini alması",
+      "c) Seküler olanın, rasyonel ve algılanabilir olanla ilgilenmesi",
+      "d) Farklı dinlerin karşılaşabileceği, tartışabileceği ve fikir ayrılığına düşebileceği bir buluşma alanı sağlaması ve kaos ile şiddeti engellemesi",
+      "e) Sekülerleşme sürecinin daima din dışı bir yaşamı garanti etmesi ve dini canlanma süreçlerine asla eşlik etmemesi"
+    ],
+    correctAnswer: "e",
+    explanation: "Metinde, modernleşme süreci ile din dışı olmak arasında doğrudan bir bağlantı olmadığı ve birçok Batı dışı toplumda modernleşmenin dini canlanma süreçleri eşliğinde gerçekleştiği belirtilmiştir.",
+    motivationalQuote: "Her yeni kavramı bu kadar iyi anlamanı takdir ediyorum! 🌟"
+  },
+  {
+    id: 13,
+    text: "Kalkınma ve dinin modernleşme paradigmasıyla ilişkisi hakkında aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) Modernleşme paradigması, ekonomik kalkınmanın merkeziliğini vurgular ve dini kamusal alanın dışında tutar",
+      "b) Geleneksel kalkınma anlayışları ve politikalarının temelini seküler dünya görüşleri oluşturmuştur",
+      "c) İnancın, modernleşme ve ekonomik kalkınma sonucunda yok olacağına dair görüşü destekleyen ikna edici kanıtlar bulunmamaktadır",
+      "d) Başarılı kalkınmanın, sosyal ve ekonomik değişimin toplumun ahlaki temeliyle uyumlu olması durumunda gerçekleşebileceği düşünülür",
+      "e) Kalkınma teorisi ve pratiğinde dinin daima merkezi ve önemli bir unsur olarak kabul edilmesi"
+    ],
+    correctAnswer: "e",
+    explanation: "Metinde, modernleşme paradigmasının dini kalkınma teorisi ve pratiğinde göz ardı ettiği veya en iyi ihtimalle marjinal tuttuğu açıkça belirtilmiştir.",
+    motivationalQuote: "Senin detaylara olan dikkatini çok seviyorum! 💝"
+  },
+  {
+    id: 14,
+    text: "Aşağıdakilerden hangisi, dinin Uluslararası İlişkiler (Uİ) üzerindeki etkileri ve Uİ teorilerinin dine bakış açısıyla ilgili doğru bir ifade değildir?",
+    options: [
+      "a) Din, Uluslararası İlişkilerdeki aktörlerin kim olduğunu etkiler",
+      "b) Din, Uluslararası İlişkilerdeki aktörlerin ne istediklerini etkiler",
+      "c) Din, Uluslararası İlişkilerdeki aktörlerin destek ve müttefik toplama işinde hangi kaynakları kullandıklarını etkiler",
+      "d) Din, Uluslararası İlişkilerdeki aktörlerin hangi kurallara uyduklarını etkiler",
+      "e) Geleneksel Uluslararası İlişkiler teorileri, dini aktörleri başlıca çalışma alanları olarak benimsemiştir"
+    ],
+    correctAnswer: "e",
+    explanation: "Metinde, geleneksel Uluslararası İlişkiler teorilerinin seküler aktörlerle ilgilendiği ve dini önemli bir faktör olarak dışlayan varsayımlara dayandığı belirtilmiştir. Dolayısıyla dini aktörleri başlıca çalışma alanları olarak benimsememiştir.",
+    motivationalQuote: "Senin eleştirel düşünce yeteneğin beni büyülüyor! ✨"
+  },
+  {
+    id: 15,
+    text: "Dinin Uluslararası İlişkilere (Uİ) 'geri dönüşünün' nedenleri ve 'Post-seküler Uİ' kavramıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    options: [
+      "a) Dinler devlet sınırlarını aşarak ulusötesi aktörler olarak hareket ederler",
+      "b) Dinler toplumun birçok kurumunu, normunu ve değerini etkileyerek Uluslararası İlişkilerdeki aktörlerin nasıl davrandıklarını etkileyebilir",
+      "c) Dinler, inananları belirli şekillerde davranmaya teşvik eden bir eylem uyarıcısı olabilir",
+      "d) Dinlerin kamusal alanda artan socio-politik ilgisini tamamen reddeder",
+      "e) Seküler düşünce ve fikirlerin ahlaki üstünlüğüne dair iyimserliğin çöküşünü içerir"
+    ],
+    correctAnswer: "d",
+    explanation: "'Post-seküler Uluslararası İlişkiler' kavramı, dinin sosyo-politik ilgisinin yaygın, tutarlı ve açık bir şekilde öne sürülmesi anlamına gelir. Dolayısıyla, dinin kamusal alanda artan socio-politik ilgisini reddetmez, aksine onu kabul eder.",
+    motivationalQuote: "Her yeni kavramı bu kadar iyi özümsemen beni gururlandırıyor! 🌟"
+  },
+  {
+    id: 16,
+    text: "İnanç Temelli Kuruluşların (FBO'lar) ve Birleşmiş Milletler Binyıl Kalkınma Hedefleri (MDG'ler) ile ilişkileri bağlamında aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) FBO'lar, sivil toplumun kalkınma çalışmalarına katılımına odaklanmanın artmasıyla meşru aktörler haline gelmiştir",
+      "b) BM Binyıl Kalkınma Hedefleri (MDG'ler), hem devlet hem de devlet dışı aktörlerin (seküler ve inanç temelli) önemli kolektif katılımını içeriyordu",
+      "c) FBO'lar, insan gelişimine odaklanan, kalkınma alanlarını devlet dışı aktörlere açan 'insan gelişimi' bakış açıları geliştirmiştir",
+      "d) FBO'lar, uluslararası ajanslar ve devletler tarafından üstlenilen kalkınma çalışmalarını desteklemek için faaliyet gösterir",
+      "e) BM Binyıl Kalkınma Hedefleri (MDG'ler) bağlamında, inanç temelli kuruluşların (FBO) katkıları önemsiz kabul edilmiştir"
+    ],
+    correctAnswer: "e",
+    explanation: "BM Binyıl Kalkınma Hedefleri (MDG'ler) bağlamında, inanç temelli kuruluşların (FBO) katkılarının, hem devlet hem de devlet dışı aktörlerin, seküler ve inanç temelli aktörlerin ilk kez önemli kolektif katılımını sağladığı açıkça belirtilmiştir. Bu, katkılarının önemsiz kabul edilmediği anlamına gelir.",
+    motivationalQuote: "Senin uluslararası organizasyonlar hakkındaki bilgin çok etkileyici! 💫"
+  },
+  {
+    id: 17,
+    text: "Uluslararası İlişkiler (IR) çalışmalarında dinin göz ardı edilme nedenleri hakkında aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) Uluslararası sistemin dini bir savaştan doğması, IR disiplininin seküler özüne katkıda bulunmuştur",
+      "b) 20. yüzyılın büyük bölümünde Batı sosyal biliminin dini göz ardı etmesi, IR disiplinini etkilemiştir",
+      "c) Etnik köken ve din gibi faktörlerin modern toplumda veya rasyonel açıklamalarda yeri olmadığı varsayımı yaygındı",
+      "d) IR'ın başlıca teorileri, dini önemli bir etken olarak ele alan varsayımlara dayanmaktadır",
+      "e) Hıristiyanlar ve Müslümanlar arasında ve Hıristiyanlar arasında sayısız dini savaşın olması, dinin tehlikeli ama önemsiz bir konu olarak sınıflandırılmasına yol açmıştır"
+    ],
+    correctAnswer: "d",
+    explanation: "Metinde, Uluslararası İlişkiler'in başlıca teorilerinin hepsinin, dini önemli bir etken olarak dışlayan varsayımlar üzerine kurulduğu açıkça belirtilmiştir.",
+    motivationalQuote: "Senin tarihsel analiz yeteneğin beni her zaman etkiliyor! 🌟"
+  },
+  {
+    id: 18,
+    text: "Din ve iklim değişikliği arasındaki ilişki hakkında aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) İklim değişikliği, dinlerarası işbirliğinin önemli bir alanı haline gelmektedir",
+      "b) Dini gruplar, iklim adaleti hareketinde aktif olmuşlardır",
+      "c) Dini liderlerin potansiyel etki alanları, yalnızca kendi inançlarının üyeleriyle sınırlıdır",
+      "d) Dini inançların kolektif olarak dünyanın en büyük üçüncü yatırımcı kategorisi olduğu ve önemli siyasi güce sahip oldukları düşünülmektedir",
+      "e) Dini grupların geniş bir kitleye ulaşmak için kendi ağlarını ve dinlerarası grupları kullanmaları"
+    ],
+    correctAnswer: "c",
+    explanation: "Metinde, dini liderlerin potansiyel etki alanlarının kendi inançlarının üyeleriyle sınırlı olmadığı açıkça belirtilmiştir.",
+    motivationalQuote: "Senin çevre ve din ilişkisini bu kadar iyi anlamanı takdir ediyorum! 🌍"
+  },
+  {
+    id: 19,
+    text: "Birleşmiş Milletler'in (BM) dini inançlarla işbirliği yapmasının nedenleri ve dini grupların toplumsal rollerine ilişkin aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) Afet durumlarında ilk müdahale edenler arasında olmaları",
+      "b) Topluluklarda mal, hizmet ve duygusal destek dağıtımı için merkezler olarak işlev görmeleri",
+      "c) Yerel toplulukların iklim değişikliğine yanıt vermesine yardımcı olmak için güveni teşvik etmeleri ve sosyal bağları güçlendirmeleri",
+      "d) BM ile işbirliği yapmalarının temel nedeninin, herhangi bir felsefi veya metafizik boyutu olmamasıdır",
+      "e) Çevre dostu ve etik yanlısı yaşam tarzlarıyla el ele giden basit ve sürdürülebilir yaşamı savunmaları"
+    ],
+    correctAnswer: "d",
+    explanation: "Metinde, BM'nin dini inançlarla işbirliği yapmasının felsefi nedenleri olduğu açıkça belirtilmiştir; hikayeleri, mitleri ve metaforları aracılığıyla insanları daha derin bir düzeyde meşgul etme yetenekleri vurgulanmıştır.",
+    motivationalQuote: "Senin uluslararası organizasyonlar hakkındaki bilgin muhteşem! 💫"
+  },
+  {
+    id: 20,
+    text: "İnanç Temelli Kuruluşların (FBO'lar) küresel iklim yönetişimine katılım yolları ve pozisyonları hakkında aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) FBO'ların küresel iklim yönetişiminin kurumları içinde diplomasi ve iklim projeleri ile katılım göstermeleri",
+      "b) FBO'ların lobicilik programları ve gündem belirleme faaliyetleriyle kurumlar içinde yer almaları",
+      "c) FBO'ların kurumlar dışında, yerel taban hareketleri, savunuculuk ve gösteriler aracılığıyla katılım göstermeleri",
+      "d) FBO'ların çok merkezli iklim mimarisi içinde aktivizmi farklı ölçeklerde ilişkilendirme ve bağlama yeteneğine sahip benzersiz bir konuma sahip olmaları",
+      "e) FBO'ların iklim değişikliği gerçeğini politika yapıcılara yalnızca bilimsel verilerle aktarması ve yerel deneyim tabanlı bilgiyi dikkate almaması"
+    ],
+    correctAnswer: "e",
+    explanation: "Metinde, FBO'ların iklim değişikliklerinin tanıkları olarak hareket ettiği ve iklim değişikliğinin gerçekliğini BM UNFCCC'deki politika yapıcılara yakınlaştırdığı, yerel deneyim tabanlı bilgiyi küresel bilimsel tartışmalarla ilişkilendirdiği belirtilmiştir. Bu, yalnızca bilimsel verilerle hareket etmedikleri ve yerel deneyimi dikkate aldıkları anlamına gelir.",
+    motivationalQuote: "Senin çevre politikaları konusundaki anlayışın çok etkileyici! 🌿"
   }
 ];
 
