@@ -79,7 +79,7 @@ const questions: Question[] = [
     ],
     correctAnswer: "d",
     explanation: "Belgede, 20. yüzyılda Faşizm ve Komünizm gibi iki aşırı laik ideolojinin yükselişi ve düşüşünün, laik düşünce ve fikirlerin dini fikirlere karşı algılanan ahlaki üstünlüğünü ölümcül bir şekilde sarstığı belirtilmiştir. Dolayısıyla bu ifade yanlıştır.",
-    motivationalQuote: "Her cevabınla beni daha da çok etkiliyorsun. Senin başarın benim mutluluğum! ��"
+    motivationalQuote: "Her cevabınla beni daha da çok etkiliyorsun. Senin başarın benim mutluluğum! "
   },
   {
     id: 6,
@@ -149,7 +149,7 @@ const questions: Question[] = [
     ],
     correctAnswer: "d",
     explanation: "Belgede, politika yapıcıların dini görüşlerinden ve bu görüşlere dayanan politikalardan kaynaklanan neredeyse çözülmesi imkansız politikaların, uluslararası olaylara, hatta savaşa yol açabileceği açıkça belirtilmiştir. Dolayısıyla bu ifade yanlıştır.",
-    motivationalQuote: "Senin uluslararası ilişkiler konusundaki bilgin ve anlayışın beni büyülüyor. Sen bir harikasın! ��"
+    motivationalQuote: "Senin uluslararası ilişkiler konusundaki bilgin ve anlayışın beni büyülüyor. Sen bir harikasın! "
   },
   {
     id: 11,
@@ -251,45 +251,185 @@ const questions: Question[] = [
   },
   {
     id: 18,
-    text: "Din ve iklim değişikliği arasındaki ilişki hakkında aşağıdaki ifadelerden hangisi doğru değildir?",
+    text: "İnanç Temelli Kuruluşların (FBO'lar) kalkınma alanındaki rolü ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     options: [
-      "a) İklim değişikliği, dinlerarası işbirliğinin önemli bir alanı haline gelmektedir",
-      "b) Dini gruplar, iklim adaleti hareketinde aktif olmuşlardır",
-      "c) Dini liderlerin potansiyel etki alanları, yalnızca kendi inançlarının üyeleriyle sınırlıdır",
-      "d) Dini inançların kolektif olarak dünyanın en büyük üçüncü yatırımcı kategorisi olduğu ve önemli siyasi güce sahip oldukları düşünülmektedir",
-      "e) Dini grupların geniş bir kitleye ulaşmak için kendi ağlarını ve dinlerarası grupları kullanmaları"
+      "a) Topluluklarda önemli fiziksel ve sosyal altyapıya sahiptirler",
+      "b) Dini liderlere ve kurumlara duyulan güven düzeyi diğer kuruluşlara göre genellikle daha yüksektir",
+      "c) Sağlık ve eğitim hizmetlerinin önemli bir bölümünü doğrudan sağlarlar",
+      "d) İnsan gelişiminin hayati yönlerinde derin tarihi katılımları vardır",
+      "e) Sadece kendi dini gruplarına hizmet verirler ve diğer gruplarla işbirliği yapmazlar"
     ],
-    correctAnswer: "c",
-    explanation: "Metinde, dini liderlerin potansiyel etki alanlarının kendi inançlarının üyeleriyle sınırlı olmadığı açıkça belirtilmiştir.",
-    motivationalQuote: "Senin çevre ve din ilişkisini bu kadar iyi anlamanı takdir ediyorum! 🌍"
+    correctAnswer: "e",
+    explanation: "FBO'lar genellikle din, etnik köken veya inanç gözetmeksizin tüm topluma hizmet verirler ve diğer dini veya seküler gruplarla işbirliği yaparlar.",
+    motivationalQuote: "Senin insani değerlere olan duyarlılığın çok değerli! 💖"
   },
   {
     id: 19,
-    text: "Birleşmiş Milletler'in (BM) dini inançlarla işbirliği yapmasının nedenleri ve dini grupların toplumsal rollerine ilişkin aşağıdaki ifadelerden hangisi doğru değildir?",
+    text: "BM ve dini kuruluşların işbirliği konusunda aşağıdaki ifadelerden hangisi doğru değildir?",
     options: [
-      "a) Afet durumlarında ilk müdahale edenler arasında olmaları",
-      "b) Topluluklarda mal, hizmet ve duygusal destek dağıtımı için merkezler olarak işlev görmeleri",
-      "c) Yerel toplulukların iklim değişikliğine yanıt vermesine yardımcı olmak için güveni teşvik etmeleri ve sosyal bağları güçlendirmeleri",
-      "d) BM ile işbirliği yapmalarının temel nedeninin, herhangi bir felsefi veya metafizik boyutu olmamasıdır",
-      "e) Çevre dostu ve etik yanlısı yaşam tarzlarıyla el ele giden basit ve sürdürülebilir yaşamı savunmaları"
+      "a) BM, dini kuruluşlarla artan bir şekilde işbirliği yapmaktadır",
+      "b) Dini kuruluşlar, BM'nin sürdürülebilir kalkınma hedeflerine katkıda bulunmaktadır",
+      "c) BM ve dini kuruluşlar arasındaki işbirliği sadece insani yardım alanıyla sınırlıdır",
+      "d) Dini kuruluşlar, BM'nin barış inşası çabalarına destek vermektedir",
+      "e) BM, dini kuruluşların yerel topluluklara erişim kapasitesinden yararlanmaktadır"
     ],
-    correctAnswer: "d",
-    explanation: "Metinde, BM'nin dini inançlarla işbirliği yapmasının felsefi nedenleri olduğu açıkça belirtilmiştir; hikayeleri, mitleri ve metaforları aracılığıyla insanları daha derin bir düzeyde meşgul etme yetenekleri vurgulanmıştır.",
-    motivationalQuote: "Senin uluslararası organizasyonlar hakkındaki bilgin muhteşem! 💫"
+    correctAnswer: "c",
+    explanation: "BM ve dini kuruluşlar arasındaki işbirliği insani yardımın yanı sıra barış inşası, sürdürülebilir kalkınma, iklim değişikliği ve diğer birçok alanı kapsamaktadır.",
+    motivationalQuote: "Senin küresel işbirliği konusundaki anlayışın harika! ✨"
   },
   {
     id: 20,
-    text: "İnanç Temelli Kuruluşların (FBO'lar) küresel iklim yönetişimine katılım yolları ve pozisyonları hakkında aşağıdaki ifadelerden hangisi doğru değildir?",
+    text: "İklim değişikliği ve dini grupların rolü hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
     options: [
-      "a) FBO'ların küresel iklim yönetişiminin kurumları içinde diplomasi ve iklim projeleri ile katılım göstermeleri",
-      "b) FBO'ların lobicilik programları ve gündem belirleme faaliyetleriyle kurumlar içinde yer almaları",
-      "c) FBO'ların kurumlar dışında, yerel taban hareketleri, savunuculuk ve gösteriler aracılığıyla katılım göstermeleri",
-      "d) FBO'ların çok merkezli iklim mimarisi içinde aktivizmi farklı ölçeklerde ilişkilendirme ve bağlama yeteneğine sahip benzersiz bir konuma sahip olmaları",
-      "e) FBO'ların iklim değişikliği gerçeğini politika yapıcılara yalnızca bilimsel verilerle aktarması ve yerel deneyim tabanlı bilgiyi dikkate almaması"
+      "a) Dini gruplar iklim adaleti hareketinde aktif rol oynamaktadır",
+      "b) Dinlerarası işbirliği, iklim değişikliği konusunda önemli bir alan haline gelmiştir",
+      "c) Dini liderler iklim değişikliğiyle mücadelede toplumu harekete geçirmede etkilidir",
+      "d) Dini gruplar çevre koruma konusunda farkındalık yaratmaktadır",
+      "e) Dini gruplar iklim değişikliği konusunda bilimsel araştırmaları reddeder"
     ],
     correctAnswer: "e",
-    explanation: "Metinde, FBO'ların iklim değişikliklerinin tanıkları olarak hareket ettiği ve iklim değişikliğinin gerçekliğini BM UNFCCC'deki politika yapıcılara yakınlaştırdığı, yerel deneyim tabanlı bilgiyi küresel bilimsel tartışmalarla ilişkilendirdiği belirtilmiştir. Bu, yalnızca bilimsel verilerle hareket etmedikleri ve yerel deneyimi dikkate aldıkları anlamına gelir.",
-    motivationalQuote: "Senin çevre politikaları konusundaki anlayışın çok etkileyici! 🌿"
+    explanation: "Birçok dini grup, iklim değişikliği konusundaki bilimsel araştırmaları kabul eder ve bu konuda bilim insanlarıyla işbirliği yapar.",
+    motivationalQuote: "Senin çevre bilincin ve analitik düşüncen muhteşem! 🌍"
+  },
+  {
+    id: 21,
+    text: "Dini diplomasi ve arabuluculuk konusunda aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) Dini liderler çatışma çözümünde arabulucu rol oynayabilir",
+      "b) Dini kurumlar barış inşası süreçlerine katkıda bulunabilir",
+      "c) Dini diplomasi resmi diplomasinin yerini tamamen alabilir",
+      "d) Dini aktörler toplumlar arası diyalogu geliştirebilir",
+      "e) Dini diplomasi, geleneksel diplomasiyi tamamlayıcı bir rol oynar"
+    ],
+    correctAnswer: "c",
+    explanation: "Dini diplomasi, resmi diplomasinin yerini almak yerine onu tamamlayıcı bir rol oynar ve resmi diplomasi kanallarıyla birlikte çalışır.",
+    motivationalQuote: "Senin barış ve diyalog konusundaki hassasiyetin çok değerli! 🕊️"
+  },
+  {
+    id: 22,
+    text: "Dini özgürlükler ve uluslararası ilişkiler bağlamında aşağıdaki ifadelerden hangisi yanlıştır?",
+    options: [
+      "a) Dini özgürlükler insan hakları konusunun önemli bir parçasıdır",
+      "b) Ülkeler arası ilişkilerde dini özgürlükler önemli bir gündem maddesi olabilir",
+      "c) Dini özgürlüklerin kısıtlanması uluslararası yaptırımlara neden olabilir",
+      "d) Dini özgürlükler sadece iç politika meselesidir",
+      "e) Dini özgürlükler konusu uluslararası anlaşmalarda yer alır"
+    ],
+    correctAnswer: "d",
+    explanation: "Dini özgürlükler sadece iç politika meselesi değil, aynı zamanda uluslararası ilişkileri etkileyen önemli bir konudur.",
+    motivationalQuote: "Senin insan hakları konusundaki duyarlılığın takdire şayan! 💫"
+  },
+  {
+    id: 23,
+    text: "Dini radikalizm ve uluslararası güvenlik ilişkisi hakkında aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) Dini radikalizm uluslararası güvenliği tehdit edebilir",
+      "b) Dini radikalizmle mücadelede uluslararası işbirliği önemlidir",
+      "c) Dini radikalizm sosyo-ekonomik faktörlerden etkilenir",
+      "d) Dini radikalizm sadece belirli dinlerle ilişkilidir",
+      "e) Dini radikalizmle mücadelede eğitim önemli bir rol oynar"
+    ],
+    correctAnswer: "d",
+    explanation: "Dini radikalizm herhangi bir dinde ortaya çıkabilir ve belirli dinlerle sınırlı değildir.",
+    motivationalQuote: "Senin önyargısız ve objektif bakış açın çok değerli! 🌟"
+  },
+  {
+    id: 24,
+    text: "Dini kurumların insani yardım faaliyetleri konusunda aşağıdaki ifadelerden hangisi yanlıştır?",
+    options: [
+      "a) Dini kurumlar doğal afetlerde yardım sağlar",
+      "b) Dini kurumlar mültecilere destek verir",
+      "c) Dini kurumlar sadece kendi inançlarından olanlara yardım eder",
+      "d) Dini kurumlar uluslararası yardım kuruluşlarıyla işbirliği yapar",
+      "e) Dini kurumlar yerel topluluklara erişimde avantaja sahiptir"
+    ],
+    correctAnswer: "c",
+    explanation: "Dini kurumlar genellikle inanç ayrımı gözetmeksizin tüm ihtiyaç sahiplerine yardım eder.",
+    motivationalQuote: "Senin insani yardım konusundaki bilgin çok etkileyici! ❤️"
+  },
+  {
+    id: 25,
+    text: "Dini kurumların eğitim alanındaki uluslararası faaliyetleri hakkında aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) Dini kurumlar uluslararası öğrenci değişim programları düzenler",
+      "b) Dini kurumlar gelişmekte olan ülkelerde okullar açar",
+      "c) Dini kurumlar sadece dini eğitim verir",
+      "d) Dini kurumlar kültürlerarası diyalogu teşvik eder",
+      "e) Dini kurumlar eğitim yoluyla barış inşasına katkıda bulunur"
+    ],
+    correctAnswer: "c",
+    explanation: "Dini kurumlar sadece dini eğitim değil, aynı zamanda genel eğitim, mesleki eğitim ve kültürel eğitim de vermektedir.",
+    motivationalQuote: "Senin eğitim konusundaki vizyonun çok geniş! 📚"
+  },
+  {
+    id: 26,
+    text: "Dini kurumların çevre koruma faaliyetleri hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    options: [
+      "a) Dini kurumlar çevre bilinci oluşturmada rol oynar",
+      "b) Dini kurumlar sürdürülebilir kalkınmayı destekler",
+      "c) Dini kurumlar iklim değişikliğiyle mücadelede aktiftir",
+      "d) Dini kurumlar çevre koruma konusunda işbirliği yapar",
+      "e) Dini kurumlar çevre sorunlarını görmezden gelir"
+    ],
+    correctAnswer: "e",
+    explanation: "Dini kurumlar çevre sorunlarını görmezden gelmez, aksine bu konuda aktif rol alır ve çözüm üretmeye çalışır.",
+    motivationalQuote: "Senin çevre duyarlılığın ve bilgin çok değerli! 🌱"
+  },
+  {
+    id: 27,
+    text: "Dini kurumların barış inşası süreçlerindeki rolü hakkında aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) Dini kurumlar çatışma çözümünde arabuluculuk yapar",
+      "b) Dini kurumlar toplumlar arası diyalogu teşvik eder",
+      "c) Dini kurumlar barış eğitimi programları düzenler",
+      "d) Dini kurumlar sadece çatışma yaratır",
+      "e) Dini kurumlar uzlaşma süreçlerine katkıda bulunur"
+    ],
+    correctAnswer: "d",
+    explanation: "Dini kurumlar sadece çatışma yaratmaz, aksine birçok durumda barış inşası ve çatışma çözümünde önemli rol oynar.",
+    motivationalQuote: "Senin barış konusundaki anlayışın çok değerli! 🕊️"
+  },
+  {
+    id: 28,
+    text: "Dini kurumların kültürlerarası diyalog faaliyetleri hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    options: [
+      "a) Dini kurumlar kültürlerarası etkinlikler düzenler",
+      "b) Dini kurumlar farklı inançlar arası diyalogu teşvik eder",
+      "c) Dini kurumlar kültürel değişim programları organize eder",
+      "d) Dini kurumlar sadece kendi kültürlerini yayar",
+      "e) Dini kurumlar karşılıklı anlayışı geliştirmeye çalışır"
+    ],
+    correctAnswer: "d",
+    explanation: "Dini kurumlar sadece kendi kültürlerini yaymakla kalmaz, aynı zamanda kültürlerarası diyalog ve karşılıklı anlayışı teşvik eder.",
+    motivationalQuote: "Senin kültürlerarası diyalog anlayışın harika! 🌍"
+  },
+  {
+    id: 29,
+    text: "Dini kurumların uluslararası kalkınma projelerindeki rolü hakkında aşağıdaki ifadelerden hangisi doğru değildir?",
+    options: [
+      "a) Dini kurumlar yoksullukla mücadele projeleri yürütür",
+      "b) Dini kurumlar sağlık hizmetleri sağlar",
+      "c) Dini kurumlar eğitim projeleri gerçekleştirir",
+      "d) Dini kurumlar sadece maddi yardım yapar",
+      "e) Dini kurumlar sürdürülebilir kalkınma projelerini destekler"
+    ],
+    correctAnswer: "d",
+    explanation: "Dini kurumlar sadece maddi yardım yapmaz, aynı zamanda eğitim, sağlık, kapasite geliştirme ve sürdürülebilir kalkınma gibi alanlarda da projeler yürütür.",
+    motivationalQuote: "Senin kalkınma konusundaki vizyonun çok geniş! 🌱"
+  },
+  {
+    id: 30,
+    text: "Dini kurumların uluslararası örgütlerle ilişkileri hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    options: [
+      "a) Dini kurumlar BM ile işbirliği yapar",
+      "b) Dini kurumlar uluslararası STK'larla ortak projeler yürütür",
+      "c) Dini kurumlar bölgesel örgütlerle çalışır",
+      "d) Dini kurumlar uluslararası örgütlerle çalışmayı reddeder",
+      "e) Dini kurumlar uluslararası konferanslara katılır"
+    ],
+    correctAnswer: "d",
+    explanation: "Dini kurumlar uluslararası örgütlerle çalışmayı reddetmez, aksine BM, uluslararası STK'lar ve bölgesel örgütlerle aktif işbirliği yapar.",
+    motivationalQuote: "Senin uluslararası işbirliği konusundaki bilgin çok etkileyici! 🌟"
   }
 ];
 
