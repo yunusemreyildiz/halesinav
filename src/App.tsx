@@ -437,13 +437,18 @@ const questions: Question[] = [
 function HomePage() {
   return (
     <div className="home-container">
-      <h1>Hale'nin Ders Notları</h1>
-      <p>Sevgilim, aşağıdaki derslerden birine tıklayarak o dersin sorularına ulaşabilirsin 💝</p>
+      <h1>Aşkımın Ders Notları</h1>
+      <p>Canım, aşağıdaki derslerden birine tıklayarak o dersin sorularına ulaşabilirsin 💝</p>
       <div className="courses-grid">
         <Link to="/devlet-toplum-din" className="course-card">
-          <h2>Devlet, Toplum ve Din</h2>
-          <p>Uluslararası İlişkiler bağlamında din ve toplum ilişkisi üzerine sorular.</p>
-          <span className="question-count">30 Soru</span>
+          <div className="course-card-content">
+            <h2>Devlet, Toplum ve Din</h2>
+            <p>Uluslararası İlişkiler bağlamında din ve toplum ilişkisi üzerine sorular.</p>
+            <div className="course-card-footer">
+              <span className="question-count">30 Soru</span>
+              <span className="start-quiz">Quiz'e Başla →</span>
+            </div>
+          </div>
         </Link>
         {/* Diğer dersler buraya eklenecek */}
       </div>
@@ -486,12 +491,57 @@ function QuizApp() {
   };
 
   if (quizCompleted) {
+    const wrongAnswers = questions.length - score;
+    const percentage = (score / questions.length) * 100;
+    let message = "";
+    let emoji = "";
+
+    if (percentage === 100) {
+      message = "Mükemmelsin aşkım! Tüm soruları doğru yanıtladın! 🎯";
+      emoji = "🏆";
+    } else if (percentage >= 80) {
+      message = "Harikasın bebeğim! Çok iyi bir sonuç! 🌟";
+      emoji = "🎉";
+    } else if (percentage >= 60) {
+      message = "İyi iş çıkardın canım! Biraz daha çalışarak daha da iyi olacaksın! 💪";
+      emoji = "✨";
+    } else {
+      message = "Üzülme aşkım, birlikte çalışarak daha iyi olacağız! 💝";
+      emoji = "💫";
+    }
+
     return (
-      <div className="quiz-container">
-        <h2>Quiz Tamamlandı!</h2>
-        <p>Toplam Skor: {score} / {questions.length}</p>
-        <button onClick={handleRestart}>Yeniden Başla</button>
-        <Link to="/" className="home-button">Ana Sayfaya Dön</Link>
+      <div className="quiz-completed-container">
+        <div className="quiz-result-card">
+          <h2>Quiz Tamamlandı! {emoji}</h2>
+          <div className="score-details">
+            <div className="score-item">
+              <span className="score-label">Toplam Soru</span>
+              <span className="score-value">{questions.length}</span>
+            </div>
+            <div className="score-item correct">
+              <span className="score-label">Doğru</span>
+              <span className="score-value">{score}</span>
+            </div>
+            <div className="score-item wrong">
+              <span className="score-label">Yanlış</span>
+              <span className="score-value">{wrongAnswers}</span>
+            </div>
+            <div className="score-item percentage">
+              <span className="score-label">Başarı</span>
+              <span className="score-value">%{percentage.toFixed(0)}</span>
+            </div>
+          </div>
+          <p className="result-message">{message}</p>
+          <div className="result-actions">
+            <button onClick={handleRestart} className="restart-button">
+              Yeniden Başla
+            </button>
+            <Link to="/" className="home-button">
+              Ana Sayfaya Dön
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }
