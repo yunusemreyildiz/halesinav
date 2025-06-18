@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/halesinav/static/css/main.cbcb1199.css",
+    "main.js": "/halesinav/static/js/main.d66f5ff0.js",
+    "static/js/453.ffc69977.chunk.js": "/halesinav/static/js/453.ffc69977.chunk.js",
+    "index.html": "/halesinav/index.html",
+    "main.cbcb1199.css.map": "/halesinav/static/css/main.cbcb1199.css.map",
+    "main.d66f5ff0.js.map": "/halesinav/static/js/main.d66f5ff0.js.map",
+    "453.ffc69977.chunk.js.map": "/halesinav/static/js/453.ffc69977.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbcb1199.css",
+    "static/js/main.d66f5ff0.js"
+  ]
+}
