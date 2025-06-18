@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 
@@ -438,20 +438,119 @@ function HomePage() {
   return (
     <div className="home-container">
       <h1>Aşkımın Ders Notları</h1>
-      <p>Canım, aşağıdaki derslerden birine tıklayarak o dersin sorularına ulaşabilirsin 💝</p>
+      <p>Canım, aşağıdaki derslerden birine tıklayarak o dersin içeriğine ulaşabilirsin 💝</p>
       <div className="courses-grid">
-        <Link to="/devlet-toplum-din" className="course-card">
-          <div className="course-card-content">
-            <h2>Devlet, Toplum ve Din</h2>
-            <p>Uluslararası İlişkiler bağlamında din ve toplum ilişkisi üzerine sorular.</p>
-            <div className="course-card-footer">
-              <span className="question-count">30 Soru</span>
-              <span className="start-quiz">Quiz'e Başla →</span>
-            </div>
+        <div className="course-section">
+          <h3>Devlet, Toplum ve Din</h3>
+          <div className="course-buttons">
+            <Link to="/devlet-toplum-din" className="course-card">
+              <div className="course-card-content">
+                <h2>Quiz</h2>
+                <p>Uluslararası İlişkiler bağlamında din ve toplum ilişkisi üzerine sorular.</p>
+                <div className="course-card-footer">
+                  <span className="question-count">30 Soru</span>
+                  <span className="start-quiz">Quiz'e Başla →</span>
+                </div>
+              </div>
+            </Link>
+            <Link to="/devlet-toplum-din/notlar" className="course-card">
+              <div className="course-card-content">
+                <h2>Ders Notları</h2>
+                <p>Derste işlenen konuların sesli anlatımı.</p>
+                <div className="course-card-footer">
+                  <span className="audio-count">5 Ses Kaydı</span>
+                  <span className="start-listening">Dinlemeye Başla →</span>
+                </div>
+              </div>
+            </Link>
           </div>
-        </Link>
-        {/* Diğer dersler buraya eklenecek */}
+        </div>
       </div>
+    </div>
+  );
+}
+
+function LectureNotes() {
+  const [currentAudio, setCurrentAudio] = useState<number | null>(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const lectureNotes = [
+    {
+      id: 1,
+      title: "Din ve Dış Politika İlişkisi",
+      description: "Dinin dış politika üzerindeki etkisi ve uluslararası ilişkilerdeki rolü.",
+      duration: "15:30",
+      file: "/halesinav/audio/din-ve-dis-politika.mp3"
+    },
+    {
+      id: 2,
+      title: "Sekülerleşme ve Laiklik",
+      description: "Sekülerleşme süreci ve laiklik kavramının detaylı incelemesi.",
+      duration: "12:45",
+      file: "/halesinav/audio/sekulerlesme-ve-laiklik.mp3"
+    },
+    {
+      id: 3,
+      title: "Post-seküler Uluslararası İlişkiler",
+      description: "Post-seküler dönemde uluslararası ilişkilerin değişen dinamikleri.",
+      duration: "18:20",
+      file: "/halesinav/audio/post-sekuler-ui.mp3"
+    },
+    {
+      id: 4,
+      title: "İnanç Temelli Kuruluşlar",
+      description: "FBO'ların uluslararası sistemdeki yeri ve önemi.",
+      duration: "14:15",
+      file: "/halesinav/audio/inanc-temelli-kuruluslar.mp3"
+    },
+    {
+      id: 5,
+      title: "Din ve İklim Değişikliği",
+      description: "Dini grupların iklim değişikliği ile mücadeledeki rolü.",
+      duration: "16:40",
+      file: "/halesinav/audio/din-ve-iklim-degisikligi.mp3"
+    }
+  ];
+
+  const handlePlay = (id: number) => {
+    if (currentAudio === id) {
+      if (audioRef.current?.paused) {
+        audioRef.current?.play();
+      } else {
+        audioRef.current?.pause();
+      }
+    } else {
+      setCurrentAudio(id);
+      if (audioRef.current) {
+        audioRef.current.src = lectureNotes.find(note => note.id === id)?.file || '';
+        audioRef.current.play();
+      }
+    }
+  };
+
+  return (
+    <div className="lecture-notes-container">
+      <h2>Ders Notları</h2>
+      <p className="section-description">Aşkım, aşağıdaki ses kayıtlarını dinleyerek ders notlarına ulaşabilirsin 💝</p>
+      <div className="audio-list">
+        {lectureNotes.map(note => (
+          <div key={note.id} className="audio-card">
+            <div className="audio-info">
+              <h3>{note.title}</h3>
+              <p>{note.description}</p>
+              <span className="duration">{note.duration}</span>
+            </div>
+            <button 
+              className={`play-button ${currentAudio === note.id ? 'playing' : ''}`}
+              onClick={() => handlePlay(note.id)}
+            >
+              {currentAudio === note.id && !audioRef.current?.paused ? '⏸️' : '▶️'}
+            </button>
+          </div>
+        ))}
+      </div>
+      <audio ref={audioRef} onEnded={() => setCurrentAudio(null)} />
+      <Link to="/" className="home-button">Ana Sayfaya Dön</Link>
     </div>
   );
 }
@@ -590,6 +689,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/devlet-toplum-din" element={<QuizApp />} />
+          <Route path="/devlet-toplum-din/notlar" element={<LectureNotes />} />
         </Routes>
       </div>
     </Router>
