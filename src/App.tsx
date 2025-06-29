@@ -2162,29 +2162,134 @@ function InternationalSecurityExamQuestions() {
         }
       ]
     },
-    {
-      category: "CRITICAL SECURITY STUDIES & POSTCOLONIALISM",
-      questions: [
-        {
-          id: 1,
-          question: "1994 York Üniversitesi konferansı, geleneksel güvenlik çalışmalarına üç ana cepheden meydan okuyarak CSS için bir başlangıç gündemi belirlemiştir. Bu üç meydan okumayı listeleyin ve açıklayın.",
-          answers: [
-            {
-              title: "Referans nesnesini sorgulamak",
-              content: "Geleneksel olarak güvenliği sağlanacak tek nesne olarak devlete odaklanmayı sorgular, bunun yerine bireyleri veya toplulukları önerir."
-            },
-            {
-              title: "Güvenliği askeri güvenlikten fazlası olarak görmek",
-              content: "Güvenlik kavramını askeri tehditlerin ötesine, ekonomik, çevresel ve toplumsal güvensizlikleri de içerecek şekilde genişletir."
-            },
-            {
-              title: "Güvenliğin çalışma şeklini değiştirmek",
-              content: "Geleneksel yaklaşımların sözde nesnelliğini reddeder, bilginin arkasındaki politikayı tanıyan post-pozitivist bir bilim anlayışını savunur."
-            }
-          ]
-        }
-      ]
-    },
+         {
+       category: "CRITICAL SECURITY STUDIES",
+       questions: [
+         {
+           id: 1,
+           question: "1994 York Üniversitesi konferansı, geleneksel güvenlik çalışmalarına üç ana cepheden meydan okuyarak CSS için bir başlangıç gündemi belirlemiştir. Bu üç meydan okumayı listeleyin ve açıklayın.",
+           answers: [
+             {
+               title: "Referans nesnesini sorgulamak",
+               content: "Geleneksel olarak güvenliği sağlanacak tek nesne olarak devlete odaklanmayı sorgular, bunun yerine bireyleri veya toplulukları önerir."
+             },
+             {
+               title: "Güvenliği askeri güvenlikten fazlası olarak görmek",
+               content: "Güvenlik kavramını askeri tehditlerin ötesine, ekonomik, çevresel ve toplumsal güvensizlikleri de içerecek şekilde genişletir."
+             },
+             {
+               title: "Güvenliğin çalışma şeklini değiştirmek",
+               content: "Geleneksel yaklaşımların sözde nesnelliğini reddeder, bilginin arkasındaki politikayı tanıyan post-pozitivist bir bilim anlayışını savunur."
+             }
+           ]
+         },
+         {
+           id: 2,
+           question: "Koruma Sorumluluğu (R2P) doktrini, üç spesifik sorumluluk üzerine inşa edilmiştir. Her birini adlandırın ve kısaca tanımlayın.",
+           answers: [
+             {
+               title: "Önleme Sorumluluğu",
+               content: "İç çatışmaların ve insan kaynaklı krizlerin köken nedenlerini ve doğrudan nedenlerini ortaya çıkmadan önce ele almak."
+             },
+             {
+               title: "Tepki Verme Sorumluluğu",
+               content: "Zorlayıcı insani ihtiyaç durumlarına uygun önlemlerle yanıt vermek, bu önlemler yaptırımları veya aşırı durumlarda askeri müdahaleyi içerebilir."
+             },
+             {
+               title: "Yeniden İnşa Sorumluluğu",
+               content: "Özellikle askeri müdahale sonrasında iyileşme, yeniden yapılanma ve uzlaşma için tam destek sağlamak."
+             }
+           ]
+         },
+         {
+           id: 3,
+           question: "Ken Booth'un Aberystwyth Okulu, güvenliğe dair eleştirel bir teoriyi üç temel soruya dayandırır. Bu üç temel soruyu listeleyin.",
+           answers: [
+             {
+               title: "Soru 1",
+               content: "Gerçek olan nedir?"
+             },
+             {
+               title: "Soru 2", 
+               content: "Bilgi nedir? / Ondan kim faydalanır?"
+             },
+             {
+               title: "Soru 3",
+               content: "Ne yapılmalı?"
+             }
+           ]
+         },
+         {
+           id: 4,
+           question: "Kopenhag Okulu, iki temel kavramsal gelişme ile tanımlanır. Bu iki kavramı adlandırın ve \"güvenlikleştirme\" için kısa bir tanım yapın.",
+           answers: [
+             {
+               title: "Güvenliğin sektörel analizi",
+               content: "Güvenlik konularının askeri, ekonomik, çevresel, toplumsal ve siyasi sektörlere ayrılması yaklaşımı."
+             },
+             {
+               title: "Güvenlikleştirme",
+               content: "Bir meselenin, \"söz eylemi\" aracılığıyla, normal siyasetin dışına çıkan olağanüstü önlemleri haklı kılan varoluşsal bir tehdit olarak sunulduğu süreç."
+             }
+           ]
+         }
+       ]
+     },
+     {
+       category: "POSTCOLONIALISM",
+       questions: [
+         {
+           id: 1,
+           question: "Postkolonyal analiz, sömürge projesinin merkezinde yer alan üç farklı şiddet biçimini tanımlar. Bu üç şiddet biçimini adlandırın ve kısaca tanımlayın.",
+           answers: [
+             {
+               title: "Maddi şiddet",
+               content: "Avrupa sömürgeciliğinin Amerika, Afrika ve Asya'daki nüfuslara uyguladığı muazzam fiziksel şiddet."
+             },
+             {
+               title: "Epistemik şiddet",
+               content: "Avrupa bilgi sistemlerinin diğer halklara dayatılması, yerel bilgi edinme yollarının aktif olarak reddedilmesi, itibarsızlaştırılması veya yok edilmesi."
+             },
+             {
+               title: "Yapısal şiddet",
+               content: "Sömürge alanlarındaki günlük yaşamı ve onun yeniden üretimini tanımlayan, sömürü ve tahakkümün sistematik ilişkileri."
+             }
+           ]
+         },
+         {
+           id: 2,
+           question: "Edward Said'in \"Oryantalizm\"i, Batı'nın Doğu ve Batı'ya dair hiyerarşik bir temsilini nasıl inşa ettiğini açıklar. \"Doğu\"ya atfedilen üç özelliği ve \"Batı\"ya atfedilen üç karşıt özelliği listeleyin.",
+           answers: [
+             {
+               title: "Doğu",
+               content: "Gizemli, duygusal, barbar olarak karakterize edilir."
+             },
+             {
+               title: "Batı",
+               content: "Bilinen, akılcı, medeni olarak karakterize edilir."
+             }
+           ]
+         },
+         {
+           id: 3,
+           question: "Postkolonyalizmin eleştirdiği temel bir kavram \"Avrupamerkezcilik\"tir. Avrupamerkezci bir dünya görüşünün üç ana unsurunu tanımlayın.",
+           answers: [
+             {
+               title: "Avrupa'nın ayrık ve kendi kendini üreten olması",
+               content: "Avrupa'nın, dünyanın geri kalanından ayrı, kendi içinde oluşmuş farklı bir medeniyet olarak tasvir edilmesi."
+             },
+             {
+               title: "Avrupa'nın tarihin merkezi olması",
+               content: "Dünya tarihinin, geçmiş ve şimdi, Avrupa'nın deneysel ve normatif merkeziliği varsayımıyla analiz edilmesi."
+             },
+             {
+               title: "Modernliğin Batı tarafından tanımlanması",
+               content: "Gelişme ve modernleşmenin son noktasının çağdaş \"Batı\" tarafından tanımlandığı varsayımı."
+             }
+           ]
+         }
+       ]
+     },
     {
       category: "CONSTRUCTIVISM",
       questions: [
@@ -2277,7 +2382,7 @@ function InternationalSecurityExamQuestions() {
        ]
      },
      {
-       category: "HUMAN SECURITY & ENVIRONMENTAL SECURITY",
+       category: "HUMAN SECURITY",
        questions: [
          {
            id: 1,
@@ -2292,14 +2397,121 @@ function InternationalSecurityExamQuestions() {
                content: "Şiddet veya çatışma gibi günlük yaşamın düzenindeki ani ve acı verici kesintilerden korunma."
              }
            ]
+         },
+         {
+           id: 2,
+           question: "1994 UNDP raporu, sürekli dikkat gerektiren yedi kritik güvenlik alanı önermiştir. Bu yedi alandan beş tanesini listeleyin ve kısaca tanımlayın.",
+           answers: [
+             {
+               title: "Ekonomik güvenlik",
+               content: "Genellikle üretken ve kazançlı işlerden veya kamu tarafından finanse edilen bir güvenlik ağından sağlanan güvenceli temel gelir."
+             },
+             {
+               title: "Gıda güvenliği",
+               content: "Herkesin her zaman temel gıdaya hem fiziksel hem de ekonomik erişiminin sağlanması."
+             },
+             {
+               title: "Sağlık güvenliği",
+               content: "Hastalıklar ve sağlıksız yaşam tarzlarından minimum düzeyde korunmanın garantilenmesi."
+             },
+             {
+               title: "Çevresel güvenlik",
+               content: "İnsanları doğanın kısa ve uzun vadeli tahribatlarından, doğadaki insan yapımı tehditlerden ve doğal çevrenin bozulmasından korumak."
+             },
+             {
+               title: "Kişisel güvenlik",
+               content: "İnsanları, devletten veya dış devletlerden, şiddet yanlısı bireylerden ve devlet altı aktörlerden veya aile içi şiddetten kaynaklanan fiziksel şiddetten korumak."
+             }
+           ]
+         },
+         {
+           id: 3,
+           question: "1994 İnsani Gelişme Raporu, insan güvenliği kavramının dört ana özelliğini detaylandırmıştır. Bu dört özelliği adlandırın ve açıklayın.",
+           answers: [
+             {
+               title: "Evrensel",
+               content: "Zengin ve yoksul tüm uluslardaki insanlar için geçerlidir, çünkü ilkeleri kültürler ve sistemler arası değere sahiptir."
+             },
+             {
+               title: "Karşılıklı Bağımlı",
+               content: "İnsan güvenliğinin farklı yönleri birbiriyle bağlantılıdır, yani bir alandaki tehditler diğer alanlara yayılabilir ve güvenliği etkileyebilir."
+             },
+             {
+               title: "Önleme Odağı",
+               content: "Tehditleri ortaya çıktıktan sonra müdahale etmekten daha kolay ve daha az maliyetlidir."
+             },
+             {
+               title: "İnsan Odaklı",
+               content: "Güvenliğin birincil referans nesnesi olarak devleti değil, insanları ve onların topluluklarını yapar."
+             }
+           ]
          }
        ]
      },
      {
-       category: "TERRORISM & SECURITY CHALLENGES",
+       category: "ENVIRONMENTAL SECURITY",
        questions: [
          {
            id: 1,
+           question: "Notlarda çevresel güvenliğin 1960'larda başlayan birbiriyle ilişkili dört gelişme nedeniyle önemli bir kavram olarak ortaya çıktığı belirtilmektedir. Bu gelişmelerden üçünü listeleyin ve kısaca tanımlayın.",
+           answers: [
+             {
+               title: "Çevresel farkındalığın artması",
+               content: "\"Sessiz Bahar\" gibi kitapların ve çevresel STK'ların yükselişinin tetiklediği, çevresel konular hakkında kamu bilincinde bir artış."
+             },
+             {
+               title: "Geleneksel güvenlik söyleminin eleştirileri",
+               content: "Akademisyenlerin güvenlik çalışmalarının dar askeri odağını sorgulamaya başlaması, çevresel risklerin de ulusal refahı tehdit ettiğini savunmaları."
+             },
+             {
+               title: "Stratejik koşullardaki değişiklikler",
+               content: "Soğuk Savaş'ın sona ermesi, çevre gibi \"yeni\" güvenlik konularının ana akım gündeme girmesi için entelektüel ve siyasi bir alan yarattı."
+             }
+           ]
+         },
+         {
+           id: 2,
+           question: "Çevresel güvenlik literatürü en az altı ana yorum içerir. Bu yorumlardan üçü için yaklaşımı, \"güvence altına alınacak varlığı\" ve \"başlıca risk kaynağını\" belirtin.",
+           answers: [
+             {
+               title: "Ekolojik güvenlik",
+               content: "Güvence Altına Alınacak Varlık: Doğal çevre, Başlıca Risk Kaynağı: İnsan faaliyetleri"
+             },
+             {
+               title: "Çevresel şiddet",
+               content: "Güvence Altına Alınacak Varlık: Ulus-devlet, Başlıca Risk Kaynağı: Savaş"
+             },
+             {
+               title: "İnsani güvenlik",
+               content: "Güvence Altına Alınacak Varlık: Bireyler, Başlıca Risk Kaynağı: Çevresel değişim"
+             }
+           ]
+         }
+       ]
+     },
+     {
+       category: "TERRORISM",
+       questions: [
+         {
+           id: 1,
+           question: "Notlar, terörizmin incelenebileceği üç farklı bakış açısı sunmaktadır. Bu üç bakış açısını adlandırın ve kısaca tanımlayın.",
+           answers: [
+             {
+               title: "Savaş olarak terörizm",
+               content: "Terörizmi askeri yöntemlerle çözülmesi gereken bir sorun olarak görür, zaferin elde edilebileceğini varsayar."
+             },
+             {
+               title: "Suç olarak terörizm",
+               content: "Terörizmi yönetmek için normal polis tekniklerine güvenir, diğer suçlar gibi sadece sınırlandırılabileceğini, ortadan kaldırılamayacağını ima eder."
+             },
+             {
+               title: "Hastalık olarak terörizm",
+               content: "Hem semptomlara hem de köken nedenlerine odaklanır, kök sorunları ele almak için uzun vadeli stratejilere ihtiyaç olduğunu varsayar."
+             }
+           ]
+         },
+         {
+           id: 2,
            question: "Terörizmin işlevsel bir tanımı altı temel unsur içerir. Bu unsurlardan dördünü adlandırın ve tanımlayın.",
            answers: [
              {
@@ -2317,6 +2529,234 @@ function InternationalSecurityExamQuestions() {
              {
                title: "Hedef bir kitleye yöneliktir",
                content: "Şiddet, doğrudan kurbanların ötesinde daha geniş bir kitleye korku yaratmayı ve mesaj göndermeyi amaçlar."
+             }
+           ]
+         }
+       ]
+     },
+     {
+       category: "GENDER AND SECURITY",
+       questions: [
+         {
+           id: 1,
+           question: "Notlar, toplumsal cinsiyet ve güvenlik arasındaki ilişkiyi analiz etmek için iki ana bakış açısı sunmaktadır. Bu iki yönü adlandırın ve kısaca tanımlayın.",
+           answers: [
+             {
+               title: "Pratik yönler",
+               content: "Kadınların ordudaki somut rollerini veya askeri çatışmanın kurbanları, gözlemcileri veya kolaylaştırıcıları olarak deneyimlerini içerir."
+             },
+             {
+               title: "Söylemsel yönler",
+               content: "Erkeklikle militarizm ve kadınlıkla besleme ve barış fikri arasında kurulan geleneksel bağlantıları içerir."
+             }
+           ]
+         },
+         {
+           id: 2,
+           question: "Jean Elshtain'in çalışmaları, savaşın cinsiyetlendirilmiş inşasında temel bir ikiliği tanımlar. Onun tanımladığı iki arketipik rolü adlandırın ve tanımlayın.",
+           answers: [
+             {
+               title: "Adil Savaşçı",
+               content: "Bir savaşçı olması beklenen, fiziksel güç ve cesaret gibi erkeksi değerlerle ilişkilendirilen ve görevi savaşmak olan erkek arketipi."
+             },
+             {
+               title: "Güzel Ruh",
+               content: "Ev cephesi ve besleme ile ilişkilendirilen ve erkek savaşçıdan korunmaya ihtiyacı olan, muharip olmayan olması beklenen kadın arketipi."
+             }
+           ]
+         }
+       ]
+     },
+     {
+       category: "SECURITIZATION APPROACH",
+       questions: [
+         {
+           id: 1,
+           question: "Kopenhag Okulu, beş genel güvenlik sektörü veya kategorisi belirleyerek güvenlik gündemini genişletir. Bu beş sektörü listeleyin.",
+           answers: [
+             {
+               title: "Askeri güvenlik",
+               content: "Geleneksel askeri tehditler ve savunma konuları."
+             },
+             {
+               title: "Çevresel güvenlik",
+               content: "Çevresel tehditler ve ekolojik güvenlik meseleleri."
+             },
+             {
+               title: "Ekonomik güvenlik",
+               content: "Ekonomik istikrar ve refah tehditleri."
+             },
+             {
+               title: "Toplumsal güvenlik",
+               content: "Kimlik, kültür ve toplumsal bütünlük tehditleri."
+             },
+             {
+               title: "Siyasi güvenlik",
+               content: "Siyasi sistem ve meşruiyet tehditleri."
+             }
+           ]
+         },
+         {
+           id: 2,
+           question: "Güvenlikleştirme modeli, herhangi bir kamusal konunun üç aşamadan oluşan bir yelpazede var olabileceğini öne sürer. Bu üç aşamayı adlandırın ve tanımlayın.",
+           answers: [
+             {
+               title: "Siyasallaşmamış",
+               content: "Konunun devlet eylemi için bir mesele olmadığı ve kamu tartışmalarına dahil edilmediği; özel alanda kaldığı aşama."
+             },
+             {
+               title: "Siyasallaşmış",
+               content: "Konunun kamu politikasının bir parçası olduğu, hükümet kararı ve kaynak tahsisi gerektirdiği ve standart siyasi sistem içinde yönetildiği aşama."
+             },
+             {
+               title: "Güvenlikleştirilmiş",
+               content: "Konunun, normal siyasi prosedürlerin ötesinde olağanüstü eylemler gerektiren varoluşsal bir tehdit olarak çerçevelendiği aşama."
+             }
+           ]
+         }
+       ]
+     },
+     {
+       category: "ECONOMIC SECURITY",
+       questions: [
+         {
+           id: 1,
+           question: "Notlarda ekonomik yaptırımların en az üç farklı amaç için kullanılabileceği belirtilmektedir. Bu üç amacı adlandırın ve kısaca tanımlayın.",
+           answers: [
+             {
+               title: "Politik",
+               content: "Bir hedefin davranışını etkileyerek barış ve özgürlük gibi hedefleri ilerletmek için ekonomik gücü kullanmak."
+             },
+             {
+               title: "Ahlaki",
+               content: "Ahlaki olarak kötü veya kınanması gereken eylemlerde ekonomik katılımı reddetmek."
+             },
+             {
+               title: "Askeri",
+               content: "Tehlikeli rejimleri izole etmek ve bölgesel ve küresel güvenliğe yönelik tehditleri zayıflatmak."
+             }
+           ]
+         }
+       ]
+     },
+     {
+       category: "INTERNATIONAL CRISIS",
+       questions: [
+         {
+           id: 1,
+           question: "Notlar, bir dış politika krizini tanımlayan beş gerekli koşulu listelemektedir. Bu koşullardan dördünü adlandırın ve kısaca tanımlayın.",
+           answers: [
+             {
+               title: "Sürpriz Unsuru",
+               content: "Durum genellikle aniden ortaya çıkar ve karar vericiler tarafından beklenmez."
+             },
+             {
+               title: "Yüksek değerli çıkarlara yönelik tehdit",
+               content: "Kriz, devletin bir veya daha fazla temel değerine veya yüksek öncelikli çıkarına yönelik bir tehdit oluşturur."
+             },
+             {
+               title: "Zaman Baskısı",
+               content: "Kararların ve eylemlerin sınırlı veya kısa bir süre içinde alınması gerektiği algısı vardır."
+             },
+             {
+               title: "Daha yüksek askeri çatışma olasılığı",
+               content: "Askeri düşmanlıkların veya silahlı çatışmanın normal koşullara göre daha yüksek olduğu algısı."
+             }
+           ]
+         }
+       ]
+     },
+     {
+       category: "NUCLEAR SECURITY",
+       questions: [
+         {
+           id: 1,
+           question: "Notlar, \"Devletler neden nükleer silahlara sahip olmak ister?\" sorusunu cevaplamak için dört ana yaklaşım olduğunu açıklamaktadır. Bu dört yaklaşımı adlandırın.",
+           answers: [
+             {
+               title: "Güvenlik Yaklaşımı",
+               content: "Devletlerin güvenlik tehditlerine karşı nükleer silahları caydırıcı olarak görmesi."
+             },
+             {
+               title: "Kişisel-Kurumsal Rekabet Yaklaşımı",
+               content: "İç politik grupların kendi çıkarları için nükleerleşmeyi desteklemesi."
+             },
+             {
+               title: "Sosyo-Psikolojik Yaklaşım",
+               content: "Prestij, statü ve ulusal kimlik gibi faktörlerin nükleer silah arayışını etkilemesi."
+             },
+             {
+               title: "Normatif Yaklaşım",
+               content: "Uluslararası normlar ve değerlerin nükleer silah politikalarını şekillendirmesi."
+             }
+           ]
+         }
+       ]
+     },
+     {
+       category: "ETHNIC CONFLICT",
+       questions: [
+         {
+           id: 1,
+           question: "Notlar, etnik kimliğin kaynağını açıklamak için üç farklı teorik yaklaşım sunmaktadır. Bu üç yaklaşımı adlandırın ve kısaca tanımlayın.",
+           answers: [
+             {
+               title: "Primordialist Yaklaşım",
+               content: "Bu yaklaşım, etnik kimliği akrabalık, dil veya din gibi değişmez özelliklere dayalı, sabit, doğal ve tarihsel olarak eski olarak görür."
+             },
+             {
+               title: "Modernist Yaklaşım",
+               content: "Bu yaklaşım, etnik ve ulusal kimliklerin sanayileşme ve devlet inşası gibi süreçler nedeniyle modern çağda ortaya çıkan yeni olgular olduğunu savunur."
+             },
+             {
+               title: "İnşacı Yaklaşım",
+               content: "Bu yaklaşım, etnik kimliklerin bireylerin ve grupların siyasi, sosyal ve psikolojik ihtiyaçlarını karşılamak için etkileşim yoluyla sosyal olarak nasıl inşa edildiğine odaklanır."
+             }
+           ]
+         }
+       ]
+     },
+     {
+       category: "HEALTH SECURITY",
+       questions: [
+         {
+           id: 1,
+           question: "Notlar, sağlık ve güvenlik arasındaki bağlantının üç farklı güvenlik çerçevesi aracılığıyla anlaşılabileceğini açıklamaktadır. Bu üç çerçeveyi adlandırın ve kısaca tanımlayın.",
+           answers: [
+             {
+               title: "İnsan güvenliği çerçevesi",
+               content: "Sıradan bireylerin sağlığına ve esenliğine odaklanır, iyi sağlığı güvenliğin hem esas hem de aracı olarak görür."
+             },
+             {
+               title: "Ulusal güvenlik çerçevesi",
+               content: "Yaygın bulaşıcı hastalıkları bir devletin nüfusuna, ekonomisine ve siyasi istikrarına yönelik tehditler olarak görür."
+             },
+             {
+               title: "Biyogüvenlik çerçevesi",
+               content: "Terörist grupların veya diğer aktörlerin kasten hastalığa neden olan biyolojik ajanları salma olasılığıyla ilgilenir."
+             }
+           ]
+         }
+       ]
+     },
+     {
+       category: "CYBER SECURITY",
+       questions: [
+         {
+           id: 1,
+           question: "Notlar, siber güvenlik hikayesinin birbiriyle bağlantılı ancak farklı üç söylem aracılığıyla anlatılabileceğini belirtmektedir. Bu üç söylemi adlandırın ve kısaca tanımlayın.",
+           answers: [
+             {
+               title: "Teknik Söylem",
+               content: "Bu söylem, virüsler ve solucanlar gibi kötü amaçlı yazılımların neden olduğu bilgisayar ve ağ kesintilerine odaklanır."
+             },
+             {
+               title: "Siber Suç ve Siber Casusluk Söylemi",
+               content: "Bu söylem, kişisel kazanç için hackleme ve devlet destekli casusluk dahil olmak üzere bilgisayarların ve ağların suç faaliyetleri için kullanımını ele alır."
+             },
+             {
+               title: "Siber Çatışmalar / Askeri-Sivil Savunma Söylemi",
+               content: "Bu söylem, siber güvenliği ulusal güvenlik açısından ele alır, bilgi savaşı, siber savaş ve kritik ulusal altyapının korunmasına odaklanır."
              }
            ]
          }
