@@ -535,4 +535,163 @@ button:hover {
   .play-button {
     margin-top: 1rem;
   }
+}
+
+.notes-count {
+  background: rgba(105, 240, 174, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+.start-reading {
+  color: var(--primary-light);
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover .start-reading {
+  transform: translateX(5px);
+}
+
+/* International Security Notes Styles */
+.international-security-notes {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.notes-content {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.note-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.note-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.note-section h3 {
+  color: var(--primary-light);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.note-section h4 {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin: 1.5rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.note-section p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.note-section ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.note-section li {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.note-section li strong {
+  color: var(--primary-light);
+}
+
+.motivational-footer {
+  background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(105, 240, 174, 0.1));
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.motivational-footer p {
+  color: var(--text);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .international-security-notes {
+    padding: 1rem;
+  }
+
+  .notes-content {
+    padding: 1.5rem;
+  }
+
+  .note-section h3 {
+    font-size: 1.4rem;
+  }
+
+  .note-section h4 {
+    font-size: 1.2rem;
+  }
+
+  .note-section p {
+    font-size: 1rem;
+  }
+
+  .motivational-footer p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .notes-content {
+    padding: 1rem;
+  }
+
+  .note-section {
+    margin-bottom: 2rem;
+  }
+
+  .note-section h3 {
+    font-size: 1.3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .note-section h4 {
+    font-size: 1.1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .motivational-footer {
+    padding: 1.5rem;
+  }
+
+  .motivational-footer p {
+    font-size: 1rem;
+  }
 } 

@@ -2,7 +2,7 @@
   "name": "quiz-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://beyzayildiz.github.io/halesinav",
+  "homepage": "https://yunusemreyildiz.github.io/halesinav",
   "dependencies": {
     "@chakra-ui/react": "^3.21.0",
     "@chakra-ui/system": "^2.6.2",

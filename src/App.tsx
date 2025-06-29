@@ -465,6 +465,22 @@ function HomePage() {
             </Link>
           </div>
         </div>
+        
+        <div className="course-section">
+          <h3>International Security</h3>
+          <div className="course-buttons">
+            <Link to="/international-security/notlar" className="course-card">
+              <div className="course-card-content">
+                <h2>Ders Notları</h2>
+                <p>Uluslararası güvenlik konularında detaylı kavramsal ve teorik bilgiler.</p>
+                <div className="course-card-footer">
+                  <span className="notes-count">Kapsamlı Notlar</span>
+                  <span className="start-reading">Okumaya Başla →</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -522,6 +538,253 @@ function LectureNotes() {
         ))}
       </div>
       <audio ref={audioRef} onEnded={() => setCurrentAudio(null)} />
+      <Link to="/" className="home-button">Ana Sayfaya Dön</Link>
+    </div>
+  );
+}
+
+function InternationalSecurityNotes() {
+  return (
+    <div className="lecture-notes-container international-security-notes">
+      <h2>International Security - Ders Notları</h2>
+      <p className="section-description">Aşkım, uluslararası güvenlik konusundaki detaylı notların burada 💝</p>
+      
+      <div className="notes-content">
+        <div className="note-section">
+          <h3>🌍 Uluslararası Güvenlik: Detaylı Bir Kavramsal ve Teorik Yolculuk</h3>
+          <p>
+            Uluslararası güvenlik, modern dünyada sadece devletlerin askerî yetenekleriyle sınırlı kalmayan, 
+            aksine karmaşık ve çok boyutlu bir olgu haline gelen kritik bir alandır. Günümüzde güvenlik şemsiyesi 
+            altına iklim değişikliği, siber saldırılar, küresel göç hareketleri, ekonomik krizler, salgın hastalıklar 
+            ve hatta toplumsal kimlik çatışmaları gibi konular da dahil olmuştur.
+          </p>
+        </div>
+
+        <div className="note-section">
+          <h3>🔍 Güvenliğin Tanımı ve Evrimi: Çok Yüzlü Bir Kavram</h3>
+          <p>
+            "Güvenlik" terimi, "özünde tartışmalı bir kavram" (essentially contested concept) olarak kabul edilir, 
+            zira herkes için farklı anlamlar taşır. Barry Buzan, güvenlik kavramının yeterince gelişmemiş olmasının 
+            beş temel nedenini şöyle sıralar:
+          </p>
+          <ul>
+            <li><strong>Kavramsal Zorluk:</strong> Güvenliğin geniş kapsamı nedeniyle net bir tanımının yapılamaması</li>
+            <li><strong>Güç ile Örtüşme:</strong> Güvenlik ile güç arasındaki yakın ilişki ve sıkça karıştırılması</li>
+            <li><strong>Gerçekçi Olmayanların İlgisizliği:</strong> Liberalizm, konstrüktivizm gibi realizm dışı teorilerin uzun süre güvenliğe yeterince odaklanmaması</li>
+            <li><strong>Teknoloji ve Politikaya Odaklanma:</strong> Güvenlik tartışmalarının genellikle teknik ve politika düzeyinde kalıp, teorik boyutunun ihmal edilmesi</li>
+            <li><strong>Politika Yapıcıların Çıkarları:</strong> Hükümetlerin güvenlik tanımını kendi ulusal çıkarları doğrultusunda şekillendirmesi</li>
+          </ul>
+        </div>
+
+        <div className="note-section">
+          <h3>⚔️ Güvenlik Teorileri: Ana Akım ve Eleştirel Yaklaşımlar</h3>
+          
+          <h4>🎯 Realizm (Gerçekçilik)</h4>
+          <p>
+            Realizm, uluslararası ilişkilerdeki en eski ve en etkili teoridir. Temelinde, uluslararası sistemin 
+            merkezi bir otoriteden yoksun olduğu (anarşik) ve bu durumun devletleri hayatta kalmak için güç 
+            arayışına ittiği varsayımı yatar.
+          </p>
+          <ul>
+            <li><strong>Klasik Realizm:</strong> İnsan doğasının bencil, korkak ve hırslı olduğu varsayımına dayanır</li>
+            <li><strong>Yapısal Realizm (Neorealizm):</strong> Kenneth Waltz tarafından geliştirildi, devlet davranışlarını uluslararası sistemin yapısıyla açıklar</li>
+            <li><strong>Saldırgan Realizm:</strong> John Mearsheimer'e göre devletler "güç maksimize edicisidir"</li>
+            <li><strong>Savunmacı Realizm:</strong> Aşırı güç peşinde koşmanın güvenlik ikilemine yol açtığını savunur</li>
+          </ul>
+
+          <h4>🕊️ Liberalizm</h4>
+          <p>
+            Liberalizm, realizmin karamsar bakış açısının aksine, uluslararası ilişkilerde işbirliği ve barışın 
+            mümkün olduğuna dair iyimser bir yaklaşım sunar.
+          </p>
+          <ul>
+            <li><strong>Ticari Liberalizm:</strong> Ekonomik karşılıklı bağımlılığın savaşı maliyetli hale getirdiği</li>
+            <li><strong>İnsan Hakları Liberalizmi:</strong> Devletlerin tüm insanlara karşı sorumlulukları olduğu</li>
+            <li><strong>Kurumsal Liberalizm:</strong> Uluslararası kurumların işbirliğini kolaylaştırdığı</li>
+            <li><strong>Demokratik Barış Teorisi:</strong> Demokrasilerin birbirleriyle savaşmama eğiliminde olduğu</li>
+          </ul>
+        </div>
+
+        <div className="note-section">
+          <h3>🔥 Eleştirel Güvenlik Çalışmaları</h3>
+          <p>
+            Eleştirel güvenlik çalışmaları, geleneksel, devlet merkezli ve askerî odaklı güvenlik anlayışlarına 
+            köklü bir eleştiri getirerek, güvenliği daha kapsayıcı, insani ve sorgulayıcı bir çerçevede ele alır.
+          </p>
+
+          <h4>🏛️ Kopenhag Okulu</h4>
+          <ul>
+            <li><strong>Sektörel Analiz:</strong> Askerî, siyasi, ekonomik, toplumsal ve çevresel olmak üzere beş sektör</li>
+            <li><strong>Güvenlikleştirme Teorisi:</strong> Bir konunun "güvenlik tehdidi" haline gelme süreci</li>
+          </ul>
+
+          <h4>🎓 Aberystwyth Okulu</h4>
+          <ul>
+            <li><strong>Özgürleşme:</strong> Güvenliğin temel amacının bireylerin baskılardan kurtulması</li>
+            <li><strong>Frankfurt Okulu ve Post-Marksist Teori:</strong> Bilgi üretiminin siyasi olduğu</li>
+          </ul>
+        </div>
+
+        <div className="note-section">
+          <h3>🌱 Küresel Tehditler ve Güvenlik Çerçeveleri</h3>
+          
+          <h4>👥 İnsan Güvenliği</h4>
+          <p>
+            Soğuk Savaş sonrası dönemde ortaya çıkan bu kavram, geleneksel devlet merkezli güvenlik anlayışını 
+            aşarak bireylerin ve toplulukların güvenliğini ön plana çıkarır.
+          </p>
+          <ul>
+            <li><strong>Korkudan arınma</strong> (freedom from fear)</li>
+            <li><strong>Yoksunluktan arınma</strong> (freedom from want)</li>
+            <li><strong>Yedi boyut:</strong> Ekonomik, gıda, sağlık, çevresel, kişisel, toplumsal ve siyasi güvenlik</li>
+          </ul>
+
+          <h4>🌍 Çevresel Güvenlik</h4>
+          <p>
+            20. yüzyılın ikinci yarısından itibaren önem kazanan bu alan, çevre kirliliği, doğal kaynakların 
+            tükenmesi ve iklim değişikliği gibi çevresel tehditlerin toplumların güvenliğini etkilediğini savunur.
+          </p>
+        </div>
+
+        <div className="note-section">
+          <h3>💰 Ekonomi ve Güvenlik</h3>
+          <p>
+            Ekonomi, günümüz güvenlik politikalarında kritik bir rol oynar ve artık sadece büyüme ya da üretim değil, 
+            bir dış politika ve güvenlik aracı olarak da kullanılır.
+          </p>
+          <ul>
+            <li><strong>Ekonomik Yaptırımlar:</strong> Siyasi amaçlarla normal ekonomik ilişkileri reddetme</li>
+            <li><strong>Ticaret ve Güvenlik:</strong> Serbest ticaretin barışı teşvik etmesi</li>
+            <li><strong>Finans ve Güvenlik:</strong> Döviz ticareti, dış borçlar, faiz oranları</li>
+          </ul>
+        </div>
+
+        <div className="note-section">
+          <h3>⚡ Uluslararası Kriz ve Kriz Yönetimi</h3>
+          <p>
+            Uluslararası kriz, iki veya daha fazla aktör arasında, savaş riskinin yüksek olduğu ve hayati çıkarların 
+            tehdit edildiği gergin bir dönemdir.
+          </p>
+          
+          <h4>🎯 Kriz Yönetimi Stratejileri</h4>
+          <ul>
+            <li><strong>Saldırgan Stratejiler:</strong> Şantaj, Geri Alınabilir Yoklama, Kontrollü Baskı</li>
+            <li><strong>Savunmacı Stratejiler:</strong> Zorlayıcı Diplomasi, Sınırlı Tırmandırma, Aynıyla Karşılık Verme</li>
+          </ul>
+        </div>
+
+        <div className="note-section">
+          <h3>☢️ Nükleer Silahlar</h3>
+          <p>
+            Devletlerin nükleer silah edinme isteği veya isteksizliği, karmaşık güvenlik, iç politika ve 
+            sosyo-psikolojik faktörlerle ilişkilidir.
+          </p>
+          
+          <h4>✅ Neden İstenir?</h4>
+          <ul>
+            <li><strong>Güvenlik:</strong> Caydırıcılık (deterrence), MAD prensibi</li>
+            <li><strong>Prestij:</strong> Büyük güç statüsü</li>
+            <li><strong>İç Politika:</strong> Milliyetçilik, bütçe, ekonomik fayda</li>
+          </ul>
+
+          <h4>❌ Neden İstenmez?</h4>
+          <ul>
+            <li><strong>Güvenlik Riski:</strong> Silahlanma yarışı, önleyici saldırı riski</li>
+            <li><strong>Ekonomik Maliyet:</strong> Yüksek geliştirme ve bakım maliyeti</li>
+            <li><strong>Normatif:</strong> Ahlaki karşıtlık, nükleer tabu</li>
+          </ul>
+        </div>
+
+        <div className="note-section">
+          <h3>🔥 Etnik Çatışma</h3>
+          <p>
+            Etnik gruplar arasındaki çatışmalar, modern dünyada uluslararası güvenliğin önemli bir bileşenidir.
+          </p>
+          
+          <h4>🧬 Etnik Kimliğin Kaynağı</h4>
+          <ul>
+            <li><strong>İlkselcilik:</strong> Doğuştan, değişmez</li>
+            <li><strong>Moderncilik:</strong> Ulus-devlet, sanayileşme ile oluşan</li>
+            <li><strong>Yapısalcılık:</strong> Sosyal olarak inşa edilen, değişebilir</li>
+          </ul>
+
+          <h4>🕊️ Çatışma Çözümü</h4>
+          <ul>
+            <li><strong>Önleme:</strong> Savaşın çıkmasını engelleme</li>
+            <li><strong>Yönetme:</strong> Şiddeti azaltma</li>
+            <li><strong>Uzlaşma:</strong> Kalıcı barış ve yeniden çatışmayı engelleme</li>
+          </ul>
+        </div>
+
+        <div className="note-section">
+          <h3>💣 Terörizm</h3>
+          <p>
+            Terörizm, siyasi amaçlarla şiddet veya şiddet tehdidi kullanarak geniş kitlelerde korku ve panik 
+            yaratma eylemleridir.
+          </p>
+          
+          <h4>🎯 Tanım Unsurları</h4>
+          <ul>
+            <li>Şiddet kullanımı/tehdidi</li>
+            <li>Organize grup</li>
+            <li>Siyasi amaçlar</li>
+            <li>Hedef kitleye yönelik psikolojik etki</li>
+            <li>Devlet dışı aktör</li>
+            <li>Zayıfların silahı</li>
+          </ul>
+
+          <h4>🛡️ Mücadele Stratejileri</h4>
+          <ul>
+            <li><strong>Önleme:</strong> İstihbarat, fiziksel güvenlik</li>
+            <li><strong>Yanıt:</strong> Misilleme, tutuklama, reformlar</li>
+            <li><strong>Uluslararası İşbirliği:</strong> İstihbarat paylaşımı, yaptırımlar</li>
+          </ul>
+        </div>
+
+        <div className="note-section">
+          <h3>🏥 Sağlık Güvenliği</h3>
+          <p>
+            Sağlık güvenliği, bireylerin ve toplumların sağlığını tehdit eden salgın hastalıklar, pandemiler ve 
+            biyolojik tehditlere karşı korunmasıdır.
+          </p>
+          
+          <h4>🔗 Sağlık ve Güvenlik Bağlantıları</h4>
+          <ul>
+            <li><strong>İnsani Güvenlik:</strong> Temel yaşam hakları ve sosyoekonomik refah</li>
+            <li><strong>Ulusal Güvenlik:</strong> Nüfus sağlığı, ekonomi, toplumsal istikrar</li>
+            <li><strong>Biyo-güvenlik:</strong> Biyolojik ajanların silah olarak kullanılması</li>
+          </ul>
+        </div>
+
+        <div className="note-section">
+          <h3>💻 Siber Güvenlik</h3>
+          <p>
+            Dijitalleşen dünyada, internet, bilgisayar ağları ve veri sistemlerine yönelik tehditler, uluslararası 
+            güvenliğin yeni ve hızla büyüyen bir alanını oluşturur.
+          </p>
+          
+          <h4>⚔️ Saldırı Türleri</h4>
+          <ul>
+            <li><strong>Bilgi Saldırıları:</strong> Veri çalma, sistem bozma</li>
+            <li><strong>Kötü Amaçlı Yazılımlar:</strong> Virüsler, solucanlar, Truva atları</li>
+            <li><strong>Hackerlar:</strong> Beyaz, siyah, gri şapkalı</li>
+          </ul>
+
+          <h4>🛡️ Güvenlik Söylemleri</h4>
+          <ul>
+            <li><strong>Teknik Söylem:</strong> Sistemlerin teknik korunması</li>
+            <li><strong>Siber Suç:</strong> Kişisel kazanç veya siyasi amaçlar</li>
+            <li><strong>Kritik Altyapı:</strong> Elektrik, su, iletişim sistemleri</li>
+            <li><strong>Siber Savaş:</strong> Siber saldırıları gerçek savaş biçimi olarak görme</li>
+          </ul>
+        </div>
+
+        <div className="motivational-footer">
+          <p>💝 Aşkım, bu kapsamlı notları okuduktan sonra uluslararası güvenlik konusunda çok daha bilgili oldun! 
+          Senin bu konulara olan ilgin ve öğrenme aşkın beni çok mutlu ediyor. Her zaman seninle gurur duyuyorum! 🌟</p>
+        </div>
+      </div>
+      
       <Link to="/" className="home-button">Ana Sayfaya Dön</Link>
     </div>
   );
@@ -662,6 +925,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/devlet-toplum-din" element={<QuizApp />} />
           <Route path="/devlet-toplum-din/notlar" element={<LectureNotes />} />
+          <Route path="/international-security/notlar" element={<InternationalSecurityNotes />} />
         </Routes>
       </div>
     </Router>
