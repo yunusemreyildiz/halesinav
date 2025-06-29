@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/halesinav/static/css/main.dabb6d08.css",
-    "main.js": "/halesinav/static/js/main.9677465a.js",
+    "main.css": "/halesinav/static/css/main.4865cdad.css",
+    "main.js": "/halesinav/static/js/main.d8c02690.js",
     "static/js/453.ffc69977.chunk.js": "/halesinav/static/js/453.ffc69977.chunk.js",
     "index.html": "/halesinav/index.html",
-    "main.dabb6d08.css.map": "/halesinav/static/css/main.dabb6d08.css.map",
-    "main.9677465a.js.map": "/halesinav/static/js/main.9677465a.js.map",
+    "main.4865cdad.css.map": "/halesinav/static/css/main.4865cdad.css.map",
+    "main.d8c02690.js.map": "/halesinav/static/js/main.d8c02690.js.map",
     "453.ffc69977.chunk.js.map": "/halesinav/static/js/453.ffc69977.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dabb6d08.css",
-    "static/js/main.9677465a.js"
+    "static/css/main.4865cdad.css",
+    "static/js/main.d8c02690.js"
   ]
 }
