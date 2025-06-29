@@ -1802,23 +1802,23 @@ function InternationalSecurityExamQuestions() {
           question: "Realist aile içindeki çoğu teori bazı temel varsayımları paylaşır. Bu temel özelliklerden beş tanesini listeleyin ve kısaca açıklayın.",
           answers: [
             {
-              title: "Anarşik uluslararası sistem",
+              title: "Anarşik uluslararası sistem (Anarchic International System)",
               content: "Devletleri koruyacak ve kuralları uygulayacak merkezi bir dünya hükümetinin veya otoritenin olmaması, onları kendi kendine yardım durumuna zorlar."
             },
             {
-              title: "Devlet merkezcilik",
+              title: "Devlet merkezcilik (State-centrism)",
               content: "Devletlerin, uluslararası siyasetteki en önemli ve birincil aktörler olduğu, kurumların ve diğer aktörlerin ise ikincil olduğu görüşü."
             },
             {
-              title: "Güç",
+              title: "Güç (Power)",
               content: "Hedeflere ulaşmak ve hayatta kalmayı sağlamak için gereken maddi kaynaklar (zenginlik, ordu, nüfus) olarak anlaşılan, uluslararası ortamın belirleyici özelliği."
             },
             {
-              title: "Tekil aktör varsayımı",
+              title: "Tekil aktör varsayımı (Unitary Actor Assumption)",
               content: "Analiz için iç siyasi bölünmeleri göz ardı ederek, devletlerin tek ve tutarlı karar alma birimleri olarak ele alınabileceği varsayımı."
             },
             {
-              title: "Rasyonel aktör varsayımı",
+              title: "Rasyonel aktör varsayımı (Rational Actor Assumption)",
               content: "Devletlerin stratejik davrandığı ve başta güvenlik ve hayatta kalma olmak üzere ulusal çıkarlarını maksimize etmek için hesaplanmış kararlar aldığı inancı."
             }
           ]
@@ -1828,11 +1828,11 @@ function InternationalSecurityExamQuestions() {
           question: "Hayatta kalmayı sağlamak için Neorealizm, devletlerin tehditlere karşı iki ana dengeleme stratejisi kullandığını savunur. Bunları adlandırın ve tanımlayın.",
           answers: [
             {
-              title: "İçsel dengeleme",
+              title: "İçsel dengeleme (Internal Balancing)",
               content: "Bir devletin potansiyel bir rakibe tek başına karşı koymak için kendi askeri yeteneklerini ve ekonomik gücünü artırması."
             },
             {
-              title: "Dışsal dengeleme",
+              title: "Dışsal dengeleme (External Balancing)",
               content: "Bir devletin, daha güçlü ve tehditkar bir devlete karşı güçlerini ve yeteneklerini birleştirmek için diğer devletlerle ittifaklar kurması."
             }
           ]
@@ -1842,11 +1842,11 @@ function InternationalSecurityExamQuestions() {
           question: "Yapısal Realizm içinde, devletlerin güvenliği nasıl araması gerektiği konusunda temel bir tartışma vardır. İki karşıt teoriyi adlandırın ve devletler için temel tavsiyelerini açıklayın.",
           answers: [
             {
-              title: "Saldırgan Realizm",
+              title: "Saldırgan Realizm (Offensive Realism)",
               content: "Devletler, hayatta kalmayı sağlamanın en iyi yolu en güçlü devlet olmak olduğu için, her zaman güçlerini maksimize etmeye ve hegemonya kurmaya çalışmalıdır."
             },
             {
-              title: "Savunmacı Realizm",
+              title: "Savunmacı Realizm (Defensive Realism)",
               content: "Devletler gücü maksimize etmek yerine uygun bir güç seviyesi aramalıdır, çünkü çok fazla güç elde etmek korku yaratarak diğer devletlerin kendilerine karşı dengeleme yapmasına neden olabilir."
             }
           ]
@@ -1856,15 +1856,15 @@ function InternationalSecurityExamQuestions() {
           question: "Savunmacı Realizm, bir devletin kendi güvenliğini artırma çabasının ters tepebileceğini savunur. Bu durum, rakibin güvensizliğini artıran üç ana mekanizma aracılığıyla gerçekleşir. Bu mekanizmaları listeleyin ve açıklayın.",
           answers: [
             {
-              title: "Silahlanma yarışı",
+              title: "Silahlanma yarışı (Arms Race)",
               content: "Bir devlet ordusunu güçlendirdiğinde, rakip de kendi ordusunu güçlendirerek karşılık verir ve bu durum her iki taraf için de güvenliği azaltabilecek bir rekabet döngüsüne yol açar."
             },
             {
-              title: "Riskli askeri politikalar",
+              title: "Riskli askeri politikalar (Risky Military Policies)",
               content: "Güvensiz bir rakip, kriz ve kazaen savaş olasılığını artıran saldırgan askeri duruşlar veya ilk vuruş politikaları benimseyebilir."
             },
             {
-              title: "Siyasi ilişkilerin bozulması",
+              title: "Siyasi ilişkilerin bozulması (Political Relations Deterioration)",
               content: "Bir devletin askeri yığınağı, rakip tarafından düşmanca niyetlerin kanıtı olarak görülebilir ve bu da diplomasiyi zehirleyen bir güvensizlik sarmalına yol açar."
             }
           ]
@@ -1874,11 +1874,11 @@ function InternationalSecurityExamQuestions() {
           question: "Anarşi nedeniyle Neorealistler, devletlerin işbirliğinden elde edilen kazanımların nasıl dağıtıldığı konusunda endişeli olduğunu savunur. Devletlerin dikkate aldığı iki 'kazanım' türünü belirleyerek ve tanımlayarak bunu açıklayın.",
           answers: [
             {
-              title: "Mutlak kazançlar",
+              title: "Mutlak kazançlar (Absolute Gains)",
               content: "Bir devletin işbirliğinden elde ettiği toplam faydalar; diğer devletlerin elde ettiği faydalarla karşılaştırılmadan, bağımsız olarak ölçülür."
             },
             {
-              title: "Göreli kazançlar",
+              title: "Göreli kazançlar (Relative Gains)",
               content: "Bir devletin, bir rakibin işbirliğinden daha fazla kazanarak gücünü artırması ve gelecekte daha büyük bir tehdit oluşturması endişesi."
             }
           ]
@@ -1893,19 +1893,19 @@ function InternationalSecurityExamQuestions() {
           question: "Liberalizm, kendisini Realizmden ayıran birkaç belirgin özellikle karakterize edilir. Liberalist yaklaşımın dört temel özelliğini listeleyin ve kısaca açıklayın.",
           answers: [
             {
-              title: "Temelde iyimser",
+              title: "Temelde iyimser (Fundamentally Optimistic)",
               content: "Uluslararası işbirliği ve barışçıl bir dünyanın mümkün olduğuna ve çatışmanın uluslararası politikanın doğasında olmadığını savunur."
             },
             {
-              title: "İçten dışa yaklaşım",
+              title: "İçten dışa yaklaşım (Inside-out Approach)",
               content: "Devletlerin iç özellikleri (örneğin, siyasi sistem, toplumsal tercihler) dış politika davranışlarının temel belirleyicisi olduğunu savunur."
             },
             {
-              title: "Çeşitli aktörlere odaklanma",
+              title: "Çeşitli aktörlere odaklanma (Focus on Diverse Actors)",
               content: "Devletler önemli olmakla birlikte, Uluslararası Hükümetler Arası Kuruluşlar (IGO'lar), Sivil Toplum Kuruluşları (STK'lar) ve çok uluslu şirketler gibi devlet dışı aktörlerin önemli rolünü vurgular."
             },
             {
-              title: "Devletlerin tekil aktör olmaması",
+              title: "Devletlerin tekil aktör olmaması (States Not as Unitary Actors)",
               content: "Devlet eylemlerini, çeşitli iç gruplar, partiler ve bürokrasiler arasındaki rekabet ve uzlaşmanın sonucu olarak görür, tek bir ses olarak değil."
             }
           ]
@@ -1915,19 +1915,19 @@ function InternationalSecurityExamQuestions() {
           question: "Neoliberal Kurumsalcılık, uluslararası kurumların anarşi altında bile devletlerin işbirliği yapmasına nasıl yardımcı olduğunu açıklar. Bu kurumların yerine getirdiği dört temel işlevi listeleyin ve kısaca açıklayın.",
           answers: [
             {
-              title: "Güvenilir bilgi sağlama",
+              title: "Güvenilir bilgi sağlama (Providing Reliable Information)",
               content: "Güvenilir bilgi üretir ve yayar, bu da devletler arasındaki belirsizliği ve güvensizliği azaltır."
             },
             {
-              title: "İşlem maliyetlerini azaltma",
+              title: "İşlem maliyetlerini azaltma (Reducing Transaction Costs)",
               content: "Devletlerin düzenli olarak müzakere yapmasını, anlaşmalar yapmasını ve etkileşim kurmasını kolaylaştırır ve daha az maliyetli hale getirir."
             },
             {
-              title: "Uyumu denetleme",
+              title: "Uyumu denetleme (Monitoring Compliance)",
               content: "Devletlerin taahhütlerine uyup uymadığını denetlemek için mekanizmalar sağlar, bu da hile yapmayı ve bedavacılığı engeller."
             },
             {
-              title: "Geleceğe gölge düşürme",
+              title: "Geleceğe gölge düşürme (Shadow of the Future)",
               content: "İşbirliğini kurumsallaştırarak, devletlerin tekrarlayan etkileşimler beklemesini sağlar, iyi bir itibarın ve gelecekteki işbirliğinin değerini artırır."
             }
           ]
@@ -1937,19 +1937,19 @@ function InternationalSecurityExamQuestions() {
           question: "Demokratik Barış Teorisi, demokrasilerin birbirleriyle savaşmadığını gözlemler. Bu demokratik barışa neden olduğuna inanılan dört faktörü veya normu listeleyin ve açıklayın.",
           answers: [
             {
-              title: "Meşruiyet, saygı ve güven",
+              title: "Meşruiyet, saygı ve güven (Legitimacy, Respect and Trust)",
               content: "Demokrasiler, diğer demokratik hükümetleri meşru ve güvene değer görür, ortak bir siyasi-ahlaki temeli paylaşırlar."
             },
             {
-              title: "Hesap verebilirlik",
+              title: "Hesap verebilirlik (Accountability)",
               content: "Demokrasilerdeki liderler, savaşın maliyetlerini taşıyan ve genellikle savaşa karşı çıkan vatandaşlarına karşı hesap verebilir konumdadır, bu da çatışma başlatmayı zorlaştırır."
             },
             {
-              title: "Hükümete sınırlamalar",
+              title: "Hükümete sınırlamalar (Constraints on Government)",
               content: "Demokratik sistemlerde, savaşa gitme kararını yavaşlatan ve diplomasiye zaman tanıyan denge ve denetleme mekanizmaları (anayasalar, kuvvetler ayrılığı) bulunur."
             },
             {
-              title: "Sorunları uzlaşıyla çözme",
+              title: "Sorunları uzlaşıyla çözme (Solving Problems through Compromise)",
               content: "Demokrasiler, şiddet içermeyen çatışma çözümü ve uzlaşma normları üzerine kuruludur ve bu normları birbirleriyle olan uluslararası ilişkilerinde de uygulamaya eğilimlidirler."
             }
           ]
@@ -1959,15 +1959,15 @@ function InternationalSecurityExamQuestions() {
           question: "Ticari Liberalizm, en eski liberal düşünce okullarından biridir. Bu yaklaşımın üç merkezi fikrini veya mekanizmasını adlandırın ve tanımlayın.",
           answers: [
             {
-              title: "Ekonomik Karşılıklı Bağımlılık",
+              title: "Ekonomik Karşılıklı Bağımlılık (Economic Interdependence)",
               content: "Ülkeler arasındaki kapsamlı ticaret ve yatırımın, savaşı refahları için çok maliyetli ve yıkıcı bir seçenek haline getirdiğini savunur."
             },
             {
-              title: "Serbest Teşebbüs / Piyasa Ekonomisi",
+              title: "Serbest Teşebbüs / Piyasa Ekonomisi (Free Enterprise / Market Economy)",
               content: "Ekonomik faaliyetin devlet kontrolü yerine piyasa güçleri tarafından yönlendirildiğinde zenginliğin en verimli şekilde üretildiğini varsayar."
             },
             {
-              title: "Küreselleşme",
+              title: "Küreselleşme (Globalization)",
               content: "Malların, sermayenin ve fikirlerin sınırlar arası artan akışının ulusal ayrımları aşındırdığına ve tek bir küresel topluluk hissini teşvik ettiğine inanır."
             }
           ]
@@ -1977,15 +1977,15 @@ function InternationalSecurityExamQuestions() {
           question: "İyimserliğine rağmen Liberalizm birkaç büyük eleştiriyle karşı karşıyadır. Liberalist uluslararası ilişkiler yaklaşımına yöneltilen üç önemli eleştiriyi listeleyin ve açıklayın.",
           answers: [
             {
-              title: "Batı emperyalizmi",
+              title: "Batı emperyalizmi (Western Imperialism)",
               content: "Liberal değerlerin (demokrasi, piyasa ekonomileri) teşvikinin, genellikle Batı çıkarlarını ilerletmek ve Batı egemenliğini sürdürmek için bir kılıf olduğunu savunur."
             },
             {
-              title: "İç tutarsızlıklar",
+              title: "İç tutarsızlıklar (Internal Inconsistencies)",
               content: "Liberalizmin, örneğin istikrar için otokrasilerle ilişki kurmak veya insan hakları ihlalleri nedeniyle onları izole etmek gibi çelişkili tavsiyeler sunduğunu belirtir."
             },
             {
-              title: "Teorik zayıflık",
+              title: "Teorik zayıflık (Theoretical Weakness)",
               content: "Demokratik barış gibi bazı temel liberal bulguların, gerçek bir nedensel ilişkiden ziyade yanıltıcı bir korelasyona dayanabileceğini iddia eder."
             }
           ]
@@ -2000,15 +2000,15 @@ function InternationalSecurityExamQuestions() {
           question: "Notlarda Tarihsel Materyalizmin üç boyutu olduğu belirtilmektedir. Her birini adlandırın ve kısaca açıklayın.",
           answers: [
             {
-              title: "Sosyal bilimsel",
+              title: "Sosyal bilimsel (Social Scientific)",
               content: "Üretim biçimlerinin (kapitalizm gibi) sınıf yapılarını nasıl yarattığını ve bu sınıflar arasındaki çatışmanın tarihsel değişimi nasıl yönlendirdiğini analiz eder."
             },
             {
-              title: "Felsefi",
+              title: "Felsefi (Philosophical)",
               content: "Üretken sistemlerin ve güç eşitsizliklerinin baskın fikirleri ve söylemleri nasıl şekillendirdiğini inceleyerek, sosyal gerçekliği anlamak için sistematik bir yol sunar."
             },
             {
-              title: "Politik",
+              title: "Politik (Political)",
               content: "Kapitalizmin içsel sömürü ve yabancılaşmasını eleştiren siyasi hareketlerle (küresel adalet ve küreselleşme karşıtlığı gibi) ilişkilidir."
             }
           ]
@@ -2018,11 +2018,11 @@ function InternationalSecurityExamQuestions() {
           question: "HM'nin kapitalizm eleştirisi, işçinin deneyimini tanımlayan iki kavrama dayanır. \"Sömürü\" ve \"Yabancılaşma\" kavramlarını tanımlayın.",
           answers: [
             {
-              title: "Sömürü",
+              title: "Sömürü (Exploitation)",
               content: "İşçilere, emeklerinin yarattığı gerçek değerden daha düşük bir ücret ödenen ve kapitalistin geri kalanını kâr olarak (artı değer) kendine mal ettiği bir süreç."
             },
             {
-              title: "Yabancılaşma",
+              title: "Yabancılaşma (Alienation)",
               content: "İşçilerin kendi emekleri ve yarattıkları ürünler üzerindeki kontrol eksikliği nedeniyle yaşadıkları güçsüzlük ve ayrılık hissi."
             }
           ]
@@ -2032,11 +2032,11 @@ function InternationalSecurityExamQuestions() {
           question: "Notlar kapitalizmi iki çelişkili yüze sahip olarak tanımlar. Onun \"ilerici\" ve \"gerici\" yönlerini açıklayın.",
           answers: [
             {
-              title: "İlerici Yön",
+              title: "İlerici Yön (Progressive Aspect)",
               content: "Kapitalizm, insan yaratıcı kapasitelerini harekete geçirme, üretici güçleri geliştirme ve muazzam zenginlik ve teknoloji üretme konusundaki benzersiz yeteneğiyle ilerici bir nitelik taşır."
             },
             {
-              title: "Gerici Yön",
+              title: "Gerici Yön (Regressive Aspect)",
               content: "Kapitalizm, sömürü ve yabancılaşma süreçleri aracılığıyla aynı anda büyük eşitsizlik, yoksulluk ve işçi sınıfı için güvensizlik yarattığı için gericidir."
             }
           ]
@@ -2046,11 +2046,11 @@ function InternationalSecurityExamQuestions() {
           question: "Barış Çalışmaları ve Tarihsel Materyalizm, dolaylı zararı anlamak için ortak bir kavramı paylaşır. \"Yapısal Şiddet\"i tanımlayın ve HM'nin bunu kapitalizme nasıl bağladığını açıklayın.",
           answers: [
             {
-              title: "Yapısal Şiddet",
+              title: "Yapısal Şiddet (Structural Violence)",
               content: "Doğrudan güç kullanımıyla değil, bir toplumun yapısının neden olduğu (örneğin yoksulluk veya önlenebilir hastalıklardan kaynaklanan ölümler) önlenebilir acı ve ölüm."
             },
             {
-              title: "HM'nin Kapitalizme Bağlantısı",
+              title: "HM'nin Kapitalizme Bağlantısı (HM's Connection to Capitalism)",
               content: "Tarihsel Materyalizm, kapitalizmin neden içsel olarak yapısal şiddet barındırdığına dair bir teori sunar, çünkü sistemin sömürü yoluyla kâr yaratma ihtiyacı kaçınılmaz olarak eşitsizlik ve yoksunluk üretir."
             }
           ]
@@ -2060,11 +2060,11 @@ function InternationalSecurityExamQuestions() {
           question: "HM, Realizmde anlaşıldığı şekliyle \"ulusal çıkara\" ve Liberalizmde anlaşıldığı şekliyle \"özgürlük\" kavramına özel bir eleştiri getirir. Bu iki eleştiriyi açıklayın.",
           answers: [
             {
-              title: "Realizm'in \"Ulusal Çıkarı\"na Eleştiri",
+              title: "Realizm'in \"Ulusal Çıkarı\"na Eleştiri (Critique of Realism's National Interest)",
               content: "Tarihsel Materyalizm, \"ulusal çıkarın\" tarafsız veya zamansız bir kavram olmadığını, aksine bir devlet içindeki egemen kapitalist sınıfın belirli sınıf çıkarlarını yansıttığını savunur."
             },
             {
-              title: "Liberalizm'in \"Özgürlük\" Kavramına Eleştiri",
+              title: "Liberalizm'in \"Özgürlük\" Kavramına Eleştiri (Critique of Liberalism's Freedom Concept)",
               content: "Tarihsel Materyalizm, liberal \"çalışma özgürlüğünün\", üretim araçlarına sahip olmayan işçilerin hayatta kalmak için emeklerini satmaya zorlandıkları yapısal \"özgürsüzlüğü\" gizlediğini savunur."
             }
           ]
@@ -2079,19 +2079,19 @@ function InternationalSecurityExamQuestions() {
           question: "Notlarda modern barış çalışmalarını tanımlayan yedi özellik listelenmektedir. Bu özelliklerden dört tanesini adlandırın ve kısaca açıklayın.",
           answers: [
             {
-              title: "Temel Nedenler",
+              title: "Temel Nedenler (Root Causes)",
               content: "Doğrudan şiddetin köken nedenlerini ele alma ve yapısal eşitsizliklerin üstesinden gelme yollarını keşfetme kaygısı."
             },
             {
-              title: "Disiplinlerarası Yaklaşımlar",
+              title: "Disiplinlerarası Yaklaşımlar (Interdisciplinary Approaches)",
               content: "Şiddetli çatışmayı anlamak için birçok akademik disiplinden çok yönlü bir yanıtın esas olduğunun kabulü."
             },
             {
-              title: "Şiddet İçermeyen Dönüşümler",
+              title: "Şiddet İçermeyen Dönüşümler (Non-violent Transformations)",
               content: "Anlaşmazlıkları çözmek ve potansiyel olarak şiddetli durumların şiddet içermeyen dönüşümünü başarmak için barışçıl yollar arayışı."
             },
             {
-              title: "Çok Düzeyli Analiz",
+              title: "Çok Düzeyli Analiz (Multi-level Analysis)",
               content: "\"İç\" ve \"dış\" ikilemini aşmaya çalışarak, çatışmanın bireysel, grup, devlet ve devletlerarası düzeylerde analizini benimseme."
             }
           ]
@@ -2101,15 +2101,15 @@ function InternationalSecurityExamQuestions() {
           question: "Barış çalışmalarının gündemi 1970'lerde üç büyük yeni uluslararası meseleyi içerecek şekilde genişledi. Bu üç meseleyi listeleyin ve açıklayın.",
           answers: [
             {
-              title: "Ekonomik Eşitsizlikler",
+              title: "Ekonomik Eşitsizlikler (Economic Inequalities)",
               content: "Eski sömürgelerin, siyasi bağımsızlık kazanmalarına rağmen ekonomik bağımsızlıklarını kazanamadıkları ve küresel eşitsizliğin büyük bir sorun olduğu farkındalığı."
             },
             {
-              title: "Küresel Çevre Durumu",
+              title: "Küresel Çevre Durumu (Global Environmental Situation)",
               content: "Küresel ekosistemin artan insan etkileriyle baş edemeyeceği ve dolayısıyla ekonomik büyümeye sınırlar koyduğu yönündeki yeni kaygı."
             },
             {
-              title: "Adalet Arayışı ve Şiddetin Haklılığı",
+              title: "Adalet Arayışı ve Şiddetin Haklılığı (Quest for Justice and Justification of Violence)",
               content: "Vietnam Savaşı ve yapısal şiddet kavramının tetiklediği, adaletin peşinde şiddetin bazen haklı olup olamayacağı üzerine bir tartışma."
             }
           ]
@@ -2119,11 +2119,11 @@ function InternationalSecurityExamQuestions() {
           question: "Johan Galtung, barış tanımını genişleten kilit bir kavram ortaya atmıştır. \"Yapısal şiddet\"i tanımlayın ve barış çalışmaları için temel çıkarımını açıklayın.",
           answers: [
             {
-              title: "Yapısal Şiddet",
+              title: "Yapısal Şiddet (Structural Violence)",
               content: "Doğrudan şiddetten değil, insanların temel ihtiyaçlarını karşılamasını engelleyen adaletsiz ekonomik ve sosyal yapılardan kaynaklanan zarar veya ölüm."
             },
             {
-              title: "Çıkarım",
+              title: "Çıkarım (Implication)",
               content: "Gerçek bir barış halinin sadece savaşın olmaması (negatif barış) değil, aynı zamanda yapısal şiddet ve sömürünün de olmaması (pozitif barış) gerektiği anlamına geliyordu."
             }
           ]
@@ -2133,15 +2133,15 @@ function InternationalSecurityExamQuestions() {
           question: "Notlar, geleceği şekillendirmesi muhtemel olan üç ana çatışma eğilimini tanımlamaktadır. Bu üç eğilimi listeleyin ve kısaca tanımlayın.",
           answers: [
             {
-              title: "Artan insan göçü",
+              title: "Artan insan göçü (Increasing Human Migration)",
               content: "Ekonomik, sosyal ve çevresel baskılar nedeniyle göç olasılığının artması, potansiyel olarak alıcı bölgelerde kültürel çatışmalara yol açması."
             },
             {
-              title: "Çevresel ve kaynak çatışmalarının tırmanması",
+              title: "Çevresel ve kaynak çatışmalarının tırmanması (Escalation of Environmental and Resource Conflicts)",
               content: "Gıda, tatlı su ve fosil yakıtlar gibi kaynaklar üzerindeki çatışmaların yerel, bölgesel ve küresel düzeylerde artma olasılığı."
             },
             {
-              title: "Güçsüzlerin şiddetli tepkileri",
+              title: "Güçsüzlerin şiddetli tepkileri (Violent Reactions of the Powerless)",
               content: "Hem devletler içinde hem de ulusötesi hareketler aracılığıyla marjinalleşmiş nüfuslardan rekabetçi ve şiddetli tepkiler beklenmesi."
             }
           ]
@@ -2151,11 +2151,11 @@ function InternationalSecurityExamQuestions() {
           question: "Gelecekteki küresel zorluklara yanıt olarak, notlar iki ana zıt seçeneği veya yolu sunmaktadır. Bu iki potansiyel yanıtı belirleyin ve açıklayın.",
           answers: [
             {
-              title: "Sürdürülebilir Kalkınma İçin Tutarlı İşbirliği",
+              title: "Sürdürülebilir Kalkınma İçin Tutarlı İşbirliği (Coherent Cooperation for Sustainable Development)",
               content: "Borç hafifletme, ticaret reformu ve kalkınma yardımı ile çatışma önleme ve çözüm programlarını içeren bir yol."
             },
             {
-              title: "Statükoyu Korumak / \"Liddism\"",
+              title: "Statükoyu Korumak / \"Liddism\" (Maintaining Status Quo / \"Liddism\")",
               content: "İnsanlığın zengin kesimlerinin, parçalanmış bir dünyayı \"sınırlandırmak\" için gerektiğinde askeri güçle desteklenen ticaret ve finansal önlemler aracılığıyla ayrıcalıklı konumlarını sürdürdüğü bir yol."
             }
           ]
@@ -2170,15 +2170,15 @@ function InternationalSecurityExamQuestions() {
            question: "1994 York Üniversitesi konferansı, geleneksel güvenlik çalışmalarına üç ana cepheden meydan okuyarak CSS için bir başlangıç gündemi belirlemiştir. Bu üç meydan okumayı listeleyin ve açıklayın.",
            answers: [
              {
-               title: "Referans nesnesini sorgulamak",
+               title: "Referans nesnesini sorgulamak (Questioning the Reference Object)",
                content: "Geleneksel olarak güvenliği sağlanacak tek nesne olarak devlete odaklanmayı sorgular, bunun yerine bireyleri veya toplulukları önerir."
              },
              {
-               title: "Güvenliği askeri güvenlikten fazlası olarak görmek",
+               title: "Güvenliği askeri güvenlikten fazlası olarak görmek (Viewing Security as More than Military Security)",
                content: "Güvenlik kavramını askeri tehditlerin ötesine, ekonomik, çevresel ve toplumsal güvensizlikleri de içerecek şekilde genişletir."
              },
              {
-               title: "Güvenliğin çalışma şeklini değiştirmek",
+               title: "Güvenliğin çalışma şeklini değiştirmek (Changing How Security Works)",
                content: "Geleneksel yaklaşımların sözde nesnelliğini reddeder, bilginin arkasındaki politikayı tanıyan post-pozitivist bir bilim anlayışını savunur."
              }
            ]
@@ -2188,15 +2188,15 @@ function InternationalSecurityExamQuestions() {
            question: "Koruma Sorumluluğu (R2P) doktrini, üç spesifik sorumluluk üzerine inşa edilmiştir. Her birini adlandırın ve kısaca tanımlayın.",
            answers: [
              {
-               title: "Önleme Sorumluluğu",
+               title: "Önleme Sorumluluğu (Responsibility to Prevent)",
                content: "İç çatışmaların ve insan kaynaklı krizlerin köken nedenlerini ve doğrudan nedenlerini ortaya çıkmadan önce ele almak."
              },
              {
-               title: "Tepki Verme Sorumluluğu",
+               title: "Tepki Verme Sorumluluğu (Responsibility to React)",
                content: "Zorlayıcı insani ihtiyaç durumlarına uygun önlemlerle yanıt vermek, bu önlemler yaptırımları veya aşırı durumlarda askeri müdahaleyi içerebilir."
              },
              {
-               title: "Yeniden İnşa Sorumluluğu",
+               title: "Yeniden İnşa Sorumluluğu (Responsibility to Rebuild)",
                content: "Özellikle askeri müdahale sonrasında iyileşme, yeniden yapılanma ve uzlaşma için tam destek sağlamak."
              }
            ]
@@ -2206,15 +2206,15 @@ function InternationalSecurityExamQuestions() {
            question: "Ken Booth'un Aberystwyth Okulu, güvenliğe dair eleştirel bir teoriyi üç temel soruya dayandırır. Bu üç temel soruyu listeleyin.",
            answers: [
              {
-               title: "Soru 1",
+               title: "Soru 1 (Question 1)",
                content: "Gerçek olan nedir?"
              },
              {
-               title: "Soru 2", 
+               title: "Soru 2 (Question 2)", 
                content: "Bilgi nedir? / Ondan kim faydalanır?"
              },
              {
-               title: "Soru 3",
+               title: "Soru 3 (Question 3)",
                content: "Ne yapılmalı?"
              }
            ]
@@ -2224,11 +2224,11 @@ function InternationalSecurityExamQuestions() {
            question: "Kopenhag Okulu, iki temel kavramsal gelişme ile tanımlanır. Bu iki kavramı adlandırın ve \"güvenlikleştirme\" için kısa bir tanım yapın.",
            answers: [
              {
-               title: "Güvenliğin sektörel analizi",
+               title: "Güvenliğin sektörel analizi (Sectoral Analysis of Security)",
                content: "Güvenlik konularının askeri, ekonomik, çevresel, toplumsal ve siyasi sektörlere ayrılması yaklaşımı."
              },
              {
-               title: "Güvenlikleştirme",
+               title: "Güvenlikleştirme (Securitization)",
                content: "Bir meselenin, \"söz eylemi\" aracılığıyla, normal siyasetin dışına çıkan olağanüstü önlemleri haklı kılan varoluşsal bir tehdit olarak sunulduğu süreç."
              }
            ]
@@ -2243,15 +2243,15 @@ function InternationalSecurityExamQuestions() {
            question: "Postkolonyal analiz, sömürge projesinin merkezinde yer alan üç farklı şiddet biçimini tanımlar. Bu üç şiddet biçimini adlandırın ve kısaca tanımlayın.",
            answers: [
              {
-               title: "Maddi şiddet",
+               title: "Maddi şiddet (Material Violence)",
                content: "Avrupa sömürgeciliğinin Amerika, Afrika ve Asya'daki nüfuslara uyguladığı muazzam fiziksel şiddet."
              },
              {
-               title: "Epistemik şiddet",
+               title: "Epistemik şiddet (Epistemic Violence)",
                content: "Avrupa bilgi sistemlerinin diğer halklara dayatılması, yerel bilgi edinme yollarının aktif olarak reddedilmesi, itibarsızlaştırılması veya yok edilmesi."
              },
              {
-               title: "Yapısal şiddet",
+               title: "Yapısal şiddet (Structural Violence)",
                content: "Sömürge alanlarındaki günlük yaşamı ve onun yeniden üretimini tanımlayan, sömürü ve tahakkümün sistematik ilişkileri."
              }
            ]
@@ -2261,11 +2261,11 @@ function InternationalSecurityExamQuestions() {
            question: "Edward Said'in \"Oryantalizm\"i, Batı'nın Doğu ve Batı'ya dair hiyerarşik bir temsilini nasıl inşa ettiğini açıklar. \"Doğu\"ya atfedilen üç özelliği ve \"Batı\"ya atfedilen üç karşıt özelliği listeleyin.",
            answers: [
              {
-               title: "Doğu",
+               title: "Doğu (East)",
                content: "Gizemli, duygusal, barbar olarak karakterize edilir."
              },
              {
-               title: "Batı",
+               title: "Batı (West)",
                content: "Bilinen, akılcı, medeni olarak karakterize edilir."
              }
            ]
@@ -2275,15 +2275,15 @@ function InternationalSecurityExamQuestions() {
            question: "Postkolonyalizmin eleştirdiği temel bir kavram \"Avrupamerkezcilik\"tir. Avrupamerkezci bir dünya görüşünün üç ana unsurunu tanımlayın.",
            answers: [
              {
-               title: "Avrupa'nın ayrık ve kendi kendini üreten olması",
+               title: "Avrupa'nın ayrık ve kendi kendini üreten olması (Europe as Distinct and Self-generating)",
                content: "Avrupa'nın, dünyanın geri kalanından ayrı, kendi içinde oluşmuş farklı bir medeniyet olarak tasvir edilmesi."
              },
              {
-               title: "Avrupa'nın tarihin merkezi olması",
+               title: "Avrupa'nın tarihin merkezi olması (Europe as Center of History)",
                content: "Dünya tarihinin, geçmiş ve şimdi, Avrupa'nın deneysel ve normatif merkeziliği varsayımıyla analiz edilmesi."
              },
              {
-               title: "Modernliğin Batı tarafından tanımlanması",
+               title: "Modernliğin Batı tarafından tanımlanması (Modernity Defined by the West)",
                content: "Gelişme ve modernleşmenin son noktasının çağdaş \"Batı\" tarafından tanımlandığı varsayımı."
              }
            ]
@@ -2298,15 +2298,15 @@ function InternationalSecurityExamQuestions() {
           question: "Notlarda inşacılığın üç temel ontolojik pozisyona dayandığı belirtilmektedir. Bu üç pozisyonu adlandırın ve kısaca açıklayın.",
           answers: [
             {
-              title: "Normatif veya düşünsel yapılar anahtardır",
+              title: "Normatif veya düşünsel yapılar anahtardır (Normative or Ideational Structures are Key)",
               content: "Paylaşılan fikirlerin, inançların ve normların dünya siyasetini şekillendirmede maddi güçler kadar, hatta onlardan daha önemli olduğunu savunur."
             },
             {
-              title: "Kimlikler önemlidir",
+              title: "Kimlikler önemlidir (Identities Matter)",
               content: "Bir aktörün kimliği çok önemlidir çünkü bu, onların çıkarlarını ve dolayısıyla uluslararası sistemdeki eylemlerini belirler."
             },
             {
-              title: "Özneler ve yapılar karşılıklı olarak oluşur",
+              title: "Özneler ve yapılar karşılıklı olarak oluşur (Agents and Structures are Mutually Constitutive)",
               content: "Devletler (özneler) ve uluslararası sistem (yapı) birbirinden ayrı değildir; etkileşim yoluyla birbirlerini şekillendirir ve yaratırlar."
             }
           ]
@@ -2316,15 +2316,15 @@ function InternationalSecurityExamQuestions() {
           question: "Alexander Wendt \"anarşi, devletlerin ondan ne yaptığıdır\" der ve üç farklı anarşi kültürü önerir. Bu üç kültürü listeleyin ve tanımlayın.",
           answers: [
             {
-              title: "Hobbesçu",
+              title: "Hobbesçu (Hobbesian)",
               content: "Devletlerin birbirini düşman olarak gördüğü, güvenliğin sıfır toplamlı bir oyun olduğu ve hayatta kalmanın saf askeri güce bağlı olduğu bir kültür."
             },
             {
-              title: "Lockeçu",
+              title: "Lockeçu (Lockean)",
               content: "Devletlerin birbirini rakip olarak gördüğü; rekabet ettikleri ve şiddet kullandıkları, ancak birbirlerinin egemenliğini kabul ederek bazı sınırlamalarla hareket ettikleri bir kültür."
             },
             {
-              title: "Kantçı",
+              title: "Kantçı (Kantian)",
               content: "Devletlerin birbirini dost olarak gördüğü, anlaşmazlıkları barışçıl bir şekilde çözdüğü ve kolektif güvenlik için işbirliği yaptığı bir kültür."
             }
           ]
@@ -2334,11 +2334,11 @@ function InternationalSecurityExamQuestions() {
           question: "İnşacılık, aktör davranışını şekillendirmede normların önemini vurgular. Notlarda tartışılan iki ana norm türünü belirleyin ve tanımlayın.",
           answers: [
             {
-              title: "Kurucu",
+              title: "Kurucu (Constitutive)",
               content: "Bir aktörün kimliğini tanımlayan, ne olduklarını ve çıkarlarının ne olacağını şekillendiren normlar (örneğin, devlet egemenliği normu)."
             },
             {
-              title: "Düzenleyici",
+              title: "Düzenleyici (Regulative)",
               content: "Zaten var olan bir kimlik için davranışı belirleyen veya yasaklayan, aktörlerin ne \"yapması gerektiğini\" veya ne \"yapmaması gerektiğini\" belirleyen normlar (örneğin, nükleer tabu)."
             }
           ]
@@ -2348,11 +2348,11 @@ function InternationalSecurityExamQuestions() {
           question: "İnşacılık düşünce okulu, metodolojilerine göre genel olarak iki ana kampa ayrılır. Bu iki kampı adlandırın ve temel farklarını açıklayın.",
           answers: [
             {
-              title: "Konvansiyonel İnşacılık",
+              title: "Konvansiyonel İnşacılık (Conventional Constructivism)",
               content: "Devleti merkezi bir aktör olarak kabul etmeye eğilimlidir ve pozitivist, bilimsel yöntemler kullanarak, rasyonel teorilerle bir \"köprü\" kurmaya çalışır."
             },
             {
-              title: "Eleştirel İnşacılık",
+              title: "Eleştirel İnşacılık (Critical Constructivism)",
               content: "Pozitivizmi reddeder ve gerçeği inşa etmede dilin ve söylemin gücüne odaklanır, varsayılan kimlikleri ve güç ilişkilerini yapıbozuma uğratmayı ve sorgulamayı amaçlar."
             }
           ]
@@ -2362,19 +2362,19 @@ function InternationalSecurityExamQuestions() {
           question: "Wendt, bir anarşi kültüründen diğerine geçişin dört \"ana değişken\" tarafından yönlendirildiğini öne sürer. Bu dört değişkeni listeleyin ve kısaca tanımlayın.",
           answers: [
             {
-              title: "Karşılıklı Bağımlılık",
+              title: "Karşılıklı Bağımlılık (Interdependence)",
               content: "Devletlerin birbirine karşılıklı olarak bağımlı olma derecesi, çatışma maliyetlerini artırabilir."
             },
             {
-              title: "Ortak Kader",
+              title: "Ortak Kader (Common Fate)",
               content: "Devletlerin ancak kolektif eylemle çözülebilecek ortak tehditlerle (çevresel felaket gibi) karşı karşıya olduğunu fark etmesi."
             },
             {
-              title: "Homojenizasyon",
+              title: "Homojenizasyon (Homogenization)",
               content: "Devletlerin siyasi ve sosyal yapılarında daha benzer hale gelme süreci, paylaşılan kimlik ve güveni teşvik edebilir."
             },
             {
-              title: "Kendi Kendine Kısıtlama",
+              title: "Kendi Kendine Kısıtlama (Self-Restraint)",
               content: "Güçlü bir devletin kendi gücünü kasıtlı olarak sınırlaması eylemi, güven inşa edebilir ve diğerlerinden karşılıklı kısıtlamayı teşvik edebilir."
             }
                      ]
@@ -2389,11 +2389,11 @@ function InternationalSecurityExamQuestions() {
            question: "1994 UNDP İnsani Gelişme Raporu, genellikle iki temel ilke ile özetlenen insan güvenliği kavramını ortaya atmıştır. Bu iki \"özgürlüğü\" adlandırın ve tanımlayın.",
            answers: [
              {
-               title: "Yoksunluktan özgürlük",
+               title: "Yoksunluktan özgürlük (Freedom from Want)",
                content: "Yaşam kalitesini düşüren açlık, hastalık ve baskı gibi kronik tehditlerden güvenlik."
              },
              {
-               title: "Korkudan özgürlük",
+               title: "Korkudan özgürlük (Freedom from Fear)",
                content: "Şiddet veya çatışma gibi günlük yaşamın düzenindeki ani ve acı verici kesintilerden korunma."
              }
            ]
@@ -2403,23 +2403,23 @@ function InternationalSecurityExamQuestions() {
            question: "1994 UNDP raporu, sürekli dikkat gerektiren yedi kritik güvenlik alanı önermiştir. Bu yedi alandan beş tanesini listeleyin ve kısaca tanımlayın.",
            answers: [
              {
-               title: "Ekonomik güvenlik",
+               title: "Ekonomik güvenlik (Economic Security)",
                content: "Genellikle üretken ve kazançlı işlerden veya kamu tarafından finanse edilen bir güvenlik ağından sağlanan güvenceli temel gelir."
              },
              {
-               title: "Gıda güvenliği",
+               title: "Gıda güvenliği (Food Security)",
                content: "Herkesin her zaman temel gıdaya hem fiziksel hem de ekonomik erişiminin sağlanması."
              },
              {
-               title: "Sağlık güvenliği",
+               title: "Sağlık güvenliği (Health Security)",
                content: "Hastalıklar ve sağlıksız yaşam tarzlarından minimum düzeyde korunmanın garantilenmesi."
              },
              {
-               title: "Çevresel güvenlik",
+               title: "Çevresel güvenlik (Environmental Security)",
                content: "İnsanları doğanın kısa ve uzun vadeli tahribatlarından, doğadaki insan yapımı tehditlerden ve doğal çevrenin bozulmasından korumak."
              },
              {
-               title: "Kişisel güvenlik",
+               title: "Kişisel güvenlik (Personal Security)",
                content: "İnsanları, devletten veya dış devletlerden, şiddet yanlısı bireylerden ve devlet altı aktörlerden veya aile içi şiddetten kaynaklanan fiziksel şiddetten korumak."
              }
            ]
@@ -2429,19 +2429,19 @@ function InternationalSecurityExamQuestions() {
            question: "1994 İnsani Gelişme Raporu, insan güvenliği kavramının dört ana özelliğini detaylandırmıştır. Bu dört özelliği adlandırın ve açıklayın.",
            answers: [
              {
-               title: "Evrensel",
+               title: "Evrensel (Universal)",
                content: "Zengin ve yoksul tüm uluslardaki insanlar için geçerlidir, çünkü ilkeleri kültürler ve sistemler arası değere sahiptir."
              },
              {
-               title: "Karşılıklı Bağımlı",
+               title: "Karşılıklı Bağımlı (Interdependent)",
                content: "İnsan güvenliğinin farklı yönleri birbiriyle bağlantılıdır, yani bir alandaki tehditler diğer alanlara yayılabilir ve güvenliği etkileyebilir."
              },
              {
-               title: "Önleme Odağı",
+               title: "Önleme Odağı (Prevention-Focused)",
                content: "Tehditleri ortaya çıktıktan sonra müdahale etmekten daha kolay ve daha az maliyetlidir."
              },
              {
-               title: "İnsan Odaklı",
+               title: "İnsan Odaklı (People-Centered)",
                content: "Güvenliğin birincil referans nesnesi olarak devleti değil, insanları ve onların topluluklarını yapar."
              }
            ]
@@ -2456,15 +2456,15 @@ function InternationalSecurityExamQuestions() {
            question: "Notlarda çevresel güvenliğin 1960'larda başlayan birbiriyle ilişkili dört gelişme nedeniyle önemli bir kavram olarak ortaya çıktığı belirtilmektedir. Bu gelişmelerden üçünü listeleyin ve kısaca tanımlayın.",
            answers: [
              {
-               title: "Çevresel farkındalığın artması",
+               title: "Çevresel farkındalığın artması (Increased Environmental Awareness)",
                content: "\"Sessiz Bahar\" gibi kitapların ve çevresel STK'ların yükselişinin tetiklediği, çevresel konular hakkında kamu bilincinde bir artış."
              },
              {
-               title: "Geleneksel güvenlik söyleminin eleştirileri",
+               title: "Geleneksel güvenlik söyleminin eleştirileri (Critiques of Traditional Security Discourse)",
                content: "Akademisyenlerin güvenlik çalışmalarının dar askeri odağını sorgulamaya başlaması, çevresel risklerin de ulusal refahı tehdit ettiğini savunmaları."
              },
              {
-               title: "Stratejik koşullardaki değişiklikler",
+               title: "Stratejik koşullardaki değişiklikler (Changes in Strategic Conditions)",
                content: "Soğuk Savaş'ın sona ermesi, çevre gibi \"yeni\" güvenlik konularının ana akım gündeme girmesi için entelektüel ve siyasi bir alan yarattı."
              }
            ]
@@ -2474,15 +2474,15 @@ function InternationalSecurityExamQuestions() {
            question: "Çevresel güvenlik literatürü en az altı ana yorum içerir. Bu yorumlardan üçü için yaklaşımı, \"güvence altına alınacak varlığı\" ve \"başlıca risk kaynağını\" belirtin.",
            answers: [
              {
-               title: "Ekolojik güvenlik",
+               title: "Ekolojik güvenlik (Ecological Security)",
                content: "Güvence Altına Alınacak Varlık: Doğal çevre, Başlıca Risk Kaynağı: İnsan faaliyetleri"
              },
              {
-               title: "Çevresel şiddet",
+               title: "Çevresel şiddet (Environmental Violence)",
                content: "Güvence Altına Alınacak Varlık: Ulus-devlet, Başlıca Risk Kaynağı: Savaş"
              },
              {
-               title: "İnsani güvenlik",
+               title: "İnsani güvenlik (Human Security)",
                content: "Güvence Altına Alınacak Varlık: Bireyler, Başlıca Risk Kaynağı: Çevresel değişim"
              }
            ]
@@ -2497,15 +2497,15 @@ function InternationalSecurityExamQuestions() {
            question: "Notlar, terörizmin incelenebileceği üç farklı bakış açısı sunmaktadır. Bu üç bakış açısını adlandırın ve kısaca tanımlayın.",
            answers: [
              {
-               title: "Savaş olarak terörizm",
+               title: "Savaş olarak terörizm (Terrorism as War)",
                content: "Terörizmi askeri yöntemlerle çözülmesi gereken bir sorun olarak görür, zaferin elde edilebileceğini varsayar."
              },
              {
-               title: "Suç olarak terörizm",
+               title: "Suç olarak terörizm (Terrorism as Crime)",
                content: "Terörizmi yönetmek için normal polis tekniklerine güvenir, diğer suçlar gibi sadece sınırlandırılabileceğini, ortadan kaldırılamayacağını ima eder."
              },
              {
-               title: "Hastalık olarak terörizm",
+               title: "Hastalık olarak terörizm (Terrorism as Disease)",
                content: "Hem semptomlara hem de köken nedenlerine odaklanır, kök sorunları ele almak için uzun vadeli stratejilere ihtiyaç olduğunu varsayar."
              }
            ]
@@ -2515,19 +2515,19 @@ function InternationalSecurityExamQuestions() {
            question: "Terörizmin işlevsel bir tanımı altı temel unsur içerir. Bu unsurlardan dördünü adlandırın ve tanımlayın.",
            answers: [
              {
-               title: "Şiddet kullanımı veya tehdidi",
+               title: "Şiddet kullanımı veya tehdidi (Use or Threat of Violence)",
                content: "Taktik, temelde fiziksel zarar vermeyi veya bunun korkusunu yaratmayı içerir."
              },
              {
-               title: "Organize bir grup tarafından gerçekleştirilir",
+               title: "Organize bir grup tarafından gerçekleştirilir (Carried out by an Organized Group)",
                content: "Eylem rastgele veya tek bir kişi tarafından değil, belirli bir yapıya sahip bir grup tarafından işlenir."
              },
              {
-               title: "Siyasi hedeflere ulaşma amacı",
+               title: "Siyasi hedeflere ulaşma amacı (Aimed at Achieving Political Goals)",
                content: "Şiddet kişisel maddi kazanç için değil, siyasi bir hedefi başarmak için tasarlanmıştır."
              },
              {
-               title: "Hedef bir kitleye yöneliktir",
+               title: "Hedef bir kitleye yöneliktir (Directed at a Target Audience)",
                content: "Şiddet, doğrudan kurbanların ötesinde daha geniş bir kitleye korku yaratmayı ve mesaj göndermeyi amaçlar."
              }
            ]
@@ -2542,11 +2542,11 @@ function InternationalSecurityExamQuestions() {
            question: "Notlar, toplumsal cinsiyet ve güvenlik arasındaki ilişkiyi analiz etmek için iki ana bakış açısı sunmaktadır. Bu iki yönü adlandırın ve kısaca tanımlayın.",
            answers: [
              {
-               title: "Pratik yönler",
+               title: "Pratik yönler (Practical Aspects)",
                content: "Kadınların ordudaki somut rollerini veya askeri çatışmanın kurbanları, gözlemcileri veya kolaylaştırıcıları olarak deneyimlerini içerir."
              },
              {
-               title: "Söylemsel yönler",
+               title: "Söylemsel yönler (Discursive Aspects)",
                content: "Erkeklikle militarizm ve kadınlıkla besleme ve barış fikri arasında kurulan geleneksel bağlantıları içerir."
              }
            ]
@@ -2556,11 +2556,11 @@ function InternationalSecurityExamQuestions() {
            question: "Jean Elshtain'in çalışmaları, savaşın cinsiyetlendirilmiş inşasında temel bir ikiliği tanımlar. Onun tanımladığı iki arketipik rolü adlandırın ve tanımlayın.",
            answers: [
              {
-               title: "Adil Savaşçı",
+               title: "Adil Savaşçı (Just Warrior)",
                content: "Bir savaşçı olması beklenen, fiziksel güç ve cesaret gibi erkeksi değerlerle ilişkilendirilen ve görevi savaşmak olan erkek arketipi."
              },
              {
-               title: "Güzel Ruh",
+               title: "Güzel Ruh (Beautiful Soul)",
                content: "Ev cephesi ve besleme ile ilişkilendirilen ve erkek savaşçıdan korunmaya ihtiyacı olan, muharip olmayan olması beklenen kadın arketipi."
              }
            ]
@@ -2575,23 +2575,23 @@ function InternationalSecurityExamQuestions() {
            question: "Kopenhag Okulu, beş genel güvenlik sektörü veya kategorisi belirleyerek güvenlik gündemini genişletir. Bu beş sektörü listeleyin.",
            answers: [
              {
-               title: "Askeri güvenlik",
+               title: "Askeri güvenlik (Military Security)",
                content: "Geleneksel askeri tehditler ve savunma konuları."
              },
              {
-               title: "Çevresel güvenlik",
+               title: "Çevresel güvenlik (Environmental Security)",
                content: "Çevresel tehditler ve ekolojik güvenlik meseleleri."
              },
              {
-               title: "Ekonomik güvenlik",
+               title: "Ekonomik güvenlik (Economic Security)",
                content: "Ekonomik istikrar ve refah tehditleri."
              },
              {
-               title: "Toplumsal güvenlik",
+               title: "Toplumsal güvenlik (Societal Security)",
                content: "Kimlik, kültür ve toplumsal bütünlük tehditleri."
              },
              {
-               title: "Siyasi güvenlik",
+               title: "Siyasi güvenlik (Political Security)",
                content: "Siyasi sistem ve meşruiyet tehditleri."
              }
            ]
@@ -2601,15 +2601,15 @@ function InternationalSecurityExamQuestions() {
            question: "Güvenlikleştirme modeli, herhangi bir kamusal konunun üç aşamadan oluşan bir yelpazede var olabileceğini öne sürer. Bu üç aşamayı adlandırın ve tanımlayın.",
            answers: [
              {
-               title: "Siyasallaşmamış",
+               title: "Siyasallaşmamış (Non-politicized)",
                content: "Konunun devlet eylemi için bir mesele olmadığı ve kamu tartışmalarına dahil edilmediği; özel alanda kaldığı aşama."
              },
              {
-               title: "Siyasallaşmış",
+               title: "Siyasallaşmış (Politicized)",
                content: "Konunun kamu politikasının bir parçası olduğu, hükümet kararı ve kaynak tahsisi gerektirdiği ve standart siyasi sistem içinde yönetildiği aşama."
              },
              {
-               title: "Güvenlikleştirilmiş",
+               title: "Güvenlikleştirilmiş (Securitized)",
                content: "Konunun, normal siyasi prosedürlerin ötesinde olağanüstü eylemler gerektiren varoluşsal bir tehdit olarak çerçevelendiği aşama."
              }
            ]
@@ -2624,15 +2624,15 @@ function InternationalSecurityExamQuestions() {
            question: "Notlarda ekonomik yaptırımların en az üç farklı amaç için kullanılabileceği belirtilmektedir. Bu üç amacı adlandırın ve kısaca tanımlayın.",
            answers: [
              {
-               title: "Politik",
+               title: "Politik (Political)",
                content: "Bir hedefin davranışını etkileyerek barış ve özgürlük gibi hedefleri ilerletmek için ekonomik gücü kullanmak."
              },
              {
-               title: "Ahlaki",
+               title: "Ahlaki (Moral)",
                content: "Ahlaki olarak kötü veya kınanması gereken eylemlerde ekonomik katılımı reddetmek."
              },
              {
-               title: "Askeri",
+               title: "Askeri (Military)",
                content: "Tehlikeli rejimleri izole etmek ve bölgesel ve küresel güvenliğe yönelik tehditleri zayıflatmak."
              }
            ]
@@ -2647,19 +2647,19 @@ function InternationalSecurityExamQuestions() {
            question: "Notlar, bir dış politika krizini tanımlayan beş gerekli koşulu listelemektedir. Bu koşullardan dördünü adlandırın ve kısaca tanımlayın.",
            answers: [
              {
-               title: "Sürpriz Unsuru",
+               title: "Sürpriz Unsuru (Element of Surprise)",
                content: "Durum genellikle aniden ortaya çıkar ve karar vericiler tarafından beklenmez."
              },
              {
-               title: "Yüksek değerli çıkarlara yönelik tehdit",
+               title: "Yüksek değerli çıkarlara yönelik tehdit (Threat to High-Value Interests)",
                content: "Kriz, devletin bir veya daha fazla temel değerine veya yüksek öncelikli çıkarına yönelik bir tehdit oluşturur."
              },
              {
-               title: "Zaman Baskısı",
+               title: "Zaman Baskısı (Time Pressure)",
                content: "Kararların ve eylemlerin sınırlı veya kısa bir süre içinde alınması gerektiği algısı vardır."
              },
              {
-               title: "Daha yüksek askeri çatışma olasılığı",
+               title: "Daha yüksek askeri çatışma olasılığı (Higher Probability of Military Conflict)",
                content: "Askeri düşmanlıkların veya silahlı çatışmanın normal koşullara göre daha yüksek olduğu algısı."
              }
            ]
@@ -2674,19 +2674,19 @@ function InternationalSecurityExamQuestions() {
            question: "Notlar, \"Devletler neden nükleer silahlara sahip olmak ister?\" sorusunu cevaplamak için dört ana yaklaşım olduğunu açıklamaktadır. Bu dört yaklaşımı adlandırın.",
            answers: [
              {
-               title: "Güvenlik Yaklaşımı",
+               title: "Güvenlik Yaklaşımı (Security Approach)",
                content: "Devletlerin güvenlik tehditlerine karşı nükleer silahları caydırıcı olarak görmesi."
              },
              {
-               title: "Kişisel-Kurumsal Rekabet Yaklaşımı",
+               title: "Kişisel-Kurumsal Rekabet Yaklaşımı (Personal-Institutional Competition Approach)",
                content: "İç politik grupların kendi çıkarları için nükleerleşmeyi desteklemesi."
              },
              {
-               title: "Sosyo-Psikolojik Yaklaşım",
+               title: "Sosyo-Psikolojik Yaklaşım (Socio-Psychological Approach)",
                content: "Prestij, statü ve ulusal kimlik gibi faktörlerin nükleer silah arayışını etkilemesi."
              },
              {
-               title: "Normatif Yaklaşım",
+               title: "Normatif Yaklaşım (Normative Approach)",
                content: "Uluslararası normlar ve değerlerin nükleer silah politikalarını şekillendirmesi."
              }
            ]
@@ -2701,15 +2701,15 @@ function InternationalSecurityExamQuestions() {
            question: "Notlar, etnik kimliğin kaynağını açıklamak için üç farklı teorik yaklaşım sunmaktadır. Bu üç yaklaşımı adlandırın ve kısaca tanımlayın.",
            answers: [
              {
-               title: "Primordialist Yaklaşım",
+               title: "Primordialist Yaklaşım (Primordialist Approach)",
                content: "Bu yaklaşım, etnik kimliği akrabalık, dil veya din gibi değişmez özelliklere dayalı, sabit, doğal ve tarihsel olarak eski olarak görür."
              },
              {
-               title: "Modernist Yaklaşım",
+               title: "Modernist Yaklaşım (Modernist Approach)",
                content: "Bu yaklaşım, etnik ve ulusal kimliklerin sanayileşme ve devlet inşası gibi süreçler nedeniyle modern çağda ortaya çıkan yeni olgular olduğunu savunur."
              },
              {
-               title: "İnşacı Yaklaşım",
+               title: "İnşacı Yaklaşım (Constructivist Approach)",
                content: "Bu yaklaşım, etnik kimliklerin bireylerin ve grupların siyasi, sosyal ve psikolojik ihtiyaçlarını karşılamak için etkileşim yoluyla sosyal olarak nasıl inşa edildiğine odaklanır."
              }
            ]
@@ -2724,15 +2724,15 @@ function InternationalSecurityExamQuestions() {
            question: "Notlar, sağlık ve güvenlik arasındaki bağlantının üç farklı güvenlik çerçevesi aracılığıyla anlaşılabileceğini açıklamaktadır. Bu üç çerçeveyi adlandırın ve kısaca tanımlayın.",
            answers: [
              {
-               title: "İnsan güvenliği çerçevesi",
+               title: "İnsan güvenliği çerçevesi (Human Security Framework)",
                content: "Sıradan bireylerin sağlığına ve esenliğine odaklanır, iyi sağlığı güvenliğin hem esas hem de aracı olarak görür."
              },
              {
-               title: "Ulusal güvenlik çerçevesi",
+               title: "Ulusal güvenlik çerçevesi (National Security Framework)",
                content: "Yaygın bulaşıcı hastalıkları bir devletin nüfusuna, ekonomisine ve siyasi istikrarına yönelik tehditler olarak görür."
              },
              {
-               title: "Biyogüvenlik çerçevesi",
+               title: "Biyogüvenlik çerçevesi (Biosecurity Framework)",
                content: "Terörist grupların veya diğer aktörlerin kasten hastalığa neden olan biyolojik ajanları salma olasılığıyla ilgilenir."
              }
            ]
@@ -2747,15 +2747,15 @@ function InternationalSecurityExamQuestions() {
            question: "Notlar, siber güvenlik hikayesinin birbiriyle bağlantılı ancak farklı üç söylem aracılığıyla anlatılabileceğini belirtmektedir. Bu üç söylemi adlandırın ve kısaca tanımlayın.",
            answers: [
              {
-               title: "Teknik Söylem",
+               title: "Teknik Söylem (Technical Discourse)",
                content: "Bu söylem, virüsler ve solucanlar gibi kötü amaçlı yazılımların neden olduğu bilgisayar ve ağ kesintilerine odaklanır."
              },
              {
-               title: "Siber Suç ve Siber Casusluk Söylemi",
+               title: "Siber Suç ve Siber Casusluk Söylemi (Cybercrime and Cyber Espionage Discourse)",
                content: "Bu söylem, kişisel kazanç için hackleme ve devlet destekli casusluk dahil olmak üzere bilgisayarların ve ağların suç faaliyetleri için kullanımını ele alır."
              },
              {
-               title: "Siber Çatışmalar / Askeri-Sivil Savunma Söylemi",
+               title: "Siber Çatışmalar / Askeri-Sivil Savunma Söylemi (Cyber Conflicts / Military-Civil Defense Discourse)",
                content: "Bu söylem, siber güvenliği ulusal güvenlik açısından ele alır, bilgi savaşı, siber savaş ve kritik ulusal altyapının korunmasına odaklanır."
              }
            ]
