@@ -1051,6 +1051,16 @@ function HomePage() {
                 </div>
               </div>
             </Link>
+            <Link to="/international-security/sinav-sorulari" className="course-card">
+              <div className="course-card-content">
+                <h2>Sınav Soruları</h2>
+                <p>Teorilerin detaylı soru-cevap formatında kapsamlı açıklamaları.</p>
+                <div className="course-card-footer">
+                  <span className="exam-count">5 Kategori</span>
+                  <span className="start-exam">Sınav Sorularına Gir →</span>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -1779,6 +1789,641 @@ function FlashcardsApp() {
   );
 }
 
+function InternationalSecurityExamQuestions() {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null);
+
+  const examQuestions = [
+    {
+      category: "REALISM",
+      questions: [
+        {
+          id: 1,
+          question: "Realist aile içindeki çoğu teori bazı temel varsayımları paylaşır. Bu temel özelliklerden beş tanesini listeleyin ve kısaca açıklayın.",
+          answers: [
+            {
+              title: "Anarşik uluslararası sistem",
+              content: "Devletleri koruyacak ve kuralları uygulayacak merkezi bir dünya hükümetinin veya otoritenin olmaması, onları kendi kendine yardım durumuna zorlar."
+            },
+            {
+              title: "Devlet merkezcilik",
+              content: "Devletlerin, uluslararası siyasetteki en önemli ve birincil aktörler olduğu, kurumların ve diğer aktörlerin ise ikincil olduğu görüşü."
+            },
+            {
+              title: "Güç",
+              content: "Hedeflere ulaşmak ve hayatta kalmayı sağlamak için gereken maddi kaynaklar (zenginlik, ordu, nüfus) olarak anlaşılan, uluslararası ortamın belirleyici özelliği."
+            },
+            {
+              title: "Tekil aktör varsayımı",
+              content: "Analiz için iç siyasi bölünmeleri göz ardı ederek, devletlerin tek ve tutarlı karar alma birimleri olarak ele alınabileceği varsayımı."
+            },
+            {
+              title: "Rasyonel aktör varsayımı",
+              content: "Devletlerin stratejik davrandığı ve başta güvenlik ve hayatta kalma olmak üzere ulusal çıkarlarını maksimize etmek için hesaplanmış kararlar aldığı inancı."
+            }
+          ]
+        },
+        {
+          id: 2,
+          question: "Hayatta kalmayı sağlamak için Neorealizm, devletlerin tehditlere karşı iki ana dengeleme stratejisi kullandığını savunur. Bunları adlandırın ve tanımlayın.",
+          answers: [
+            {
+              title: "İçsel dengeleme",
+              content: "Bir devletin potansiyel bir rakibe tek başına karşı koymak için kendi askeri yeteneklerini ve ekonomik gücünü artırması."
+            },
+            {
+              title: "Dışsal dengeleme",
+              content: "Bir devletin, daha güçlü ve tehditkar bir devlete karşı güçlerini ve yeteneklerini birleştirmek için diğer devletlerle ittifaklar kurması."
+            }
+          ]
+        },
+        {
+          id: 3,
+          question: "Yapısal Realizm içinde, devletlerin güvenliği nasıl araması gerektiği konusunda temel bir tartışma vardır. İki karşıt teoriyi adlandırın ve devletler için temel tavsiyelerini açıklayın.",
+          answers: [
+            {
+              title: "Saldırgan Realizm",
+              content: "Devletler, hayatta kalmayı sağlamanın en iyi yolu en güçlü devlet olmak olduğu için, her zaman güçlerini maksimize etmeye ve hegemonya kurmaya çalışmalıdır."
+            },
+            {
+              title: "Savunmacı Realizm",
+              content: "Devletler gücü maksimize etmek yerine uygun bir güç seviyesi aramalıdır, çünkü çok fazla güç elde etmek korku yaratarak diğer devletlerin kendilerine karşı dengeleme yapmasına neden olabilir."
+            }
+          ]
+        },
+        {
+          id: 4,
+          question: "Savunmacı Realizm, bir devletin kendi güvenliğini artırma çabasının ters tepebileceğini savunur. Bu durum, rakibin güvensizliğini artıran üç ana mekanizma aracılığıyla gerçekleşir. Bu mekanizmaları listeleyin ve açıklayın.",
+          answers: [
+            {
+              title: "Silahlanma yarışı",
+              content: "Bir devlet ordusunu güçlendirdiğinde, rakip de kendi ordusunu güçlendirerek karşılık verir ve bu durum her iki taraf için de güvenliği azaltabilecek bir rekabet döngüsüne yol açar."
+            },
+            {
+              title: "Riskli askeri politikalar",
+              content: "Güvensiz bir rakip, kriz ve kazaen savaş olasılığını artıran saldırgan askeri duruşlar veya ilk vuruş politikaları benimseyebilir."
+            },
+            {
+              title: "Siyasi ilişkilerin bozulması",
+              content: "Bir devletin askeri yığınağı, rakip tarafından düşmanca niyetlerin kanıtı olarak görülebilir ve bu da diplomasiyi zehirleyen bir güvensizlik sarmalına yol açar."
+            }
+          ]
+        },
+        {
+          id: 5,
+          question: "Anarşi nedeniyle Neorealistler, devletlerin işbirliğinden elde edilen kazanımların nasıl dağıtıldığı konusunda endişeli olduğunu savunur. Devletlerin dikkate aldığı iki 'kazanım' türünü belirleyerek ve tanımlayarak bunu açıklayın.",
+          answers: [
+            {
+              title: "Mutlak kazançlar",
+              content: "Bir devletin işbirliğinden elde ettiği toplam faydalar; diğer devletlerin elde ettiği faydalarla karşılaştırılmadan, bağımsız olarak ölçülür."
+            },
+            {
+              title: "Göreli kazançlar",
+              content: "Bir devletin, bir rakibin işbirliğinden daha fazla kazanarak gücünü artırması ve gelecekte daha büyük bir tehdit oluşturması endişesi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      category: "LIBERALISM",
+      questions: [
+        {
+          id: 1,
+          question: "Liberalizm, kendisini Realizmden ayıran birkaç belirgin özellikle karakterize edilir. Liberalist yaklaşımın dört temel özelliğini listeleyin ve kısaca açıklayın.",
+          answers: [
+            {
+              title: "Temelde iyimser",
+              content: "Uluslararası işbirliği ve barışçıl bir dünyanın mümkün olduğuna ve çatışmanın uluslararası politikanın doğasında olmadığını savunur."
+            },
+            {
+              title: "İçten dışa yaklaşım",
+              content: "Devletlerin iç özellikleri (örneğin, siyasi sistem, toplumsal tercihler) dış politika davranışlarının temel belirleyicisi olduğunu savunur."
+            },
+            {
+              title: "Çeşitli aktörlere odaklanma",
+              content: "Devletler önemli olmakla birlikte, Uluslararası Hükümetler Arası Kuruluşlar (IGO'lar), Sivil Toplum Kuruluşları (STK'lar) ve çok uluslu şirketler gibi devlet dışı aktörlerin önemli rolünü vurgular."
+            },
+            {
+              title: "Devletlerin tekil aktör olmaması",
+              content: "Devlet eylemlerini, çeşitli iç gruplar, partiler ve bürokrasiler arasındaki rekabet ve uzlaşmanın sonucu olarak görür, tek bir ses olarak değil."
+            }
+          ]
+        },
+        {
+          id: 2,
+          question: "Neoliberal Kurumsalcılık, uluslararası kurumların anarşi altında bile devletlerin işbirliği yapmasına nasıl yardımcı olduğunu açıklar. Bu kurumların yerine getirdiği dört temel işlevi listeleyin ve kısaca açıklayın.",
+          answers: [
+            {
+              title: "Güvenilir bilgi sağlama",
+              content: "Güvenilir bilgi üretir ve yayar, bu da devletler arasındaki belirsizliği ve güvensizliği azaltır."
+            },
+            {
+              title: "İşlem maliyetlerini azaltma",
+              content: "Devletlerin düzenli olarak müzakere yapmasını, anlaşmalar yapmasını ve etkileşim kurmasını kolaylaştırır ve daha az maliyetli hale getirir."
+            },
+            {
+              title: "Uyumu denetleme",
+              content: "Devletlerin taahhütlerine uyup uymadığını denetlemek için mekanizmalar sağlar, bu da hile yapmayı ve bedavacılığı engeller."
+            },
+            {
+              title: "Geleceğe gölge düşürme",
+              content: "İşbirliğini kurumsallaştırarak, devletlerin tekrarlayan etkileşimler beklemesini sağlar, iyi bir itibarın ve gelecekteki işbirliğinin değerini artırır."
+            }
+          ]
+        },
+        {
+          id: 3,
+          question: "Demokratik Barış Teorisi, demokrasilerin birbirleriyle savaşmadığını gözlemler. Bu demokratik barışa neden olduğuna inanılan dört faktörü veya normu listeleyin ve açıklayın.",
+          answers: [
+            {
+              title: "Meşruiyet, saygı ve güven",
+              content: "Demokrasiler, diğer demokratik hükümetleri meşru ve güvene değer görür, ortak bir siyasi-ahlaki temeli paylaşırlar."
+            },
+            {
+              title: "Hesap verebilirlik",
+              content: "Demokrasilerdeki liderler, savaşın maliyetlerini taşıyan ve genellikle savaşa karşı çıkan vatandaşlarına karşı hesap verebilir konumdadır, bu da çatışma başlatmayı zorlaştırır."
+            },
+            {
+              title: "Hükümete sınırlamalar",
+              content: "Demokratik sistemlerde, savaşa gitme kararını yavaşlatan ve diplomasiye zaman tanıyan denge ve denetleme mekanizmaları (anayasalar, kuvvetler ayrılığı) bulunur."
+            },
+            {
+              title: "Sorunları uzlaşıyla çözme",
+              content: "Demokrasiler, şiddet içermeyen çatışma çözümü ve uzlaşma normları üzerine kuruludur ve bu normları birbirleriyle olan uluslararası ilişkilerinde de uygulamaya eğilimlidirler."
+            }
+          ]
+        },
+        {
+          id: 4,
+          question: "Ticari Liberalizm, en eski liberal düşünce okullarından biridir. Bu yaklaşımın üç merkezi fikrini veya mekanizmasını adlandırın ve tanımlayın.",
+          answers: [
+            {
+              title: "Ekonomik Karşılıklı Bağımlılık",
+              content: "Ülkeler arasındaki kapsamlı ticaret ve yatırımın, savaşı refahları için çok maliyetli ve yıkıcı bir seçenek haline getirdiğini savunur."
+            },
+            {
+              title: "Serbest Teşebbüs / Piyasa Ekonomisi",
+              content: "Ekonomik faaliyetin devlet kontrolü yerine piyasa güçleri tarafından yönlendirildiğinde zenginliğin en verimli şekilde üretildiğini varsayar."
+            },
+            {
+              title: "Küreselleşme",
+              content: "Malların, sermayenin ve fikirlerin sınırlar arası artan akışının ulusal ayrımları aşındırdığına ve tek bir küresel topluluk hissini teşvik ettiğine inanır."
+            }
+          ]
+        },
+        {
+          id: 5,
+          question: "İyimserliğine rağmen Liberalizm birkaç büyük eleştiriyle karşı karşıyadır. Liberalist uluslararası ilişkiler yaklaşımına yöneltilen üç önemli eleştiriyi listeleyin ve açıklayın.",
+          answers: [
+            {
+              title: "Batı emperyalizmi",
+              content: "Liberal değerlerin (demokrasi, piyasa ekonomileri) teşvikinin, genellikle Batı çıkarlarını ilerletmek ve Batı egemenliğini sürdürmek için bir kılıf olduğunu savunur."
+            },
+            {
+              title: "İç tutarsızlıklar",
+              content: "Liberalizmin, örneğin istikrar için otokrasilerle ilişki kurmak veya insan hakları ihlalleri nedeniyle onları izole etmek gibi çelişkili tavsiyeler sunduğunu belirtir."
+            },
+            {
+              title: "Teorik zayıflık",
+              content: "Demokratik barış gibi bazı temel liberal bulguların, gerçek bir nedensel ilişkiden ziyade yanıltıcı bir korelasyona dayanabileceğini iddia eder."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      category: "HISTORICAL MATERIALISM",
+      questions: [
+        {
+          id: 1,
+          question: "Notlarda Tarihsel Materyalizmin üç boyutu olduğu belirtilmektedir. Her birini adlandırın ve kısaca açıklayın.",
+          answers: [
+            {
+              title: "Sosyal bilimsel",
+              content: "Üretim biçimlerinin (kapitalizm gibi) sınıf yapılarını nasıl yarattığını ve bu sınıflar arasındaki çatışmanın tarihsel değişimi nasıl yönlendirdiğini analiz eder."
+            },
+            {
+              title: "Felsefi",
+              content: "Üretken sistemlerin ve güç eşitsizliklerinin baskın fikirleri ve söylemleri nasıl şekillendirdiğini inceleyerek, sosyal gerçekliği anlamak için sistematik bir yol sunar."
+            },
+            {
+              title: "Politik",
+              content: "Kapitalizmin içsel sömürü ve yabancılaşmasını eleştiren siyasi hareketlerle (küresel adalet ve küreselleşme karşıtlığı gibi) ilişkilidir."
+            }
+          ]
+        },
+        {
+          id: 2,
+          question: "HM'nin kapitalizm eleştirisi, işçinin deneyimini tanımlayan iki kavrama dayanır. \"Sömürü\" ve \"Yabancılaşma\" kavramlarını tanımlayın.",
+          answers: [
+            {
+              title: "Sömürü",
+              content: "İşçilere, emeklerinin yarattığı gerçek değerden daha düşük bir ücret ödenen ve kapitalistin geri kalanını kâr olarak (artı değer) kendine mal ettiği bir süreç."
+            },
+            {
+              title: "Yabancılaşma",
+              content: "İşçilerin kendi emekleri ve yarattıkları ürünler üzerindeki kontrol eksikliği nedeniyle yaşadıkları güçsüzlük ve ayrılık hissi."
+            }
+          ]
+        },
+        {
+          id: 3,
+          question: "Notlar kapitalizmi iki çelişkili yüze sahip olarak tanımlar. Onun \"ilerici\" ve \"gerici\" yönlerini açıklayın.",
+          answers: [
+            {
+              title: "İlerici Yön",
+              content: "Kapitalizm, insan yaratıcı kapasitelerini harekete geçirme, üretici güçleri geliştirme ve muazzam zenginlik ve teknoloji üretme konusundaki benzersiz yeteneğiyle ilerici bir nitelik taşır."
+            },
+            {
+              title: "Gerici Yön",
+              content: "Kapitalizm, sömürü ve yabancılaşma süreçleri aracılığıyla aynı anda büyük eşitsizlik, yoksulluk ve işçi sınıfı için güvensizlik yarattığı için gericidir."
+            }
+          ]
+        },
+        {
+          id: 4,
+          question: "Barış Çalışmaları ve Tarihsel Materyalizm, dolaylı zararı anlamak için ortak bir kavramı paylaşır. \"Yapısal Şiddet\"i tanımlayın ve HM'nin bunu kapitalizme nasıl bağladığını açıklayın.",
+          answers: [
+            {
+              title: "Yapısal Şiddet",
+              content: "Doğrudan güç kullanımıyla değil, bir toplumun yapısının neden olduğu (örneğin yoksulluk veya önlenebilir hastalıklardan kaynaklanan ölümler) önlenebilir acı ve ölüm."
+            },
+            {
+              title: "HM'nin Kapitalizme Bağlantısı",
+              content: "Tarihsel Materyalizm, kapitalizmin neden içsel olarak yapısal şiddet barındırdığına dair bir teori sunar, çünkü sistemin sömürü yoluyla kâr yaratma ihtiyacı kaçınılmaz olarak eşitsizlik ve yoksunluk üretir."
+            }
+          ]
+        },
+        {
+          id: 5,
+          question: "HM, Realizmde anlaşıldığı şekliyle \"ulusal çıkara\" ve Liberalizmde anlaşıldığı şekliyle \"özgürlük\" kavramına özel bir eleştiri getirir. Bu iki eleştiriyi açıklayın.",
+          answers: [
+            {
+              title: "Realizm'in \"Ulusal Çıkarı\"na Eleştiri",
+              content: "Tarihsel Materyalizm, \"ulusal çıkarın\" tarafsız veya zamansız bir kavram olmadığını, aksine bir devlet içindeki egemen kapitalist sınıfın belirli sınıf çıkarlarını yansıttığını savunur."
+            },
+            {
+              title: "Liberalizm'in \"Özgürlük\" Kavramına Eleştiri",
+              content: "Tarihsel Materyalizm, liberal \"çalışma özgürlüğünün\", üretim araçlarına sahip olmayan işçilerin hayatta kalmak için emeklerini satmaya zorlandıkları yapısal \"özgürsüzlüğü\" gizlediğini savunur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      category: "PEACE STUDIES",
+      questions: [
+        {
+          id: 1,
+          question: "Notlarda modern barış çalışmalarını tanımlayan yedi özellik listelenmektedir. Bu özelliklerden dört tanesini adlandırın ve kısaca açıklayın.",
+          answers: [
+            {
+              title: "Temel Nedenler",
+              content: "Doğrudan şiddetin köken nedenlerini ele alma ve yapısal eşitsizliklerin üstesinden gelme yollarını keşfetme kaygısı."
+            },
+            {
+              title: "Disiplinlerarası Yaklaşımlar",
+              content: "Şiddetli çatışmayı anlamak için birçok akademik disiplinden çok yönlü bir yanıtın esas olduğunun kabulü."
+            },
+            {
+              title: "Şiddet İçermeyen Dönüşümler",
+              content: "Anlaşmazlıkları çözmek ve potansiyel olarak şiddetli durumların şiddet içermeyen dönüşümünü başarmak için barışçıl yollar arayışı."
+            },
+            {
+              title: "Çok Düzeyli Analiz",
+              content: "\"İç\" ve \"dış\" ikilemini aşmaya çalışarak, çatışmanın bireysel, grup, devlet ve devletlerarası düzeylerde analizini benimseme."
+            }
+          ]
+        },
+        {
+          id: 2,
+          question: "Barış çalışmalarının gündemi 1970'lerde üç büyük yeni uluslararası meseleyi içerecek şekilde genişledi. Bu üç meseleyi listeleyin ve açıklayın.",
+          answers: [
+            {
+              title: "Ekonomik Eşitsizlikler",
+              content: "Eski sömürgelerin, siyasi bağımsızlık kazanmalarına rağmen ekonomik bağımsızlıklarını kazanamadıkları ve küresel eşitsizliğin büyük bir sorun olduğu farkındalığı."
+            },
+            {
+              title: "Küresel Çevre Durumu",
+              content: "Küresel ekosistemin artan insan etkileriyle baş edemeyeceği ve dolayısıyla ekonomik büyümeye sınırlar koyduğu yönündeki yeni kaygı."
+            },
+            {
+              title: "Adalet Arayışı ve Şiddetin Haklılığı",
+              content: "Vietnam Savaşı ve yapısal şiddet kavramının tetiklediği, adaletin peşinde şiddetin bazen haklı olup olamayacağı üzerine bir tartışma."
+            }
+          ]
+        },
+        {
+          id: 3,
+          question: "Johan Galtung, barış tanımını genişleten kilit bir kavram ortaya atmıştır. \"Yapısal şiddet\"i tanımlayın ve barış çalışmaları için temel çıkarımını açıklayın.",
+          answers: [
+            {
+              title: "Yapısal Şiddet",
+              content: "Doğrudan şiddetten değil, insanların temel ihtiyaçlarını karşılamasını engelleyen adaletsiz ekonomik ve sosyal yapılardan kaynaklanan zarar veya ölüm."
+            },
+            {
+              title: "Çıkarım",
+              content: "Gerçek bir barış halinin sadece savaşın olmaması (negatif barış) değil, aynı zamanda yapısal şiddet ve sömürünün de olmaması (pozitif barış) gerektiği anlamına geliyordu."
+            }
+          ]
+        },
+        {
+          id: 4,
+          question: "Notlar, geleceği şekillendirmesi muhtemel olan üç ana çatışma eğilimini tanımlamaktadır. Bu üç eğilimi listeleyin ve kısaca tanımlayın.",
+          answers: [
+            {
+              title: "Artan insan göçü",
+              content: "Ekonomik, sosyal ve çevresel baskılar nedeniyle göç olasılığının artması, potansiyel olarak alıcı bölgelerde kültürel çatışmalara yol açması."
+            },
+            {
+              title: "Çevresel ve kaynak çatışmalarının tırmanması",
+              content: "Gıda, tatlı su ve fosil yakıtlar gibi kaynaklar üzerindeki çatışmaların yerel, bölgesel ve küresel düzeylerde artma olasılığı."
+            },
+            {
+              title: "Güçsüzlerin şiddetli tepkileri",
+              content: "Hem devletler içinde hem de ulusötesi hareketler aracılığıyla marjinalleşmiş nüfuslardan rekabetçi ve şiddetli tepkiler beklenmesi."
+            }
+          ]
+        },
+        {
+          id: 5,
+          question: "Gelecekteki küresel zorluklara yanıt olarak, notlar iki ana zıt seçeneği veya yolu sunmaktadır. Bu iki potansiyel yanıtı belirleyin ve açıklayın.",
+          answers: [
+            {
+              title: "Sürdürülebilir Kalkınma İçin Tutarlı İşbirliği",
+              content: "Borç hafifletme, ticaret reformu ve kalkınma yardımı ile çatışma önleme ve çözüm programlarını içeren bir yol."
+            },
+            {
+              title: "Statükoyu Korumak / \"Liddism\"",
+              content: "İnsanlığın zengin kesimlerinin, parçalanmış bir dünyayı \"sınırlandırmak\" için gerektiğinde askeri güçle desteklenen ticaret ve finansal önlemler aracılığıyla ayrıcalıklı konumlarını sürdürdüğü bir yol."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      category: "CRITICAL SECURITY STUDIES & POSTCOLONIALISM",
+      questions: [
+        {
+          id: 1,
+          question: "1994 York Üniversitesi konferansı, geleneksel güvenlik çalışmalarına üç ana cepheden meydan okuyarak CSS için bir başlangıç gündemi belirlemiştir. Bu üç meydan okumayı listeleyin ve açıklayın.",
+          answers: [
+            {
+              title: "Referans nesnesini sorgulamak",
+              content: "Geleneksel olarak güvenliği sağlanacak tek nesne olarak devlete odaklanmayı sorgular, bunun yerine bireyleri veya toplulukları önerir."
+            },
+            {
+              title: "Güvenliği askeri güvenlikten fazlası olarak görmek",
+              content: "Güvenlik kavramını askeri tehditlerin ötesine, ekonomik, çevresel ve toplumsal güvensizlikleri de içerecek şekilde genişletir."
+            },
+            {
+              title: "Güvenliğin çalışma şeklini değiştirmek",
+              content: "Geleneksel yaklaşımların sözde nesnelliğini reddeder, bilginin arkasındaki politikayı tanıyan post-pozitivist bir bilim anlayışını savunur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      category: "CONSTRUCTIVISM",
+      questions: [
+        {
+          id: 1,
+          question: "Notlarda inşacılığın üç temel ontolojik pozisyona dayandığı belirtilmektedir. Bu üç pozisyonu adlandırın ve kısaca açıklayın.",
+          answers: [
+            {
+              title: "Normatif veya düşünsel yapılar anahtardır",
+              content: "Paylaşılan fikirlerin, inançların ve normların dünya siyasetini şekillendirmede maddi güçler kadar, hatta onlardan daha önemli olduğunu savunur."
+            },
+            {
+              title: "Kimlikler önemlidir",
+              content: "Bir aktörün kimliği çok önemlidir çünkü bu, onların çıkarlarını ve dolayısıyla uluslararası sistemdeki eylemlerini belirler."
+            },
+            {
+              title: "Özneler ve yapılar karşılıklı olarak oluşur",
+              content: "Devletler (özneler) ve uluslararası sistem (yapı) birbirinden ayrı değildir; etkileşim yoluyla birbirlerini şekillendirir ve yaratırlar."
+            }
+          ]
+        },
+        {
+          id: 2,
+          question: "Alexander Wendt \"anarşi, devletlerin ondan ne yaptığıdır\" der ve üç farklı anarşi kültürü önerir. Bu üç kültürü listeleyin ve tanımlayın.",
+          answers: [
+            {
+              title: "Hobbesçu",
+              content: "Devletlerin birbirini düşman olarak gördüğü, güvenliğin sıfır toplamlı bir oyun olduğu ve hayatta kalmanın saf askeri güce bağlı olduğu bir kültür."
+            },
+            {
+              title: "Lockeçu",
+              content: "Devletlerin birbirini rakip olarak gördüğü; rekabet ettikleri ve şiddet kullandıkları, ancak birbirlerinin egemenliğini kabul ederek bazı sınırlamalarla hareket ettikleri bir kültür."
+            },
+            {
+              title: "Kantçı",
+              content: "Devletlerin birbirini dost olarak gördüğü, anlaşmazlıkları barışçıl bir şekilde çözdüğü ve kolektif güvenlik için işbirliği yaptığı bir kültür."
+            }
+          ]
+        },
+        {
+          id: 3,
+          question: "İnşacılık, aktör davranışını şekillendirmede normların önemini vurgular. Notlarda tartışılan iki ana norm türünü belirleyin ve tanımlayın.",
+          answers: [
+            {
+              title: "Kurucu",
+              content: "Bir aktörün kimliğini tanımlayan, ne olduklarını ve çıkarlarının ne olacağını şekillendiren normlar (örneğin, devlet egemenliği normu)."
+            },
+            {
+              title: "Düzenleyici",
+              content: "Zaten var olan bir kimlik için davranışı belirleyen veya yasaklayan, aktörlerin ne \"yapması gerektiğini\" veya ne \"yapmaması gerektiğini\" belirleyen normlar (örneğin, nükleer tabu)."
+            }
+          ]
+        },
+        {
+          id: 4,
+          question: "İnşacılık düşünce okulu, metodolojilerine göre genel olarak iki ana kampa ayrılır. Bu iki kampı adlandırın ve temel farklarını açıklayın.",
+          answers: [
+            {
+              title: "Konvansiyonel İnşacılık",
+              content: "Devleti merkezi bir aktör olarak kabul etmeye eğilimlidir ve pozitivist, bilimsel yöntemler kullanarak, rasyonel teorilerle bir \"köprü\" kurmaya çalışır."
+            },
+            {
+              title: "Eleştirel İnşacılık",
+              content: "Pozitivizmi reddeder ve gerçeği inşa etmede dilin ve söylemin gücüne odaklanır, varsayılan kimlikleri ve güç ilişkilerini yapıbozuma uğratmayı ve sorgulamayı amaçlar."
+            }
+          ]
+        },
+        {
+          id: 5,
+          question: "Wendt, bir anarşi kültüründen diğerine geçişin dört \"ana değişken\" tarafından yönlendirildiğini öne sürer. Bu dört değişkeni listeleyin ve kısaca tanımlayın.",
+          answers: [
+            {
+              title: "Karşılıklı Bağımlılık",
+              content: "Devletlerin birbirine karşılıklı olarak bağımlı olma derecesi, çatışma maliyetlerini artırabilir."
+            },
+            {
+              title: "Ortak Kader",
+              content: "Devletlerin ancak kolektif eylemle çözülebilecek ortak tehditlerle (çevresel felaket gibi) karşı karşıya olduğunu fark etmesi."
+            },
+            {
+              title: "Homojenizasyon",
+              content: "Devletlerin siyasi ve sosyal yapılarında daha benzer hale gelme süreci, paylaşılan kimlik ve güveni teşvik edebilir."
+            },
+            {
+              title: "Kendi Kendine Kısıtlama",
+              content: "Güçlü bir devletin kendi gücünü kasıtlı olarak sınırlaması eylemi, güven inşa edebilir ve diğerlerinden karşılıklı kısıtlamayı teşvik edebilir."
+            }
+                     ]
+         }
+       ]
+     },
+     {
+       category: "HUMAN SECURITY & ENVIRONMENTAL SECURITY",
+       questions: [
+         {
+           id: 1,
+           question: "1994 UNDP İnsani Gelişme Raporu, genellikle iki temel ilke ile özetlenen insan güvenliği kavramını ortaya atmıştır. Bu iki \"özgürlüğü\" adlandırın ve tanımlayın.",
+           answers: [
+             {
+               title: "Yoksunluktan özgürlük",
+               content: "Yaşam kalitesini düşüren açlık, hastalık ve baskı gibi kronik tehditlerden güvenlik."
+             },
+             {
+               title: "Korkudan özgürlük",
+               content: "Şiddet veya çatışma gibi günlük yaşamın düzenindeki ani ve acı verici kesintilerden korunma."
+             }
+           ]
+         }
+       ]
+     },
+     {
+       category: "TERRORISM & SECURITY CHALLENGES",
+       questions: [
+         {
+           id: 1,
+           question: "Terörizmin işlevsel bir tanımı altı temel unsur içerir. Bu unsurlardan dördünü adlandırın ve tanımlayın.",
+           answers: [
+             {
+               title: "Şiddet kullanımı veya tehdidi",
+               content: "Taktik, temelde fiziksel zarar vermeyi veya bunun korkusunu yaratmayı içerir."
+             },
+             {
+               title: "Organize bir grup tarafından gerçekleştirilir",
+               content: "Eylem rastgele veya tek bir kişi tarafından değil, belirli bir yapıya sahip bir grup tarafından işlenir."
+             },
+             {
+               title: "Siyasi hedeflere ulaşma amacı",
+               content: "Şiddet kişisel maddi kazanç için değil, siyasi bir hedefi başarmak için tasarlanmıştır."
+             },
+             {
+               title: "Hedef bir kitleye yöneliktir",
+               content: "Şiddet, doğrudan kurbanların ötesinde daha geniş bir kitleye korku yaratmayı ve mesaj göndermeyi amaçlar."
+             }
+           ]
+         }
+       ]
+     }
+   ];
+
+  if (selectedCategory && selectedQuestion !== null) {
+    const category = examQuestions.find(cat => cat.category === selectedCategory);
+    const question = category?.questions[selectedQuestion];
+    
+    if (question) {
+      return (
+        <div className="exam-question-detail">
+          <button 
+            onClick={() => setSelectedQuestion(null)}
+            className="back-button"
+          >
+            ← {selectedCategory} Sorularına Dön
+          </button>
+          
+          <div className="question-container">
+            <h3>Soru {question.id}</h3>
+            <p className="question-text">{question.question}</p>
+            
+            <div className="answers-list">
+              {question.answers.map((answer, index) => (
+                <div key={index} className="answer-item">
+                  <h4>{answer.title}</h4>
+                  <p>{answer.content}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <Link to="/" className="home-button">Ana Sayfaya Dön</Link>
+        </div>
+      );
+    }
+  }
+
+  if (selectedCategory) {
+    const category = examQuestions.find(cat => cat.category === selectedCategory);
+    
+    return (
+      <div className="exam-category-detail">
+        <button 
+          onClick={() => setSelectedCategory(null)}
+          className="back-button"
+        >
+          ← Tüm Kategorilere Dön
+        </button>
+        
+        <h2>{selectedCategory} - Sınav Soruları</h2>
+        <p className="section-description">Aşkım, bu bölümde {selectedCategory.toLowerCase()} konusundaki detaylı sınav sorularını bulabilirsin 💝</p>
+        
+        <div className="questions-grid">
+          {category?.questions.map((question, index) => (
+            <div 
+              key={question.id} 
+              className="question-card"
+              onClick={() => setSelectedQuestion(index)}
+            >
+              <h3>Soru {question.id}</h3>
+              <p>{question.question.substring(0, 120)}...</p>
+              <div className="question-meta">
+                <span className="answer-count">{question.answers.length} Cevap</span>
+                <span className="view-question">Görüntüle →</span>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <Link to="/" className="home-button">Ana Sayfaya Dön</Link>
+      </div>
+    );
+  }
+
+  return (
+    <div className="exam-questions-container">
+      <h2>International Security - Sınav Soruları</h2>
+      <p className="section-description">
+        Canım, burada International Security dersinin kapsamlı sınav sorularını kategori kategori bulabilirsin. 
+        Her kategori, teorilerin derinlemesine anlaşılması için detaylı sorular ve cevaplar içeriyor 📚💝
+      </p>
+      
+      <div className="categories-grid">
+        {examQuestions.map((category) => (
+          <div 
+            key={category.category} 
+            className="category-card"
+            onClick={() => setSelectedCategory(category.category)}
+          >
+            <h3>{category.category}</h3>
+            <div className="category-meta">
+              <span className="question-count">{category.questions.length} Soru</span>
+              <span className="view-category">Kategoriye Gir →</span>
+            </div>
+          </div>
+        ))}
+      </div>
+      
+      <Link to="/" className="home-button">Ana Sayfaya Dön</Link>
+    </div>
+  );
+}
+
 function App() {
   return (
     <Router basename="/halesinav">
@@ -1791,6 +2436,7 @@ function App() {
           <Route path="/international-security/notlar" element={<InternationalSecurityNotes />} />
           <Route path="/international-security/sesli-notlar" element={<InternationalSecurityLectureNotes />} />
           <Route path="/international-security/flashcards" element={<FlashcardsApp />} />
+          <Route path="/international-security/sinav-sorulari" element={<InternationalSecurityExamQuestions />} />
         </Routes>
       </div>
     </Router>
