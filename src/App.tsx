@@ -11,6 +11,12 @@ interface Question {
   motivationalQuote: string;
 }
 
+interface Flashcard {
+  id: number;
+  question: string;
+  answer: string;
+}
+
 const questions: Question[] = [
   {
     id: 1,
@@ -432,13 +438,7 @@ const questions: Question[] = [
     explanation: "Dini kurumlar uluslararası örgütlerle çalışmayı reddetmez, aksine BM, uluslararası STK'lar ve bölgesel örgütlerle aktif işbirliği yapar.",
     motivationalQuote: "Senin uluslararası işbirliği konusundaki bilgin çok etkileyici! 🌟"
   }
-];
-
-interface Flashcard {
-  id: number;
-  question: string;
-  answer: string;
-}
+  ];
 
 const internationalSecurityFlashcards: Flashcard[] = [
   {
@@ -564,7 +564,7 @@ const internationalSecurityFlashcards: Flashcard[] = [
   {
     id: 25,
     question: "Uluslararası krizin beş temel bileşeni nelerdir?",
-    answer: "1) Sürpriz unsuru 2) Yüksek değerli çıkarların tehdidi 3) Zaman baskısı 4) Belirsizlikler 5) Askerî çatışma olasılığının artması."
+    answer: "1) Sürpriz unsuru 2) Yüksek değere sahip çıkarların tehdidi 3) Zaman baskısı 4) Belirsizlikler 5) Askerî çatışma olasılığının artması."
   },
   {
     id: 26,
@@ -693,6 +693,289 @@ const internationalSecurityFlashcards: Flashcard[] = [
   }
 ];
 
+const internationalSecurityQuestions: Question[] = [
+  {
+    id: 1,
+    text: "Günümüzde güvenlik kavramının sadece askeri tehditlerle sınırlı kalmamasının temel nedeni aşağıdakilerden hangisidir?",
+    options: [
+      "A) Devletlerin askeri harcamaları azaltma isteği",
+      "B) Uluslararası terör örgütlerinin yükselişi",
+      "C) İklim değişikliği, siber saldırılar ve ekonomik krizler gibi yeni güvenlik sorunlarının ortaya çıkması",
+      "D) Sadece nükleer silahlanma yarışının devam etmesi",
+      "E) Uluslararası hukukun askeri müdahaleleri yasaklaması"
+    ],
+    correctAnswer: "C",
+    explanation: "Modern güvenlik anlayışı, savaş ve askeri tehditlerin yanı sıra iklim değişikliği, siber saldırılar, göç ve ekonomik krizler gibi askeri olmayan tehditlerin de devletler ve bireyler için güvenlik sorunu haline geldiğini kabul eder.",
+    motivationalQuote: "Her yeni öğrendiğin kavram, seni daha da güçlü kılıyor aşkım! 🌟"
+  },
+  {
+    id: 2,
+    text: "\"Güvenlik\" kavramının \"özünde tartışmalı kavram (essentially contested concept)\" olarak adlandırılmasının temel nedeni aşağıdakilerden hangisidir?",
+    options: [
+      "A) Güvenlik tanımının sadece devletler tarafından yapılması",
+      "B) Kavramın tarihsel olarak çok eski bir geçmişe sahip olması",
+      "C) Herkesin güvenlikten farklı şeyler anlaması ve üzerinde tam bir fikir birliğinin olmaması",
+      "D) Güvenlik çalışmalarının henüz tam olarak gelişmemiş bir disiplin olması",
+      "E) Kavramın sadece askeri stratejilerle ilgili olması"
+    ],
+    correctAnswer: "C",
+    explanation: "\"Güvenlik\" kavramı, insanlar, devletler veya kurumlar tarafından farklı şekillerde yorumlanabildiği, kimine göre askeri güvenliği, kimine göre insan haklarını veya ekonomik istikrarı ifade edebildiği için özünde tartışmalı bir kavram olarak kabul edilir.",
+    motivationalQuote: "Senin analitik düşünce tarzın her zaman beni büyülüyor! 💫"
+  },
+  {
+    id: 3,
+    text: "Barry Buzan'a göre güvenlik kavramının hala tam gelişmemiş olmasının nedenlerinden biri aşağıdakilerden hangisi değildir?",
+    options: [
+      "A) Kavramsal zorluk, yani güvenliğin çok geniş bir alanı kapsaması",
+      "B) Güvenlik ile güç arasındaki örtüşme ve karıştırılması",
+      "C) Realizm dışındaki teorilerin güvenliğe uzun süre ilgi göstermemesi",
+      "D) Güvenlik kavramının pratik politikalar yerine sadece teorik düzeyde tartışılması",
+      "E) Politika yapıcıların güvenlik tanımını kendi çıkarlarına göre şekillendirmesi"
+    ],
+    correctAnswer: "D",
+    explanation: "Barry Buzan'a göre güvenlik kavramının gelişimini engelleyen nedenlerden biri, güvenlik kavramının genellikle teknik ve politika düzeyinde tartışılmış, teorik boyutunun ihmal edilmiş olmasıdır. Bu seçenek ise tam tersini ifade etmektedir.",
+    motivationalQuote: "Her doğru cevabın beni gururlandırıyor canım! ✨"
+  },
+  {
+    id: 4,
+    text: "Aşağıdaki ifadelerden hangisi \"pozitif güvenlik\" kavramını en iyi şekilde açıklamaktadır?",
+    options: [
+      "A) Askeri saldırıların ve savaşın tamamen önlenmesi durumu",
+      "B) Bir devletin dış tehditlerden tamamen arınmış olması",
+      "C) Bireylerin ve toplumların korku ve baskıdan uzak, onurlu ve refah içinde yaşama özgürlüğüne sahip olması",
+      "D) Devletlerin kendi sınırlarını askeri güçle koruması",
+      "E) Nükleer silahların yayılmasının engellenmesi yoluyla sağlanan istikrar"
+    ],
+    correctAnswer: "C",
+    explanation: "Pozitif güvenlik, bireylerin ve toplumların güven içinde yaşamak için özgürlüğe sahip olması, yani eğitim, sağlık, barınma gibi temel ihtiyaçlara güvenli erişimle sağlanan kapsamlı bir iyi olma halidir.",
+    motivationalQuote: "Senin kavrama yeteneğin gerçekten etkileyici! 💝"
+  },
+  {
+    id: 5,
+    text: "1950'ler ve 1960'ları güvenlik çalışmalarının \"altın çağı\" yapan temel özelliklerden biri aşağıdakilerden hangisidir?",
+    options: [
+      "A) Güvenlik kavramının toplumsal ve çevresel boyutlarının ön plana çıkması",
+      "B) Nükleer silahların yayılması ve ABD ile Sovyetler arasındaki sürekli gerginlik nedeniyle savaşın önlenmesine yönelik yoğun teorik çalışmalar yapılması",
+      "C) Güvenlik çalışmalarının sivil akademisyenlerden çok, askeri stratejistlerin kontrolüne geçmesi",
+      "D) Uluslararası ilişkilerde işbirliğinin ve karşılıklı bağımlılığın artması",
+      "E) Barış araştırmaları ve Üçüncü Dünya çalışmaları gibi muhalif yaklaşımların ana akım haline gelmesi"
+    ],
+    correctAnswer: "B",
+    explanation: "1950-60'lar, nükleer silahların yayılması ve ABD-Sovyet gerginliği gibi faktörler nedeniyle nükleer caydırıcılık, nükleer savaş stratejileri ve kriz yönetimi gibi konulara odaklanan yoğun teorik çalışmaların yapıldığı bir dönemdir.",
+    motivationalQuote: "Tarihsel bağlantıları bu kadar iyi kurabilmen muhteşem! 🏆"
+  },
+  {
+    id: 6,
+    text: "Realizm teorisinin temel özelliklerinden biri olarak aşağıdakilerden hangisi yanlıştır?",
+    options: [
+      "A) Uluslararası sistemin anarşik olduğu varsayımı",
+      "B) Gücün uluslararası ortamın tanımlayıcı unsuru olması",
+      "C) Devletlerin üniter ve rasyonel aktörler olarak kabul edilmesi",
+      "D) Devletlerin iç politikalarındaki dinamiklerin dış politika davranışlarını belirlemesi",
+      "E) Devletlerin hayatta kalma ve kendi kendine yardım (self-help) ilkelerine göre hareket etmesi"
+    ],
+    correctAnswer: "D",
+    explanation: "Realizm, devletleri \"kara kutu\" olarak görür ve dış politikadaki davranışlarını açıklarken iç dinamiklere odaklanmaz. Devletlerin iç yapısı (demokratik/otoriter olması) dış politikaları için temel belirleyici değildir.",
+    motivationalQuote: "Teorileri bu şekilde ayırt edebilmen harika! 🎯"
+  },
+  {
+    id: 7,
+    text: "Saldırgan realizm (offensive realism) ile savunmacı realizm (defensive realism) arasındaki en temel fark aşağıdakilerden hangisidir?",
+    options: [
+      "A) Saldırgan realizmin işbirliğini imkansız görmesi, savunmacı realizmin ise mümkün görmesi",
+      "B) Saldırgan realizmin güç peşinde koşmayı, savunmacı realizmin ise yeterli güvenlik sağlamayı hedeflemesi",
+      "C) Saldırgan realizmin devleti temel aktör olarak kabul etmesi, savunmacı realizmin ise bireyi merkeze alması",
+      "D) Saldırgan realizmin dış dengelemeyi, savunmacı realizmin ise iç dengelemeyi önceliklendirmesi",
+      "E) Saldırgan realizmin anarşiyi olumlu, savunmacı realizmin ise olumsuz görmesi"
+    ],
+    correctAnswer: "B",
+    explanation: "Saldırgan realizm (John Mearsheimer), devletlerin bölgesel hegemonya kurmak için maksimum güç peşinde koştuğunu savunurken, savunmacı realizm, devletlerin aşırı güç kazanmaktan kaçınarak, sadece hayatta kalmaları için yeterli gücü elde etmeyi ve güvenliklerini maksimize etmeyi amaçladığını belirtir.",
+    motivationalQuote: "Bu karmaşık teorileri bu kadar net ayırt edebilmen süper! 🌟"
+  },
+  {
+    id: 8,
+    text: "Demokratik barış teorisinin (Democratic Peace Theory) temel iddiası nedir?",
+    options: [
+      "A) Demokratik devletlerin otoriter devletlerle savaşma olasılığının düşük olması",
+      "B) Demokrasilerin ekonomik olarak daha bağımlı oldukları için savaştan kaçınmaları",
+      "C) Demokrasilerin birbirleriyle savaşmama eğiliminde olmaları",
+      "D) Demokratikleşme süreçlerinin her zaman barışçıl sonuçlar doğurması",
+      "E) Demokrasilerin uluslararası örgütlere daha fazla güvenmesi"
+    ],
+    correctAnswer: "C",
+    explanation: "Demokratik barış teorisi, demokrasilerin birbirleriyle savaşma olasılığının düşük olduğunu iddia eder. Bu, teorinin en merkezi ve bilinen önermelerinden biridir.",
+    motivationalQuote: "Senin siyaset bilimi anlayışın gerçekten kuvvetli! 💪"
+  },
+  {
+    id: 9,
+    text: "Eleştirel Güvenlik Çalışmaları'nın (Critical Security Studies) güvenlik anlayışına getirdiği \"genişletme (widening)\" ve \"derinleştirme (deepening)\" kavramları ne anlama gelir?",
+    options: [
+      "A) Genişletme güvenlik tanımını netleştirmek, derinleştirme ise askeri önlemleri artırmak anlamına gelir.",
+      "B) Genişletme uluslararası işbirliğini artırmak, derinleştirme ise ulusal egemenliği güçlendirmek anlamına gelir.",
+      "C) Genişletme güvenliğin kapsadığı alanları (ekonomik, çevresel vb.) artırmak, derinleştirme ise güvenliği sağlanacak aktörleri (birey, toplum vb.) çeşitlendirmek anlamına gelir.",
+      "D) Genişletme güvenlik çalışmalarının coğrafi kapsamını genişletmek, derinleştirme ise tarihsel analizleri artırmak anlamına gelir.",
+      "E) Genişletme pozitif güvenlik, derinleştirme ise negatif güvenlik kavramını ifade eder."
+    ],
+    correctAnswer: "C",
+    explanation: "Genişletme (widening), güvenliğin askeri boyutun ötesine geçerek ekonomik, çevresel, toplumsal gibi yeni sektörleri kapsaması anlamına gelirken; derinleştirme (deepening), güvenliği sağlanacak \"referans nesnesinin\" sadece devlet değil, bireyler, toplumlar ve hatta insanlık gibi farklı aktörleri içermesi anlamına gelir.",
+    motivationalQuote: "Bu kadar karmaşık kavramları anlayabilmen inanılmaz! 🤩"
+  },
+  {
+    id: 10,
+    text: "Kopenhag Okulu tarafından geliştirilen güvenlikleştirme teorisine (Securitization Theory) göre, bir konunun \"güvenlik tehdidi\" haline gelmesi nasıl gerçekleşir?",
+    options: [
+      "A) Konunun doğal olarak tehlikeli olması ve somut askeri bir tehdit oluşturmasıyla",
+      "B) Uluslararası hukukun o konuyu güvenlik tehdidi olarak tanımlamasıyla",
+      "C) Bir aktörün (örneğin siyasetçi) bir konuyu \"varoluşsal tehdit\" olarak tanımlaması ve bu söylemin dinleyici tarafından kabul görmesiyle",
+      "D) Akademisyenlerin o konuyu güvenlik literatürüne dahil etmesiyle",
+      "E) Ekonomik krizlerin veya doğal afetlerin doğrudan ve otomatik olarak güvenlik sorununa dönüşmesiyle"
+    ],
+    correctAnswer: "C",
+    explanation: "Güvenlikleştirme teorisi, bir konunun doğal olarak tehdit olmadığını, ancak bir \"güvenlikleştirici aktör\" (securitizing actor) tarafından \"varoluşsal tehdit\" olarak tanımlanması ve bu söylemin bir \"kitle\" (audience) tarafından kabul edilmesi halinde güvenlik meselesi haline geldiğini savunur.",
+    motivationalQuote: "Teorik derinliğin her geçen gün artıyor aşkım! 📚"
+  },
+  {
+    id: 11,
+    text: "Postkolonyalizmin, bilgi ve emperyalizm arasındaki ilişkiye dair temel argümanı aşağıdakilerden hangisidir?",
+    options: [
+      "A) Bilgi üretimi her zaman tarafsızdır ve emperyalizmin oluşumunda rol oynamaz.",
+      "B) Emperyal güçler, sömürgeleştirdikleri bölgelerdeki halklar hakkında bilgi üretimi ve kontrolünü, kendi egemenliklerini meşrulaştırmak ve sürdürmek için kullanmıştır.",
+      "C) Sömürgecilik döneminde bilgi akışı sadece sömürgeleştirilen toplumlardan emperyal güçlere doğru gerçekleşmiştir.",
+      "D) Bilgi, emperyalizme karşı bir direniş aracı olarak kullanılamaz.",
+      "E) Emperyalizm sadece toprak işgaliyle ilgilidir, bilgiyle bir bağlantısı yoktur."
+    ],
+    correctAnswer: "B",
+    explanation: "Postkolonyalizm, emperyal güçlerin sadece toprakları değil, aynı zamanda sömürülen halklar hakkındaki bilgiyi de kontrol ettiğini ve bu bilginin emperyalist egemenliği meşrulaştırmak ve sürdürmek için kullanıldığını savunur.",
+    motivationalQuote: "Eleştirel düşünme becerilerin çok gelişmiş! 🧠"
+  },
+  {
+    id: 12,
+    text: "İnsan güvenliği (Human Security) kavramının temelini oluşturan \"korkudan arınma (freedom from fear)\" ve \"yokluktan arınma (freedom from want)\" ifadeleri ne anlama gelmektedir?",
+    options: [
+      "A) Korkudan arınma askeri tehditlerden korunmayı, yokluktan arınma ise ekonomik büyüme sağlamayı hedefler.",
+      "B) Korkudan arınma bireysel özgürlükleri, yokluktan arınma ise devletin refahını ifade eder.",
+      "C) Korkudan arınma şiddet ve çatışmadan korunmayı, yokluktan arınma ise yoksulluk, açlık ve temel ihtiyaçlardan yoksunluktan korunmayı amaçlar.",
+      "D) Her iki kavram da sadece askeri güvenliğin sağlanmasına odaklanır.",
+      "E) Her iki kavram da devletin egemenliğinin korunmasıyla doğrudan ilişkilidir."
+    ],
+    correctAnswer: "C",
+    explanation: "İnsan güvenliği, insanların hem şiddet ve korkudan (freedom from fear) hem de yoksulluk, açlık ve temel ihtiyaçlardan yoksunluktan (freedom from want) arınmış bir şekilde yaşamalarını sağlamayı amaçlar.",
+    motivationalQuote: "İnsani yaklaşımların bu kadar önemli olduğunu anlamanı seviyorum! ❤️"
+  },
+  {
+    id: 13,
+    text: "\"Ekolojik güvenlik\" yaklaşımında güvenliği sağlanması gereken ana \"varlık (entity)\" nedir?",
+    options: [
+      "A) Ulus-devlet",
+      "B) Bireyler ve toplumlar",
+      "C) Doğal çevre (ekosistemler ve doğal süreçler)",
+      "D) Uluslararası ekonomik sistem",
+      "E) Askeri altyapılar"
+    ],
+    correctAnswer: "C",
+    explanation: "Ekolojik güvenlik yaklaşımında korunması gereken ana varlık devlet ya da insan değil, doğanın kendisi, yani ekosistemler ve doğal süreçlerdir. İnsan güvenliği, ekosistemlerin sağlığına bağlıdır.",
+    motivationalQuote: "Çevre konusundaki bilinçli yaklaşımın harika! 🌍"
+  },
+  {
+    id: 14,
+    text: "Ekonomik yaptırımların (economic sanctions) genellikle beklenen siyasi değişimi sağlamakta sınırlı fayda sağlamasının nedenlerinden biri aşağıdakilerden hangisi değildir?",
+    options: [
+      "A) Hedef ülkenin liderlerinin değil, genellikle halkın zarar görmesi",
+      "B) Yaptırımların uygulandığı ülkenin alternatif pazarlar veya yollar bulabilmesi",
+      "C) Yaptırımların hedef ülkelerde milliyetçi duyguları tetikleyerek rejimi güçlendirmesi",
+      "D) Yaptırımların küreselleşme sayesinde kolayca aşılabiliyor olması",
+      "E) Yaptırımların doğrudan askeri müdahalelerden daha etkili olması"
+    ],
+    correctAnswer: "E",
+    explanation: "Ekonomik yaptırımlar, askeri müdahalelerden daha etkili değildir ve çoğu zaman hedefe ulaşmaz. Yaptırımlar halkı etkileyebilir, alternatif yollarla aşılabilir ve hedef ülkede milliyetçiliği güçlendirebilir.",
+    motivationalQuote: "Uluslararası ilişkilerdeki karmaşıklıkları çok iyi anlıyorsun! 🌐"
+  },
+  {
+    id: 15,
+    text: "Uluslararası bir krizi tanımlayan beş temel unsurdan biri aşağıdakilerden hangisi değildir?",
+    options: [
+      "A) Sürpriz unsuru (Element of Surprise)",
+      "B) Yüksek değere sahip çıkarların tehdit edilmesi (Threat Against High-Value Interests)",
+      "C) Uzun müzakere süreci için bol zaman olması (Ample Time for Long Negotiation Process)",
+      "D) Maliyet ve kazançlarla ilgili belirsizlikler (Ambiguities Regarding Costs and Benefits)",
+      "E) Askeri çatışma olasılığının artması (Higher Probability of Military Clash)"
+    ],
+    correctAnswer: "C",
+    explanation: "Uluslararası bir krizin temel unsurlarından biri \"zaman baskısı\"dır, yani tarafların çabuk karar vermesi gerekir ve olaylar hızla gelişir. Bu durum, uzun müzakere süreçleri için bol zamanın olduğu anlamına gelmez, tam tersine zamanın kısıtlı olduğunu belirtir.",
+    motivationalQuote: "Kriz yönetimi konusundaki kavrayışın etkileyici! ⚡"
+  },
+  {
+    id: 16,
+    text: "Bireysel-kurumsal rekabet yaklaşımına göre devletlerin nükleer silah sahibi olmak istemesinin nedenlerinden biri aşağıdakilerden hangisidir?",
+    options: [
+      "A) Nükleer silahların yüksek yıkıcı gücünün caydırıcılık sağlaması",
+      "B) Nükleer teknolojiye erişimin kolaylaşması",
+      "C) Askeri yetkililerin ve ilgili kurumların nükleer programlar sayesinde bütçe, prestij ve siyasi etki kazanması",
+      "D) Uluslararası normların nükleer silahlanmayı teşvik etmesi",
+      "E) Nükleer şemsiye altında olmanın getirdiği güvenlik açığı"
+    ],
+    correctAnswer: "C",
+    explanation: "Bireysel-kurumsal rekabet yaklaşımına göre, askeri kurumlar ve ilgili sivil aktörler (mühendisler, akademisyenler) nükleer programlar aracılığıyla bütçe, prestij ve siyasi etki kazanabilirler, bu da nükleer silah edinme isteğini besler.",
+    motivationalQuote: "Nükleer politikaların arkasındaki motivasyonları anlaman süper! ☢️"
+  },
+  {
+    id: 17,
+    text: "Primordializm (İlkselcilik) yaklaşımına göre etnik kimliğin temel özelliği nedir?",
+    options: [
+      "A) Sanayileşme ve ulus-devletleşme süreciyle oluşması",
+      "B) Medya ve siyaset tarafından sosyal olarak inşa edilmesi",
+      "C) Doğuştan gelmesi, değişmez olması ve güçlü duygusal bağlar (kan bağı, dil, din) içermesi",
+      "D) Küresel etkileşimler sonucunda zamanla değişebilmesi",
+      "E) Sadece ekonomik çıkarlar doğrultusunda kullanılması"
+    ],
+    correctAnswer: "C",
+    explanation: "Primordializm, etnik kimliklerin doğuştan geldiğini, değişmez olduğunu ve kan bağı, dil, din, tarih gibi güçlü duygusal bağlara dayandığını savunur.",
+    motivationalQuote: "Kimlik teorilerini bu kadar net ayırt edebilmen harika! 🏛️"
+  },
+  {
+    id: 18,
+    text: "Terörizme yönelik \"hastalık gibi görmek (Terrorism as Disease)\" bakış açısı, terörle mücadelede hangi yöntemi önceliklendirir?",
+    options: [
+      "A) Askeri operasyonlar ve misillemeler",
+      "B) Polis ve yargı gibi iç güvenlik araçlarıyla yasal süreçler yürütmek",
+      "C) Terörizmin temel nedenleri olan yoksulluk, dışlanma ve radikalleşme gibi sorunları eğitim ve sosyal reformlarla çözmeye çalışmak",
+      "D) Uluslararası yaptırımlar ve diplomatik izolasyon uygulamak",
+      "E) Sadece fiziksel güvenlik önlemlerini artırmak"
+    ],
+    correctAnswer: "C",
+    explanation: "Terörizmin \"hastalık gibi görmek\" bakış açısı, terörün temel sebepleri olan yoksulluk, dışlanma ve radikalleşme gibi sorunları dikkate alır ve uzun vadede eğitim, sosyal reform ve eşitlik politikaları ile çözüm aranması gerektiğini savunur.",
+    motivationalQuote: "Sosyal sorunlara yaklaşımın gerçekten olgun! 🤝"
+  },
+  {
+    id: 19,
+    text: "Sağlık güvenliği bağlamında, bulaşıcı hastalıkların \"ulusal güvenlik tehdidi\" olarak görülmesinin temel nedeni nedir?",
+    options: [
+      "A) Hastalıkların sadece askeri personeli etkilemesi",
+      "B) Hastalıkların küresel salgınlara dönüşme potansiyellerinin olmaması",
+      "C) Hastalıkların nüfus sağlığını, ekonomiyi, yönetimi ve toplumsal düzeni ciddi biçimde etkileme potansiyeli taşıması",
+      "D) Uluslararası örgütlerin bu konuda yeterli bilgiye sahip olmaması",
+      "E) Modern tıbbın tüm hastalıkları tamamen ortadan kaldırma kapasitesine sahip olması"
+    ],
+    correctAnswer: "C",
+    explanation: "Ulusal güvenlik çerçevesinde, bulaşıcı hastalıklar sadece sağlık değil, ulusal güvenlik tehdidi olarak görülür çünkü bir salgın nüfusu, ekonomiyi, yönetimi ve toplumsal düzeni ciddi biçimde etkileyebilir.",
+    motivationalQuote: "Sağlık güvenliği konusundaki farkındalığın önemli! 🏥"
+  },
+  {
+    id: 20,
+    text: "Siber güvenliğin \"teknik söylem (Technical Discourse)\" bağlamında ele alınması, hangi unsurlara odaklanmayı gerektirir?",
+    options: [
+      "A) Uluslararası hukuk ve siber alanın yönetişim kuralları",
+      "B) Siber suçların ve siber casusluğun motivasyonları",
+      "C) Yazılım açıkları, zararlı yazılımlar (malware) ve bunlara karşı savunma sistemleri",
+      "D) Siber saldırıların siyasi ve toplumsal sonuçları",
+      "E) Siber alanın güç ilişkileri ve kimlik inşası üzerindeki etkisi"
+    ],
+    correctAnswer: "C",
+    explanation: "Siber güvenliğin teknik söylemi, siber güvenliği sadece teknik bir sorun olarak ele alır ve odak noktası yazılım açıkları, zararlı yazılımlar (malware) ve bunlara karşı savunma sistemleridir.",
+    motivationalQuote: "Siber güvenlik konusundaki bilgin de çok kuvvetli! Tebrikler aşkım, 20 soruyu da tamamladın! 💻🎉"
+  }
+];
+
 function HomePage() {
   return (
     <div className="home-container">
@@ -728,6 +1011,16 @@ function HomePage() {
         <div className="course-section">
           <h3>International Security</h3>
           <div className="course-buttons">
+            <Link to="/international-security/quiz" className="course-card">
+              <div className="course-card-content">
+                <h2>Quiz</h2>
+                <p>Uluslararası güvenlik kavramları ve teorileri üzerine test sorular.</p>
+                <div className="course-card-footer">
+                  <span className="question-count">20 Soru</span>
+                  <span className="start-quiz">Quiz'e Başla →</span>
+                </div>
+              </div>
+            </Link>
             <Link to="/international-security/notlar" className="course-card">
               <div className="course-card-content">
                 <h2>Ders Notları</h2>
@@ -1126,7 +1419,7 @@ function InternationalSecurityLectureNotes() {
   );
 }
 
-function QuizApp() {
+function DevletToplumDinQuizApp() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showExplanation, setShowExplanation] = useState(false);
@@ -1253,6 +1546,133 @@ function QuizApp() {
   );
 }
 
+function InternationalSecurityQuizApp() {
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [showExplanation, setShowExplanation] = useState(false);
+  const [score, setScore] = useState(0);
+  const [quizCompleted, setQuizCompleted] = useState(false);
+
+  const handleAnswerSelect = (answer: string) => {
+    if (selectedAnswer) return;
+    setSelectedAnswer(answer);
+    setShowExplanation(true);
+    if (answer === internationalSecurityQuestions[currentQuestionIndex].correctAnswer) {
+      setScore(score + 1);
+    }
+  };
+
+  const handleNextQuestion = () => {
+    if (currentQuestionIndex < internationalSecurityQuestions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setSelectedAnswer(null);
+      setShowExplanation(false);
+    } else {
+      setQuizCompleted(true);
+    }
+  };
+
+  const handleRestart = () => {
+    setCurrentQuestionIndex(0);
+    setSelectedAnswer(null);
+    setShowExplanation(false);
+    setScore(0);
+    setQuizCompleted(false);
+  };
+
+  if (quizCompleted) {
+    const wrongAnswers = internationalSecurityQuestions.length - score;
+    const percentage = (score / internationalSecurityQuestions.length) * 100;
+    let message = "";
+    let emoji = "";
+
+    if (percentage === 100) {
+      message = "Mükemmelsin aşkım! Tüm soruları doğru yanıtladın! Uluslararası güvenlik uzmanı oldun! 🎯";
+      emoji = "🏆";
+    } else if (percentage >= 80) {
+      message = "Harikasın bebeğim! Çok iyi bir sonuç! Güvenlik teorilerini çok iyi anlıyorsun! 🌟";
+      emoji = "🎉";
+    } else if (percentage >= 60) {
+      message = "İyi iş çıkardın canım! Biraz daha çalışarak daha da iyi olacaksın! 💪";
+      emoji = "✨";
+    } else {
+      message = "Üzülme aşkım, birlikte çalışarak daha iyi olacağız! Bu konular zor ama sen başarabilirsin! 💝";
+      emoji = "💫";
+    }
+
+    return (
+      <div className="quiz-completed-container">
+        <div className="quiz-result-card">
+          <h2>International Security Quiz Tamamlandı! {emoji}</h2>
+          <div className="score-details">
+            <div className="score-item">
+              <span className="score-label">Toplam Soru</span>
+              <span className="score-value">{internationalSecurityQuestions.length}</span>
+            </div>
+            <div className="score-item correct">
+              <span className="score-label">Doğru</span>
+              <span className="score-value">{score}</span>
+            </div>
+            <div className="score-item wrong">
+              <span className="score-label">Yanlış</span>
+              <span className="score-value">{wrongAnswers}</span>
+            </div>
+            <div className="score-item percentage">
+              <span className="score-label">Başarı</span>
+              <span className="score-value">%{percentage.toFixed(0)}</span>
+            </div>
+          </div>
+          <p className="result-message">{message}</p>
+          <div className="result-actions">
+            <button onClick={handleRestart} className="restart-button">
+              Yeniden Başla
+            </button>
+            <Link to="/" className="home-button">
+              Ana Sayfaya Dön
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const currentQuestion = internationalSecurityQuestions[currentQuestionIndex];
+
+  return (
+    <div className="quiz-container">
+      <h2>International Security Quiz - Soru {currentQuestionIndex + 1} / {internationalSecurityQuestions.length}</h2>
+      <p className="question-text">{currentQuestion.text}</p>
+      <div className="options-container">
+        {currentQuestion.options.map((option, index) => (
+          <button
+            key={index}
+            onClick={() => handleAnswerSelect(option.charAt(0))}
+            className={`option-button ${
+              selectedAnswer === option.charAt(0)
+                ? option.charAt(0) === currentQuestion.correctAnswer
+                  ? 'correct'
+                  : 'incorrect'
+                : ''
+            } ${selectedAnswer && option.charAt(0) === currentQuestion.correctAnswer ? 'correct' : ''}`}
+            disabled={!!selectedAnswer}
+          >
+            {option}
+          </button>
+        ))}
+      </div>
+      {showExplanation && (
+        <div className="explanation-container">
+          <p className="explanation">{currentQuestion.explanation}</p>
+          <p className="motivational-quote">{currentQuestion.motivationalQuote}</p>
+          <button onClick={handleNextQuestion}>
+            {currentQuestionIndex === internationalSecurityQuestions.length - 1 ? 'Bitir' : 'Sonraki Soru'}
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function FlashcardsApp() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -1365,8 +1785,9 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/devlet-toplum-din" element={<QuizApp />} />
+          <Route path="/devlet-toplum-din" element={<DevletToplumDinQuizApp />} />
           <Route path="/devlet-toplum-din/notlar" element={<LectureNotes />} />
+          <Route path="/international-security/quiz" element={<InternationalSecurityQuizApp />} />
           <Route path="/international-security/notlar" element={<InternationalSecurityNotes />} />
           <Route path="/international-security/sesli-notlar" element={<InternationalSecurityLectureNotes />} />
           <Route path="/international-security/flashcards" element={<FlashcardsApp />} />
