@@ -738,6 +738,16 @@ function HomePage() {
                 </div>
               </div>
             </Link>
+            <Link to="/international-security/sesli-notlar" className="course-card">
+              <div className="course-card-content">
+                <h2>Sesli Anlatım</h2>
+                <p>Uluslararası güvenlik konularının sesli anlatımı.</p>
+                <div className="course-card-footer">
+                  <span className="audio-count">1 Ses Kaydı</span>
+                  <span className="start-listening">Dinlemeye Başla →</span>
+                </div>
+              </div>
+            </Link>
             <Link to="/international-security/flashcards" className="course-card">
               <div className="course-card-content">
                 <h2>Flashcards</h2>
@@ -1059,6 +1069,63 @@ function InternationalSecurityNotes() {
   );
 }
 
+function InternationalSecurityLectureNotes() {
+  const [currentAudio, setCurrentAudio] = useState<number | null>(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const lectureNotes = [
+    {
+      id: 1,
+      title: "Uluslararası Güvenlik",
+      description: "Uluslararası güvenlik kavramları, teoriler ve modern tehditler üzerine kapsamlı anlatım.",
+      duration: "12:00",
+      file: "/halesinav/audio/guvenlik.mp3"
+    }
+  ];
+
+  const handlePlay = (id: number) => {
+    if (currentAudio === id) {
+      if (audioRef.current?.paused) {
+        audioRef.current?.play();
+      } else {
+        audioRef.current?.pause();
+      }
+    } else {
+      setCurrentAudio(id);
+      if (audioRef.current) {
+        audioRef.current.src = lectureNotes.find(note => note.id === id)?.file || '';
+        audioRef.current.play();
+      }
+    }
+  };
+
+  return (
+    <div className="lecture-notes-container">
+      <h2>International Security - Sesli Anlatım</h2>
+      <p className="section-description">Aşkım, aşağıdaki ses kaydını dinleyerek uluslararası güvenlik konularını öğrenebilirsin 💝</p>
+      <div className="audio-list">
+        {lectureNotes.map(note => (
+          <div key={note.id} className="audio-card">
+            <div className="audio-info">
+              <h3>{note.title}</h3>
+              <p>{note.description}</p>
+              <span className="duration">{note.duration}</span>
+            </div>
+            <button 
+              className={`play-button ${currentAudio === note.id ? 'playing' : ''}`}
+              onClick={() => handlePlay(note.id)}
+            >
+              {currentAudio === note.id && !audioRef.current?.paused ? '⏸️' : '▶️'}
+            </button>
+          </div>
+        ))}
+      </div>
+      <audio ref={audioRef} onEnded={() => setCurrentAudio(null)} />
+      <Link to="/" className="home-button">Ana Sayfaya Dön</Link>
+    </div>
+  );
+}
+
 function QuizApp() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -1301,6 +1368,7 @@ function App() {
           <Route path="/devlet-toplum-din" element={<QuizApp />} />
           <Route path="/devlet-toplum-din/notlar" element={<LectureNotes />} />
           <Route path="/international-security/notlar" element={<InternationalSecurityNotes />} />
+          <Route path="/international-security/sesli-notlar" element={<InternationalSecurityLectureNotes />} />
           <Route path="/international-security/flashcards" element={<FlashcardsApp />} />
         </Routes>
       </div>
