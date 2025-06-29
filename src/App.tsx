@@ -434,6 +434,265 @@ const questions: Question[] = [
   }
 ];
 
+interface Flashcard {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+const internationalSecurityFlashcards: Flashcard[] = [
+  {
+    id: 1,
+    question: "Uluslararası güvenliğin temel tanımı nedir?",
+    answer: "Değer verilen şeylere yönelik tehditlerin azaltılması olarak tanımlanır. Bu değerler; yaşam, özgürlük, refah veya egemenlik gibi unsurları içerebilir."
+  },
+  {
+    id: 2,
+    question: "Barry Buzan'a göre güvenlik kavramının yeterince gelişmemiş olmasının beş temel nedeni nelerdir?",
+    answer: "1) Kavramsal Zorluk 2) Güç ile Örtüşme 3) Gerçekçi Olmayanların İlgisizliği 4) Teknoloji ve Politikaya Odaklanma 5) Politika Yapıcıların Çıkarları"
+  },
+  {
+    id: 3,
+    question: "Negatif güvenlik ve pozitif güvenlik arasındaki fark nedir?",
+    answer: "Negatif güvenlik: Tehditlerin olmaması, savaşsızlık. Pozitif güvenlik: Güven içinde yaşama özgürlüğü, temel ihtiyaçlara erişim."
+  },
+  {
+    id: 4,
+    question: "MAD (Mutual Assured Destruction) nedir?",
+    answer: "Karşılıklı Kesin Yıkım prensibi. Nükleer caydırıcılık stratejisi olup, her iki tarafın da saldırı halinde kesin yıkımla karşılaşacağı varsayımına dayanır."
+  },
+  {
+    id: 5,
+    question: "Güvenlik çalışmalarının 'Altın Çağı' hangi dönemdir ve özellikleri nelerdir?",
+    answer: "1950'ler ve 1960'lar. Yüksek siyaset konularına odaklanma, RAND Corporation gibi kurumlar, oyun teorisi yaklaşımları ve realizmin ana akım teori olması."
+  },
+  {
+    id: 6,
+    question: "Klasik Realizmin temel varsayımları nelerdir?",
+    answer: "İnsan doğasının bencil, korkak ve hırslı olduğu varsayımı. Devletlerin de bu insani dürtülerle hareket ettiği ve güç arayışında olduğu savunulur."
+  },
+  {
+    id: 7,
+    question: "Kenneth Waltz'ın Yapısal Realizmi (Neorealizm) neyi vurgular?",
+    answer: "Devlet davranışlarını uluslararası sistemin yapısıyla açıklar. Anarşik sistemde devletler 'güvenlik maksimize edicidir' ve hayatta kalmak için gerekli gücü elde etmeye çalışırlar."
+  },
+  {
+    id: 8,
+    question: "Saldırgan Realizm ile Savunmacı Realizm arasındaki temel fark nedir?",
+    answer: "Saldırgan Realizm: Devletler güç maksimize edicisidir, nihai amaç bölgesel hegemonya. Savunmacı Realizm: Aşırı güç arayışı güvenlik ikilemine yol açar, dengeli davranmak daha akılcıdır."
+  },
+  {
+    id: 9,
+    question: "Güvenlik ikilemi (Security Dilemma) nedir?",
+    answer: "Bir devletin güvenliğini artırmak için aldığı önlemlerin, diğer devletlerin güvenlik endişelerini artırması ve sonuçta tüm tarafların güvenliğinin azalması durumu."
+  },
+  {
+    id: 10,
+    question: "Liberalizmin güvenlik anlayışında hangi unsurlar önemlidir?",
+    answer: "Ekonomik karşılıklı bağımlılık, uluslararası kurumlar, demokratik barış teorisi, insan hakları ve sivil toplum kuruluşları."
+  },
+  {
+    id: 11,
+    question: "Demokratik Barış Teorisi'nin temel argümanı nedir?",
+    answer: "Demokrasilerin birbirleriyle savaşmama eğiliminde olduğu. Nedenleri: karşılıklı meşruiyet tanıma, uzlaşma kültürü, hesap verebilirlik ve şeffaflık."
+  },
+  {
+    id: 12,
+    question: "Kurumsal Liberalizm uluslararası kurumların rolünü nasıl açıklar?",
+    answer: "Uluslararası kurumlar anarşik sistemde bile işbirliğini kolaylaştırır, güvenilir bilgi sağlar, müzakereleri kolaylaştırır ve 'geleceğin gölgesi' yaratır."
+  },
+  {
+    id: 13,
+    question: "Eleştirel Güvenlik Çalışmaları'nın temel amacı nedir?",
+    answer: "Güvenliği 'genişletmek' (ekonomik, çevresel boyutlar) ve 'derinleştirmek' (birey, toplum, ekosistem güvenliği). Geleneksel devlet merkezli yaklaşımı eleştirme."
+  },
+  {
+    id: 14,
+    question: "Kopenhag Okulu'nun beş güvenlik sektörü nelerdir?",
+    answer: "1) Askerî 2) Siyasi 3) Ekonomik 4) Toplumsal 5) Çevresel güvenlik sektörleri."
+  },
+  {
+    id: 15,
+    question: "Güvenlikleştirme Teorisi (Securitization Theory) nedir?",
+    answer: "Bir konunun doğal olarak tehlikeli olmasına gerek kalmadan, bir aktörün o konuyu tehdit olarak tanımlaması ve toplumun bunu kabul etmesiyle 'güvenlikleştirilmesi' süreci."
+  },
+  {
+    id: 16,
+    question: "Aberystwyth Okulu'nun 'özgürleşme' (emancipation) kavramı neyi ifade eder?",
+    answer: "Güvenliğin temel amacının bireylerin baskılardan kurtulması olduğunu vurgular. Sadece tehdit tanımlamakla kalmayıp, daha adil ve özgür bir dünya kurma amacı taşır."
+  },
+  {
+    id: 17,
+    question: "İnsan Güvenliği'nin iki temel prensibi nelerdir?",
+    answer: "'Korkudan arınma' (freedom from fear) ve 'yoksunluktan arınma' (freedom from want). Kronik tehditlerden ve ani krizlerden korunmayı içerir."
+  },
+  {
+    id: 18,
+    question: "İnsan Güvenliği'nin yedi boyutu nelerdir?",
+    answer: "1) Ekonomik 2) Gıda 3) Sağlık 4) Çevresel 5) Kişisel 6) Toplumsal 7) Siyasi güvenlik."
+  },
+  {
+    id: 19,
+    question: "R2P (Responsibility to Protect - Koruma Sorumluluğu) ilkesi neyi savunur?",
+    answer: "İnsan hakları ihlallerine karşı uluslararası müdahaleyi meşrulaştıran ilke. Devletlerin tüm insanlara karşı koruma sorumluluğu olduğunu vurgular."
+  },
+  {
+    id: 20,
+    question: "Çevresel Güvenlik alanında 'Ekolojik Güvenlik' yaklaşımı neyi vurgular?",
+    answer: "Güvenliği sağlanması gerekenin doğal çevre (ekosistemler) olduğunu vurgular ve insan faaliyetlerini temel risk kaynağı olarak görür."
+  },
+  {
+    id: 21,
+    question: "Çevresel tehditlerde 'tehdit çarpanı' kavramı nedir?",
+    answer: "Kaynak kıtlığı (su, toprak) gibi çevresel değişimlerin devletlerarası çatışmaları ve savaşları tetikleyebileceği durum. 'Su savaşları' potansiyeli."
+  },
+  {
+    id: 22,
+    question: "Ekonomik yaptırımların üç temel amacı nedir?",
+    answer: "1) Siyasi amaçlar (davranış değişikliği) 2) Ahlaki amaçlar (kınama) 3) Askerî amaçlar (güç zayıflatma)."
+  },
+  {
+    id: 23,
+    question: "Akıllı yaptırımlar (Smart Sanctions) neden tercih edilir?",
+    answer: "Geniş kapsamlı yaptırımlar sınırlı fayda sağlar ve diktatörlükleri güçlendirebilir. Akıllı yaptırımlar bireysel aktörleri ve belirli şirketleri hedefleyerek daha etkili olmayı amaçlar."
+  },
+  {
+    id: 24,
+    question: "Küreselleşme ve ekonomik güvenlik ilişkisinde Washington Uzlaşısı neyi savunur?",
+    answer: "IMF ve Dünya Bankası'nın reform paketleri, piyasaların serbestleşmesi ve devlet müdahalesinin azalması. Neoliberal politikalar."
+  },
+  {
+    id: 25,
+    question: "Uluslararası krizin beş temel bileşeni nelerdir?",
+    answer: "1) Sürpriz unsuru 2) Yüksek değerli çıkarların tehdidi 3) Zaman baskısı 4) Belirsizlikler 5) Askerî çatışma olasılığının artması."
+  },
+  {
+    id: 26,
+    question: "Saldırgan kriz yönetimi stratejilerine örnekler verin.",
+    answer: "Şantaj, Geri Alınabilir Yoklama, Kontrollü Baskı, Olup Bittiye Getirme, Yıpratma Stratejileri. Mevcut durumu değiştirmeyi hedefler."
+  },
+  {
+    id: 27,
+    question: "Savunmacı kriz yönetimi stratejilerine örnekler verin.",
+    answer: "Zorlayıcı Diplomasi, Sınırlı Tırmandırma, Aynıyla Karşılık Verme, Yetenek Sınama, Kırmızı Çizgi Belirleme. Statükoyu korumayı amaçlar."
+  },
+  {
+    id: 28,
+    question: "Devletlerin nükleer silah edinme isteklerindeki güvenlik yaklaşımı neyi vurgular?",
+    answer: "Temel amaç caydırıcılıktır (deterrence). Nükleer silahların yıkıcı gücü, saldırganı eylemden vazgeçirir (MAD prensibi)."
+  },
+  {
+    id: 29,
+    question: "Nükleer şemsiye (nuclear umbrella) kavramı nedir?",
+    answer: "Bazı ülkelerin güçlü müttefiklerin nükleer koruması altında bulunması. Bu durum kendi nükleer silah geliştirme ihtiyacını azaltır (Japonya, G. Kore örneği)."
+  },
+  {
+    id: 30,
+    question: "Nükleer tabu (nuclear taboo) nedir?",
+    answer: "Nükleer silahların kullanımı üzerindeki ahlaki ve siyasi baskı. Uluslararası hukuka ve normlara aykırılık olarak görülmesi."
+  },
+  {
+    id: 31,
+    question: "NPT (Nükleer Silahların Yayılmasını Önleme Antlaşması) neyi hedefler?",
+    answer: "Yeni ülkelerin silah edinmesini (yatay yayılma) ve mevcut güçlerin silahlarını artırmasını (dikey yayılma) önlemeyi hedefler."
+  },
+  {
+    id: 32,
+    question: "Etnik kimliğin kaynağına dair üç temel yaklaşım nelerdir?",
+    answer: "1) İlkselcilik (Primordialism): Doğuştan, değişmez 2) Moderncilik: Ulus-devlet, sanayileşme ile oluşan 3) Yapısalcılık: Sosyal olarak inşa edilen, değişebilir."
+  },
+  {
+    id: 33,
+    question: "Etnik çatışmalarda 'Gerçekçi Grup Çatışması Teorisi' neyi savunur?",
+    answer: "Kaynak rekabetinin grup çatışmalarının temel nedeni olduğunu savunur. Kıt kaynaklar için rekabet gruplar arası düşmanlığa yol açar."
+  },
+  {
+    id: 34,
+    question: "Sosyal Kimlik Teorisi etnik çatışmaları nasıl açıklar?",
+    answer: "'Biz' ve 'onlar' ayrımının grup kimliği oluşturduğunu ve bu ayrımın çatışmaları körüklediğini savunur. Grup üyeliği kimlik için kritiktir."
+  },
+  {
+    id: 35,
+    question: "Uzlaşmacı Demokrasi (Consociational Democracy) modeli nedir?",
+    answer: "Çok etnili toplumlarda güç paylaşımı ve kültürel özerklik yoluyla barışçıl birlikte yaşamayı hedefleyen model. Elit işbirliği esasına dayanır."
+  },
+  {
+    id: 36,
+    question: "Terörizmin altı ana tanım unsuru nelerdir?",
+    answer: "1) Şiddet kullanımı/tehdidi 2) Organize grup 3) Siyasi amaçlar 4) Hedef kitleye psikolojik etki 5) Devlet dışı aktör 6) Zayıfların silahı."
+  },
+  {
+    id: 37,
+    question: "Terörle mücadelede üç temel bakış açısı nelerdir?",
+    answer: "1) Savaş gibi görmek (Warfare Model) 2) Suç olarak görmek (Crime Model) 3) Hastalık gibi görmek (Disease Model - sosyoekonomik nedenler)."
+  },
+  {
+    id: 38,
+    question: "Terörizmin bireysel düzeydeki nedenleri neler olabilir?",
+    answer: "Hayal kırıklığı, psikolojik sorunlar, marjinalleşme, kimlik arayışı, radikalleşme süreci ve kişisel motivasyonlar."
+  },
+  {
+    id: 39,
+    question: "Terörle mücadelede önleme stratejilerine örnekler verin.",
+    answer: "İstihbarat toplama, fiziksel güvenlik önlemleri, erken uyarı sistemleri, radikalleşme karşıtı programlar ve toplumsal entegrasyon politikaları."
+  },
+  {
+    id: 40,
+    question: "Sağlık güvenliğinde 'güvenlikleştirme' süreci nasıl işler?",
+    answer: "Hızlı yayılan hastalıklar bir devletin nüfus sağlığını, ekonomisini ve toplumsal istikrarını ciddi şekilde etkileyerek sağlığın 'güvenlikleştirilmesi' sürecini tetikler."
+  },
+  {
+    id: 41,
+    question: "Biyo-güvenlik çerçevesinde temel tehditler nelerdir?",
+    answer: "Biyolojik ajanların (virüs, bakteri) silah olarak kullanılması, kazara yayılması, terörist gruplar için düşük maliyetli silah potansiyeli."
+  },
+  {
+    id: 42,
+    question: "Siber güvenlikte 'asimetrik zayıflıklar' kavramı neyi ifade eder?",
+    answer: "Küçük teknik güce sahip aktörlerin bile devasa sistemlere zarar verebilmesi durumu. Saldırı yöntemleri savunmadan daha hızlı gelişir."
+  },
+  {
+    id: 43,
+    question: "Siber saldırılarda kullanılan malware türleri nelerdir?",
+    answer: "Virüsler, solucanlar, Truva atları gibi kötü amaçlı yazılımlar. Sistemleri bozabilir, geciktirebilir, yok edebilir veya bilgi çalabilir."
+  },
+  {
+    id: 44,
+    question: "Siber güvenlikte 'attribütasyon problemi' nedir?",
+    answer: "Siber saldırı sonrası saldırganı tespit etme zorluğu. Bu durum siber alandaki mücadeleyi zorlaştırır ve cezasızlığa yol açabilir."
+  },
+  {
+    id: 45,
+    question: "Kritik altyapıların siber güvenliği neden önemlidir?",
+    answer: "Elektrik, su, iletişim gibi kritik altyapıların siber saldırılara karşı korunması toplumsal yaşamın devamlılığı için kritiktir. Özelleştirme riskleri artırır."
+  },
+  {
+    id: 46,
+    question: "Stuxnet virüsü neden önemli bir örnek teşkil eder?",
+    answer: "İran'ın nükleer programını hedefleyen bu virüs, siber saldırıların fiziksel altyapıya verdiği zararı gösteren önemli bir siber savaş örneğidir."
+  },
+  {
+    id: 47,
+    question: "NATO'nun Madde 5'i siber saldırılar bağlamında nasıl yorumlanır?",
+    answer: "Siber alandaki saldırılar, NATO'nun ortak savunma maddesi (Madde 5) kapsamında değerlendirilebilir ve kolektif savunma yanıtını tetikleyebilir."
+  },
+  {
+    id: 48,
+    question: "Güvenlik çalışmalarında 'yüksek siyaset' ve 'düşük siyaset' ayrımı nedir?",
+    answer: "Yüksek siyaset: Ulusal güvenlik, dış politika gibi hayati konular. Düşük siyaset: Ekonomi, çevre gibi ikincil görülen konular. Bu ayrım eleştirilmektedir."
+  },
+  {
+    id: 49,
+    question: "Post-seküler Uluslararası İlişkiler kavramının temel unsurları nelerdir?",
+    answer: "Dinin 'özelleştirilmemesi', manevi meselelerin artan önemi, uluslararası ilişkilerde dini aktörlerin rolü ve seküler düşüncenin ahlaki üstünlüğünün sorgulanması."
+  },
+  {
+    id: 50,
+    question: "Küresel yönetişim (global governance) kavramı neyi ifade eder?",
+    answer: "Küresel sorunların çözümü için devletler, uluslararası örgütler, sivil toplum ve özel sektörün işbirliği halinde yönetim süreçleri oluşturması."
+  }
+];
+
 function HomePage() {
   return (
     <div className="home-container">
@@ -476,6 +735,16 @@ function HomePage() {
                 <div className="course-card-footer">
                   <span className="notes-count">Kapsamlı Notlar</span>
                   <span className="start-reading">Okumaya Başla →</span>
+                </div>
+              </div>
+            </Link>
+            <Link to="/international-security/flashcards" className="course-card">
+              <div className="course-card-content">
+                <h2>Flashcards</h2>
+                <p>Önemli kavramları kart kart çalışmak için interaktif flashcards.</p>
+                <div className="course-card-footer">
+                  <span className="flashcard-count">50 Kart</span>
+                  <span className="start-cards">Kartları Aç →</span>
                 </div>
               </div>
             </Link>
@@ -917,6 +1186,112 @@ function QuizApp() {
   );
 }
 
+function FlashcardsApp() {
+  const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleNextCard = () => {
+    if (currentCardIndex < internationalSecurityFlashcards.length - 1) {
+      setCurrentCardIndex(currentCardIndex + 1);
+      setIsFlipped(false);
+    }
+  };
+
+  const handlePrevCard = () => {
+    if (currentCardIndex > 0) {
+      setCurrentCardIndex(currentCardIndex - 1);
+      setIsFlipped(false);
+    }
+  };
+
+  const handleFlip = () => {
+    setIsFlipped(!isFlipped);
+  };
+
+  const currentCard = internationalSecurityFlashcards[currentCardIndex];
+
+  return (
+    <div className="flashcards-container">
+      <h2>International Security - Flashcards</h2>
+      <p className="section-description">
+        Aşkım, kartları çevirerek önemli kavramları pekiştirebilirsin 💝
+      </p>
+      
+      <div className="flashcard-progress">
+        <span className="progress-text">
+          {currentCardIndex + 1} / {internationalSecurityFlashcards.length}
+        </span>
+        <div className="progress-bar">
+          <div 
+            className="progress-fill" 
+            style={{ width: `${((currentCardIndex + 1) / internationalSecurityFlashcards.length) * 100}%` }}
+          ></div>
+        </div>
+      </div>
+
+      <div className="flashcard-wrapper">
+        <div className={`flashcard ${isFlipped ? 'flipped' : ''}`} onClick={handleFlip}>
+          <div className="flashcard-front">
+            <div className="card-header">
+              <span className="card-type">SORU</span>
+            </div>
+            <div className="card-content">
+              <p>{currentCard.question}</p>
+            </div>
+            <div className="card-footer">
+              <span className="flip-hint">Cevabı görmek için kartı çevir 👆</span>
+            </div>
+          </div>
+          <div className="flashcard-back">
+            <div className="card-header">
+              <span className="card-type">CEVAP</span>
+            </div>
+            <div className="card-content">
+              <p>{currentCard.answer}</p>
+            </div>
+            <div className="card-footer">
+              <span className="flip-hint">Soruya dönmek için tekrar çevir 👆</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flashcard-controls">
+        <button 
+          className="nav-button prev" 
+          onClick={handlePrevCard}
+          disabled={currentCardIndex === 0}
+        >
+          ← Önceki
+        </button>
+        
+        <button className="flip-button" onClick={handleFlip}>
+          {isFlipped ? '🔄 Soruya Dön' : '🔄 Cevabı Göster'}
+        </button>
+        
+        <button 
+          className="nav-button next" 
+          onClick={handleNextCard}
+          disabled={currentCardIndex === internationalSecurityFlashcards.length - 1}
+        >
+          Sonraki →
+        </button>
+      </div>
+
+      {currentCardIndex === internationalSecurityFlashcards.length - 1 && (
+        <div className="completion-message">
+          <p>🎉 Tebrikler aşkım! Tüm kartları tamamladın! Bilgilerini pekiştirdin! 💝</p>
+          <button onClick={() => {setCurrentCardIndex(0); setIsFlipped(false);}} className="restart-cards">
+            🔄 Baştan Başla
+          </button>
+        </div>
+      )}
+      
+      <Link to="/" className="home-button">Ana Sayfaya Dön</Link>
+    </div>
+  );
+}
+
 function App() {
   return (
     <Router basename="/halesinav">
@@ -926,6 +1301,7 @@ function App() {
           <Route path="/devlet-toplum-din" element={<QuizApp />} />
           <Route path="/devlet-toplum-din/notlar" element={<LectureNotes />} />
           <Route path="/international-security/notlar" element={<InternationalSecurityNotes />} />
+          <Route path="/international-security/flashcards" element={<FlashcardsApp />} />
         </Routes>
       </div>
     </Router>
