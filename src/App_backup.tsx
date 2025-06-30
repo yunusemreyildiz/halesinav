@@ -2752,8 +2752,6 @@ function InternationalSecurityExamQuestions() {
      }
    ];
 
-
-
   if (selectedCategory && selectedQuestion !== null) {
     const category = examQuestions.find(cat => cat.category === selectedCategory);
     const question = category?.questions[selectedQuestion];
@@ -2858,13 +2856,6 @@ function InternationalSecurityExamQuestions() {
 
 function InternationalSecurityMemoryGame() {
   // InternationalSecurityExamQuestions'dan tüm sınav sorularını kullan - TÜM KATEGORİLER
-  const [isMixedMode, setIsMixedMode] = useState(false);
-  const [mixedQuestions, setMixedQuestions] = useState<any[]>([]);
-  const [currentMixedIndex, setCurrentMixedIndex] = useState(0);
-  const [mixedResults, setMixedResults] = useState<any[]>([]);
-  const [showMixedResults, setShowMixedResults] = useState(false);
-  const [mixedScore, setMixedScore] = useState(0);
-
   const examQuestions = [
     {
       category: "REALISM",
@@ -3115,29 +3106,25 @@ function InternationalSecurityMemoryGame() {
         },
         {
           id: 4,
-          question: "Barış Çalışmaları ve Tarihsel Materyalizm, dolaylı zararı anlamak için ortak bir kavramı paylaşır. \"Yapısal Şiddet\"i tanımlayın ve HM'nin bunu kapitalizme nasıl bağladığını açıklayın.",
+          question: "Johan Galtung'un \"yapısal şiddet\" kavramını tanımlayın ve bir örnek verin.",
           answers: [
             {
-              title: "Yapısal Şiddet (Structural Violence)",
-              content: "Doğrudan güç kullanımıyla değil, bir toplumun yapısının neden olduğu (örneğin yoksulluk veya önlenebilir hastalıklardan kaynaklanan ölümler) önlenebilir acı ve ölüm."
-            },
-            {
-              title: "HM'nin Kapitalizme Bağlantısı (HM's Connection to Capitalism)",
-              content: "Tarihsel Materyalizm, kapitalizmin neden içsel olarak yapısal şiddet barındırdığına dair bir teori sunar, çünkü sistemin sömürü yoluyla kâr yaratma ihtiyacı kaçınılmaz olarak eşitsizlik ve yoksunluk üretir."
+              title: "Yapısal şiddet (Structural Violence)",
+              content: "İnsanların temel ihtiyaçlarının karşılanmasını engelleyen ve potansiyellerine ulaşmalarını kısıtlayan sosyal, ekonomik ve politik yapılar. Örnek: Yoksulluk nedeniyle çocukların eğitime erişememesi veya sağlık hizmetlerinden yararlanamaması."
             }
           ]
         },
         {
           id: 5,
-          question: "HM, Realizmde anlaşıldığı şekliyle \"ulusal çıkara\" ve Liberalizmde anlaşıldığı şekliyle \"özgürlük\" kavramına özel bir eleştiri getirir. Bu iki eleştiriyi açıklayın.",
+          question: "HM, \"ulusal çıkar\" ve \"özgürlük\" gibi liberal kavramları nasıl eleştirir? Her birini açıklayın.",
           answers: [
             {
-              title: "Realizm'in \"Ulusal Çıkarı\"na Eleştiri (Critique of Realism's National Interest)",
-              content: "Tarihsel Materyalizm, \"ulusal çıkarın\" tarafsız veya zamansız bir kavram olmadığını, aksine bir devlet içindeki egemen kapitalist sınıfın belirli sınıf çıkarlarını yansıttığını savunur."
+              title: "Ulusal çıkar eleştirisi (National Interest Critique)",
+              content: "\"Ulusal çıkar\" kavramının, gerçekte baskın ekonomik sınıfların çıkarlarını gizlediğini ve tüm toplumun çıkarlarını temsil etmediğini savunur."
             },
             {
-              title: "Liberalizm'in \"Özgürlük\" Kavramına Eleştiri (Critique of Liberalism's Freedom Concept)",
-              content: "Tarihsel Materyalizm, liberal \"çalışma özgürlüğünün\", üretim araçlarına sahip olmayan işçilerin hayatta kalmak için emeklerini satmaya zorlandıkları yapısal \"özgürsüzlüğü\" gizlediğini savunur."
+              title: "Özgürlük eleştirisi (Freedom Critique)",
+              content: "Liberal \"özgürlük\" anlayışının, yalnızca yasal hakları kapsadığını, ancak ekonomik eşitsizliklerin yarattığı gerçek kısıtlamaları görmezden geldiğini belirtir."
             }
           ]
         }
@@ -3148,693 +3135,97 @@ function InternationalSecurityMemoryGame() {
       questions: [
         {
           id: 1,
-          question: "Notlarda modern barış çalışmalarını tanımlayan yedi özellik listelenmektedir. Bu özelliklerden dört tanesini adlandırın ve kısaca açıklayın.",
+          question: "Modern barış çalışmalarının üç belirgin özelliğini listeleyin ve kısaca açıklayın.",
           answers: [
             {
-              title: "Temel Nedenler (Root Causes)",
-              content: "Doğrudan şiddetin köken nedenlerini ele alma ve yapısal eşitsizliklerin üstesinden gelme yollarını keşfetme kaygısı."
+              title: "Değer odaklı (Value-oriented)",
+              content: "Barış çalışmaları, objektif sosyal bilim iddiasında bulunmaz; açıkça barış, adalet ve şiddetsizlik değerlerini destekler."
             },
             {
-              title: "Disiplinlerarası Yaklaşımlar (Interdisciplinary Approaches)",
-              content: "Şiddetli çatışmayı anlamak için birçok akademik disiplinden çok yönlü bir yanıtın esas olduğunun kabulü."
+              title: "Çok disiplinli (Multi-disciplinary)",
+              content: "Siyaset bilimi, sosyoloji, psikoloji, antropoloji, ekonomi ve diğer alanlardan yöntem ve içgörüleri birleştirir."
             },
             {
-              title: "Şiddet İçermeyen Dönüşümler (Non-violent Transformations)",
-              content: "Anlaşmazlıkları çözmek ve potansiyel olarak şiddetli durumların şiddet içermeyen dönüşümünü başarmak için barışçıl yollar arayışı."
-            },
-            {
-              title: "Çok Düzeyli Analiz (Multi-level Analysis)",
-              content: "\"İç\" ve \"dış\" ikilemini aşmaya çalışarak, çatışmanın bireysel, grup, devlet ve devletlerarası düzeylerde analizini benimseme."
+              title: "Problem çözme odaklı (Problem-solving oriented)",
+              content: "Yalnızca çatışmayı anlamakla kalmaz, aynı zamanda çatışmaları önleme ve çözme konusunda pratik öneriler sunmayı amaçlar."
             }
           ]
         },
         {
           id: 2,
-          question: "Barış çalışmalarının gündemi 1970'lerde üç büyük yeni uluslararası meseleyi içerecek şekilde genişledi. Bu üç meseleyi listeleyin ve açıklayın.",
+          question: "1970'lerde barış çalışmalarının gündemi nasıl genişledi? Üç yeni odak alanını adlandırın ve açıklayın.",
           answers: [
             {
-              title: "Ekonomik Eşitsizlikler (Economic Inequalities)",
-              content: "Eski sömürgelerin, siyasi bağımsızlık kazanmalarına rağmen ekonomik bağımsızlıklarını kazanamadıkları ve küresel eşitsizliğin büyük bir sorun olduğu farkındalığı."
+              title: "Yapısal şiddet (Structural Violence)",
+              content: "Doğrudan fiziksel şiddetin yanı sıra, yoksulluk, eşitsizlik ve adaletsizlikten kaynaklanan dolaylı şiddete odaklanma."
             },
             {
-              title: "Küresel Çevre Durumu (Global Environmental Situation)",
-              content: "Küresel ekosistemin artan insan etkileriyle baş edemeyeceği ve dolayısıyla ekonomik büyümeye sınırlar koyduğu yönündeki yeni kaygı."
+              title: "Çevresel güvenlik (Environmental Security)",
+              content: "Çevresel bozulma ve kaynak kıtlığının çatışmalara nasıl yol açabileceğini ve barışı nasıl tehdit edebileceğini inceleme."
             },
             {
-              title: "Adalet Arayışı ve Şiddetin Haklılığı (Quest for Justice and Justification of Violence)",
-              content: "Vietnam Savaşı ve yapısal şiddet kavramının tetiklediği, adaletin peşinde şiddetin bazen haklı olup olamayacağı üzerine bir tartışma."
+              title: "İnsan güvenliği (Human Security)",
+              content: "Geleneksel devlet güvenliğinin ötesinde, bireylerin güvenlik, refah ve insan hakları ihtiyaçlarına odaklanma."
             }
           ]
         },
         {
           id: 3,
-          question: "Johan Galtung, barış tanımını genişleten kilit bir kavram ortaya atmıştır. \"Yapısal şiddet\"i tanımlayın ve barış çalışmaları için temel çıkarımını açıklayın.",
+          question: "Johan Galtung'un \"yapısal şiddet\" kavramını tanımlayın ve iki örnek verin.",
           answers: [
             {
-              title: "Yapısal Şiddet (Structural Violence)",
-              content: "Doğrudan şiddetten değil, insanların temel ihtiyaçlarını karşılamasını engelleyen adaletsiz ekonomik ve sosyal yapılardan kaynaklanan zarar veya ölüm."
+              title: "Yapısal şiddet tanımı (Definition of Structural Violence)",
+              content: "İnsanların temel ihtiyaçlarının karşılanmasını engelleyen ve potansiyellerine ulaşmalarını kısıtlayan sosyal, ekonomik ve politik yapılar."
             },
             {
-              title: "Çıkarım (Implication)",
-              content: "Gerçek bir barış halinin sadece savaşın olmaması (negatif barış) değil, aynı zamanda yapısal şiddet ve sömürünün de olmaması (pozitif barış) gerektiği anlamına geliyordu."
+              title: "Ekonomik örnek (Economic Example)",
+              content: "Yoksulluk nedeniyle çocukların eğitime erişememesi veya sağlık hizmetlerinden yararlanamaması."
+            },
+            {
+              title: "Siyasi örnek (Political Example)",
+              content: "Belirli grupların siyasi katılımdan sistematik olarak dışlanması veya ayrımcı yasalar."
             }
           ]
         },
         {
           id: 4,
-          question: "Notlar, geleceği şekillendirmesi muhtemel olan üç ana çatışma eğilimini tanımlamaktadır. Bu üç eğilimi listeleyin ve kısaca tanımlayın.",
+          question: "Barış çalışmaları, çatışmaların üç ana eğilimini tanımlar. Bunları adlandırın ve açıklayın.",
           answers: [
             {
-              title: "Artan insan göçü (Increasing Human Migration)",
-              content: "Ekonomik, sosyal ve çevresel baskılar nedeniyle göç olasılığının artması, potansiyel olarak alıcı bölgelerde kültürel çatışmalara yol açması."
+              title: "Tırmanma (Escalation)",
+              content: "Çatışmaların zaman içinde yoğunlaşma, daha fazla taraf ve konuyu kapsama ve daha şiddetli hale gelme eğilimi."
             },
             {
-              title: "Çevresel ve kaynak çatışmalarının tırmanması (Escalation of Environmental and Resource Conflicts)",
-              content: "Gıda, tatlı su ve fosil yakıtlar gibi kaynaklar üzerindeki çatışmaların yerel, bölgesel ve küresel düzeylerde artma olasılığı."
+              title: "Polarizasyon (Polarization)",
+              content: "Çatışma taraflarının pozisyonlarının sertleşmesi, orta yolun kaybolması ve 'biz-onlar' zihniyetinin güçlenmesi."
             },
             {
-              title: "Güçsüzlerin şiddetli tepkileri (Violent Reactions of the Powerless)",
-              content: "Hem devletler içinde hem de ulusötesi hareketler aracılığıyla marjinalleşmiş nüfuslardan rekabetçi ve şiddetli tepkiler beklenmesi."
+              title: "Genelleşme (Generalization)",
+              content: "Başlangıçta spesifik bir konu etrafındaki çatışmanın, daha geniş konuları ve daha fazla alanı kapsayacak şekilde genişlemesi."
             }
           ]
         },
         {
           id: 5,
-          question: "Gelecekteki küresel zorluklara yanıt olarak, notlar iki ana zıt seçeneği veya yolu sunmaktadır. Bu iki potansiyel yanıtı belirleyin ve açıklayın.",
+          question: "Çatışma çözümü için barış çalışmaları hangi üç gelecekteki yanıt seçeneğini önerir? Her birini açıklayın.",
           answers: [
             {
-              title: "Sürdürülebilir Kalkınma İçin Tutarlı İşbirliği (Coherent Cooperation for Sustainable Development)",
-              content: "Borç hafifletme, ticaret reformu ve kalkınma yardımı ile çatışma önleme ve çözüm programlarını içeren bir yol."
+              title: "Barışı koruma (Peacekeeping)",
+              content: "Çatışma tarafları arasında tarafsız güçlerin konuşlandırılması yoluyla ateşkesi sürdürme ve şiddeti önleme."
             },
             {
-              title: "Statükoyu Korumak / \"Liddism\" (Maintaining Status Quo / \"Liddism\")",
-              content: "İnsanlığın zengin kesimlerinin, parçalanmış bir dünyayı \"sınırlandırmak\" için gerektiğinde askeri güçle desteklenen ticaret ve finansal önlemler aracılığıyla ayrıcalıklı konumlarını sürdürdüğü bir yol."
+              title: "Barış yapma (Peacemaking)",
+              content: "Müzakere, arabuluculuk ve diplomasi yoluyla çatışma taraflarını bir anlaşmaya varmaya teşvik etme süreci."
+            },
+            {
+              title: "Barış inşa etme (Peacebuilding)",
+              content: "Çatışmanın kök nedenlerini ele alarak, sürdürülebilir barış için gerekli kurumları, ilişkileri ve yapıları oluşturma."
             }
           ]
         }
       ]
-    },
-         {
-       category: "CRITICAL SECURITY STUDIES",
-       questions: [
-         {
-           id: 1,
-           question: "1994 York Üniversitesi konferansı, geleneksel güvenlik çalışmalarına üç ana cepheden meydan okuyarak CSS için bir başlangıç gündemi belirlemiştir. Bu üç meydan okumayı listeleyin ve açıklayın.",
-           answers: [
-             {
-               title: "Referans nesnesini sorgulamak (Questioning the Reference Object)",
-               content: "Geleneksel olarak güvenliği sağlanacak tek nesne olarak devlete odaklanmayı sorgular, bunun yerine bireyleri veya toplulukları önerir."
-             },
-             {
-               title: "Güvenliği askeri güvenlikten fazlası olarak görmek (Viewing Security as More than Military Security)",
-               content: "Güvenlik kavramını askeri tehditlerin ötesine, ekonomik, çevresel ve toplumsal güvensizlikleri de içerecek şekilde genişletir."
-             },
-             {
-               title: "Güvenliğin çalışma şeklini değiştirmek (Changing How Security Works)",
-               content: "Geleneksel yaklaşımların sözde nesnelliğini reddeder, bilginin arkasındaki politikayı tanıyan post-pozitivist bir bilim anlayışını savunur."
-             }
-           ]
-         },
-         {
-           id: 2,
-           question: "Koruma Sorumluluğu (R2P) doktrini, üç spesifik sorumluluk üzerine inşa edilmiştir. Her birini adlandırın ve kısaca tanımlayın.",
-           answers: [
-             {
-               title: "Önleme Sorumluluğu (Responsibility to Prevent)",
-               content: "İç çatışmaların ve insan kaynaklı krizlerin köken nedenlerini ve doğrudan nedenlerini ortaya çıkmadan önce ele almak."
-             },
-             {
-               title: "Tepki Verme Sorumluluğu (Responsibility to React)",
-               content: "Zorlayıcı insani ihtiyaç durumlarına uygun önlemlerle yanıt vermek, bu önlemler yaptırımları veya aşırı durumlarda askeri müdahaleyi içerebilir."
-             },
-             {
-               title: "Yeniden İnşa Sorumluluğu (Responsibility to Rebuild)",
-               content: "Özellikle askeri müdahale sonrasında iyileşme, yeniden yapılanma ve uzlaşma için tam destek sağlamak."
-             }
-           ]
-         },
-         {
-           id: 3,
-           question: "Ken Booth'un Aberystwyth Okulu, güvenliğe dair eleştirel bir teoriyi üç temel soruya dayandırır. Bu üç temel soruyu listeleyin.",
-           answers: [
-             {
-               title: "Soru 1 (Question 1)",
-               content: "Gerçek olan nedir?"
-             },
-             {
-               title: "Soru 2 (Question 2)", 
-               content: "Bilgi nedir? / Ondan kim faydalanır?"
-             },
-             {
-               title: "Soru 3 (Question 3)",
-               content: "Ne yapılmalı?"
-             }
-           ]
-         },
-         {
-           id: 4,
-           question: "Kopenhag Okulu, iki temel kavramsal gelişme ile tanımlanır. Bu iki kavramı adlandırın ve \"güvenlikleştirme\" için kısa bir tanım yapın.",
-           answers: [
-             {
-               title: "Güvenliğin sektörel analizi (Sectoral Analysis of Security)",
-               content: "Güvenlik konularının askeri, ekonomik, çevresel, toplumsal ve siyasi sektörlere ayrılması yaklaşımı."
-             },
-             {
-               title: "Güvenlikleştirme (Securitization)",
-               content: "Bir meselenin, \"söz eylemi\" aracılığıyla, normal siyasetin dışına çıkan olağanüstü önlemleri haklı kılan varoluşsal bir tehdit olarak sunulduğu süreç."
-             }
-           ]
-         }
-       ]
-     },
-     {
-       category: "POSTCOLONIALISM",
-       questions: [
-         {
-           id: 1,
-           question: "Postkolonyal analiz, sömürge projesinin merkezinde yer alan üç farklı şiddet biçimini tanımlar. Bu üç şiddet biçimini adlandırın ve kısaca tanımlayın.",
-           answers: [
-             {
-               title: "Maddi şiddet (Material Violence)",
-               content: "Avrupa sömürgeciliğinin Amerika, Afrika ve Asya'daki nüfuslara uyguladığı muazzam fiziksel şiddet."
-             },
-             {
-               title: "Epistemik şiddet (Epistemic Violence)",
-               content: "Avrupa bilgi sistemlerinin diğer halklara dayatılması, yerel bilgi edinme yollarının aktif olarak reddedilmesi, itibarsızlaştırılması veya yok edilmesi."
-             },
-             {
-               title: "Yapısal şiddet (Structural Violence)",
-               content: "Sömürge alanlarındaki günlük yaşamı ve onun yeniden üretimini tanımlayan, sömürü ve tahakkümün sistematik ilişkileri."
-             }
-           ]
-         },
-         {
-           id: 2,
-           question: "Edward Said'in \"Oryantalizm\"i, Batı'nın Doğu ve Batı'ya dair hiyerarşik bir temsilini nasıl inşa ettiğini açıklar. \"Doğu\"ya atfedilen üç özelliği ve \"Batı\"ya atfedilen üç karşıt özelliği listeleyin.",
-           answers: [
-             {
-               title: "Doğu (East)",
-               content: "Gizemli, duygusal, barbar olarak karakterize edilir."
-             },
-             {
-               title: "Batı (West)",
-               content: "Bilinen, akılcı, medeni olarak karakterize edilir."
-             }
-           ]
-         },
-         {
-           id: 3,
-           question: "Postkolonyalizmin eleştirdiği temel bir kavram \"Avrupamerkezcilik\"tir. Avrupamerkezci bir dünya görüşünün üç ana unsurunu tanımlayın.",
-           answers: [
-             {
-               title: "Avrupa'nın ayrık ve kendi kendini üreten olması (Europe as Distinct and Self-generating)",
-               content: "Avrupa'nın, dünyanın geri kalanından ayrı, kendi içinde oluşmuş farklı bir medeniyet olarak tasvir edilmesi."
-             },
-             {
-               title: "Avrupa'nın tarihin merkezi olması (Europe as Center of History)",
-               content: "Dünya tarihinin, geçmiş ve şimdi, Avrupa'nın deneysel ve normatif merkeziliği varsayımıyla analiz edilmesi."
-             },
-             {
-               title: "Modernliğin Batı tarafından tanımlanması (Modernity Defined by the West)",
-               content: "Gelişme ve modernleşmenin son noktasının çağdaş \"Batı\" tarafından tanımlandığı varsayımı."
-             }
-           ]
-         }
-       ]
-     },
-    {
-      category: "CONSTRUCTIVISM",
-      questions: [
-        {
-          id: 1,
-          question: "Notlarda inşacılığın üç temel ontolojik pozisyona dayandığı belirtilmektedir. Bu üç pozisyonu adlandırın ve kısaca açıklayın.",
-          answers: [
-            {
-              title: "Normatif veya düşünsel yapılar anahtardır (Normative or Ideational Structures are Key)",
-              content: "Paylaşılan fikirlerin, inançların ve normların dünya siyasetini şekillendirmede maddi güçler kadar, hatta onlardan daha önemli olduğunu savunur."
-            },
-            {
-              title: "Kimlikler önemlidir (Identities Matter)",
-              content: "Bir aktörün kimliği çok önemlidir çünkü bu, onların çıkarlarını ve dolayısıyla uluslararası sistemdeki eylemlerini belirler."
-            },
-            {
-              title: "Özneler ve yapılar karşılıklı olarak oluşur (Agents and Structures are Mutually Constitutive)",
-              content: "Devletler (özneler) ve uluslararası sistem (yapı) birbirinden ayrı değildir; etkileşim yoluyla birbirlerini şekillendirir ve yaratırlar."
-            }
-          ]
-        },
-        {
-          id: 2,
-          question: "Alexander Wendt \"anarşi, devletlerin ondan ne yaptığıdır\" der ve üç farklı anarşi kültürü önerir. Bu üç kültürü listeleyin ve tanımlayın.",
-          answers: [
-            {
-              title: "Hobbesçu (Hobbesian)",
-              content: "Devletlerin birbirini düşman olarak gördüğü, güvenliğin sıfır toplamlı bir oyun olduğu ve hayatta kalmanın saf askeri güce bağlı olduğu bir kültür."
-            },
-            {
-              title: "Lockeçu (Lockean)",
-              content: "Devletlerin birbirini rakip olarak gördüğü; rekabet ettikleri ve şiddet kullandıkları, ancak birbirlerinin egemenliğini kabul ederek bazı sınırlamalarla hareket ettikleri bir kültür."
-            },
-            {
-              title: "Kantçı (Kantian)",
-              content: "Devletlerin birbirini dost olarak gördüğü, anlaşmazlıkları barışçıl bir şekilde çözdüğü ve kolektif güvenlik için işbirliği yaptığı bir kültür."
-            }
-          ]
-        },
-        {
-          id: 3,
-          question: "İnşacılık, aktör davranışını şekillendirmede normların önemini vurgular. Notlarda tartışılan iki ana norm türünü belirleyin ve tanımlayın.",
-          answers: [
-            {
-              title: "Kurucu (Constitutive)",
-              content: "Bir aktörün kimliğini tanımlayan, ne olduklarını ve çıkarlarının ne olacağını şekillendiren normlar (örneğin, devlet egemenliği normu)."
-            },
-            {
-              title: "Düzenleyici (Regulative)",
-              content: "Zaten var olan bir kimlik için davranışı belirleyen veya yasaklayan, aktörlerin ne \"yapması gerektiğini\" veya ne \"yapmaması gerektiğini\" belirleyen normlar (örneğin, nükleer tabu)."
-            }
-          ]
-        },
-        {
-          id: 4,
-          question: "İnşacılık düşünce okulu, metodolojilerine göre genel olarak iki ana kampa ayrılır. Bu iki kampı adlandırın ve temel farklarını açıklayın.",
-          answers: [
-            {
-              title: "Konvansiyonel İnşacılık (Conventional Constructivism)",
-              content: "Devleti merkezi bir aktör olarak kabul etmeye eğilimlidir ve pozitivist, bilimsel yöntemler kullanarak, rasyonel teorilerle bir \"köprü\" kurmaya çalışır."
-            },
-            {
-              title: "Eleştirel İnşacılık (Critical Constructivism)",
-              content: "Pozitivizmi reddeder ve gerçeği inşa etmede dilin ve söylemin gücüne odaklanır, varsayılan kimlikleri ve güç ilişkilerini yapıbozuma uğratmayı ve sorgulamayı amaçlar."
-            }
-          ]
-        },
-        {
-          id: 5,
-          question: "Wendt, bir anarşi kültüründen diğerine geçişin dört \"ana değişken\" tarafından yönlendirildiğini öne sürer. Bu dört değişkeni listeleyin ve kısaca tanımlayın.",
-          answers: [
-            {
-              title: "Karşılıklı Bağımlılık (Interdependence)",
-              content: "Devletlerin birbirine karşılıklı olarak bağımlı olma derecesi, çatışma maliyetlerini artırabilir."
-            },
-            {
-              title: "Ortak Kader (Common Fate)",
-              content: "Devletlerin ancak kolektif eylemle çözülebilecek ortak tehditlerle (çevresel felaket gibi) karşı karşıya olduğunu fark etmesi."
-            },
-            {
-              title: "Homojenizasyon (Homogenization)",
-              content: "Devletlerin siyasi ve sosyal yapılarında daha benzer hale gelme süreci, paylaşılan kimlik ve güveni teşvik edebilir."
-            },
-            {
-              title: "Kendi Kendine Kısıtlama (Self-Restraint)",
-              content: "Güçlü bir devletin kendi gücünü kasıtlı olarak sınırlaması eylemi, güven inşa edebilir ve diğerlerinden karşılıklı kısıtlamayı teşvik edebilir."
-            }
-                     ]
-         }
-       ]
-     },
-     {
-       category: "HUMAN SECURITY",
-       questions: [
-         {
-           id: 1,
-           question: "1994 UNDP İnsani Gelişme Raporu, genellikle iki temel ilke ile özetlenen insan güvenliği kavramını ortaya atmıştır. Bu iki \"özgürlüğü\" adlandırın ve tanımlayın.",
-           answers: [
-             {
-               title: "Yoksunluktan özgürlük (Freedom from Want)",
-               content: "Yaşam kalitesini düşüren açlık, hastalık ve baskı gibi kronik tehditlerden güvenlik."
-             },
-             {
-               title: "Korkudan özgürlük (Freedom from Fear)",
-               content: "Şiddet veya çatışma gibi günlük yaşamın düzenindeki ani ve acı verici kesintilerden korunma."
-             }
-           ]
-         },
-         {
-           id: 2,
-           question: "1994 UNDP raporu, sürekli dikkat gerektiren yedi kritik güvenlik alanı önermiştir. Bu yedi alandan beş tanesini listeleyin ve kısaca tanımlayın.",
-           answers: [
-             {
-               title: "Ekonomik güvenlik (Economic Security)",
-               content: "Genellikle üretken ve kazançlı işlerden veya kamu tarafından finanse edilen bir güvenlik ağından sağlanan güvenceli temel gelir."
-             },
-             {
-               title: "Gıda güvenliği (Food Security)",
-               content: "Herkesin her zaman temel gıdaya hem fiziksel hem de ekonomik erişiminin sağlanması."
-             },
-             {
-               title: "Sağlık güvenliği (Health Security)",
-               content: "Hastalıklar ve sağlıksız yaşam tarzlarından minimum düzeyde korunmanın garantilenmesi."
-             },
-             {
-               title: "Çevresel güvenlik (Environmental Security)",
-               content: "İnsanları doğanın kısa ve uzun vadeli tahribatlarından, doğadaki insan yapımı tehditlerden ve doğal çevrenin bozulmasından korumak."
-             },
-             {
-               title: "Kişisel güvenlik (Personal Security)",
-               content: "İnsanları, devletten veya dış devletlerden, şiddet yanlısı bireylerden ve devlet altı aktörlerden veya aile içi şiddetten kaynaklanan fiziksel şiddetten korumak."
-             }
-           ]
-         },
-         {
-           id: 3,
-           question: "1994 İnsani Gelişme Raporu, insan güvenliği kavramının dört ana özelliğini detaylandırmıştır. Bu dört özelliği adlandırın ve açıklayın.",
-           answers: [
-             {
-               title: "Evrensel (Universal)",
-               content: "Zengin ve yoksul tüm uluslardaki insanlar için geçerlidir, çünkü ilkeleri kültürler ve sistemler arası değere sahiptir."
-             },
-             {
-               title: "Karşılıklı Bağımlı (Interdependent)",
-               content: "İnsan güvenliğinin farklı yönleri birbiriyle bağlantılıdır, yani bir alandaki tehditler diğer alanlara yayılabilir ve güvenliği etkileyebilir."
-             },
-             {
-               title: "Önleme Odağı (Prevention-Focused)",
-               content: "Tehditleri ortaya çıktıktan sonra müdahale etmekten daha kolay ve daha az maliyetlidir."
-             },
-             {
-               title: "İnsan Odaklı (People-Centered)",
-               content: "Güvenliğin birincil referans nesnesi olarak devleti değil, insanları ve onların topluluklarını yapar."
-             }
-           ]
-         }
-       ]
-     },
-     {
-       category: "ENVIRONMENTAL SECURITY",
-       questions: [
-         {
-           id: 1,
-           question: "Notlarda çevresel güvenliğin 1960'larda başlayan birbiriyle ilişkili dört gelişme nedeniyle önemli bir kavram olarak ortaya çıktığı belirtilmektedir. Bu gelişmelerden üçünü listeleyin ve kısaca tanımlayın.",
-           answers: [
-             {
-               title: "Çevresel farkındalığın artması (Increased Environmental Awareness)",
-               content: "\"Sessiz Bahar\" gibi kitapların ve çevresel STK'ların yükselişinin tetiklediği, çevresel konular hakkında kamu bilincinde bir artış."
-             },
-             {
-               title: "Geleneksel güvenlik söyleminin eleştirileri (Critiques of Traditional Security Discourse)",
-               content: "Akademisyenlerin güvenlik çalışmalarının dar askeri odağını sorgulamaya başlaması, çevresel risklerin de ulusal refahı tehdit ettiğini savunmaları."
-             },
-             {
-               title: "Stratejik koşullardaki değişiklikler (Changes in Strategic Conditions)",
-               content: "Soğuk Savaş'ın sona ermesi, çevre gibi \"yeni\" güvenlik konularının ana akım gündeme girmesi için entelektüel ve siyasi bir alan yarattı."
-             }
-           ]
-         },
-         {
-           id: 2,
-           question: "Çevresel güvenlik literatürü en az altı ana yorum içerir. Bu yorumlardan üçü için yaklaşımı, \"güvence altına alınacak varlığı\" ve \"başlıca risk kaynağını\" belirtin.",
-           answers: [
-             {
-               title: "Ekolojik güvenlik (Ecological Security)",
-               content: "Güvence Altına Alınacak Varlık: Doğal çevre, Başlıca Risk Kaynağı: İnsan faaliyetleri"
-             },
-             {
-               title: "Çevresel şiddet (Environmental Violence)",
-               content: "Güvence Altına Alınacak Varlık: Ulus-devlet, Başlıca Risk Kaynağı: Savaş"
-             },
-             {
-               title: "İnsani güvenlik (Human Security)",
-               content: "Güvence Altına Alınacak Varlık: Bireyler, Başlıca Risk Kaynağı: Çevresel değişim"
-             }
-           ]
-         }
-       ]
-     },
-     {
-       category: "TERRORISM",
-       questions: [
-         {
-           id: 1,
-           question: "Notlar, terörizmin incelenebileceği üç farklı bakış açısı sunmaktadır. Bu üç bakış açısını adlandırın ve kısaca tanımlayın.",
-           answers: [
-             {
-               title: "Savaş olarak terörizm (Terrorism as War)",
-               content: "Terörizmi askeri yöntemlerle çözülmesi gereken bir sorun olarak görür, zaferin elde edilebileceğini varsayar."
-             },
-             {
-               title: "Suç olarak terörizm (Terrorism as Crime)",
-               content: "Terörizmi yönetmek için normal polis tekniklerine güvenir, diğer suçlar gibi sadece sınırlandırılabileceğini, ortadan kaldırılamayacağını ima eder."
-             },
-             {
-               title: "Hastalık olarak terörizm (Terrorism as Disease)",
-               content: "Hem semptomlara hem de köken nedenlerine odaklanır, kök sorunları ele almak için uzun vadeli stratejilere ihtiyaç olduğunu varsayar."
-             }
-           ]
-         },
-         {
-           id: 2,
-           question: "Terörizmin işlevsel bir tanımı altı temel unsur içerir. Bu unsurlardan dördünü adlandırın ve tanımlayın.",
-           answers: [
-             {
-               title: "Şiddet kullanımı veya tehdidi (Use or Threat of Violence)",
-               content: "Taktik, temelde fiziksel zarar vermeyi veya bunun korkusunu yaratmayı içerir."
-             },
-             {
-               title: "Organize bir grup tarafından gerçekleştirilir (Carried out by an Organized Group)",
-               content: "Eylem rastgele veya tek bir kişi tarafından değil, belirli bir yapıya sahip bir grup tarafından işlenir."
-             },
-             {
-               title: "Siyasi hedeflere ulaşma amacı (Aimed at Achieving Political Goals)",
-               content: "Şiddet kişisel maddi kazanç için değil, siyasi bir hedefi başarmak için tasarlanmıştır."
-             },
-             {
-               title: "Hedef bir kitleye yöneliktir (Directed at a Target Audience)",
-               content: "Şiddet, doğrudan kurbanların ötesinde daha geniş bir kitleye korku yaratmayı ve mesaj göndermeyi amaçlar."
-             }
-           ]
-         }
-       ]
-     },
-     {
-       category: "GENDER AND SECURITY",
-       questions: [
-         {
-           id: 1,
-           question: "Notlar, toplumsal cinsiyet ve güvenlik arasındaki ilişkiyi analiz etmek için iki ana bakış açısı sunmaktadır. Bu iki yönü adlandırın ve kısaca tanımlayın.",
-           answers: [
-             {
-               title: "Pratik yönler (Practical Aspects)",
-               content: "Kadınların ordudaki somut rollerini veya askeri çatışmanın kurbanları, gözlemcileri veya kolaylaştırıcıları olarak deneyimlerini içerir."
-             },
-             {
-               title: "Söylemsel yönler (Discursive Aspects)",
-               content: "Erkeklikle militarizm ve kadınlıkla besleme ve barış fikri arasında kurulan geleneksel bağlantıları içerir."
-             }
-           ]
-         },
-         {
-           id: 2,
-           question: "Jean Elshtain'in çalışmaları, savaşın cinsiyetlendirilmiş inşasında temel bir ikiliği tanımlar. Onun tanımladığı iki arketipik rolü adlandırın ve tanımlayın.",
-           answers: [
-             {
-               title: "Adil Savaşçı (Just Warrior)",
-               content: "Bir savaşçı olması beklenen, fiziksel güç ve cesaret gibi erkeksi değerlerle ilişkilendirilen ve görevi savaşmak olan erkek arketipi."
-             },
-             {
-               title: "Güzel Ruh (Beautiful Soul)",
-               content: "Ev cephesi ve besleme ile ilişkilendirilen ve erkek savaşçıdan korunmaya ihtiyacı olan, muharip olmayan olması beklenen kadın arketipi."
-             }
-           ]
-         }
-       ]
-     },
-     {
-       category: "SECURITIZATION APPROACH",
-       questions: [
-         {
-           id: 1,
-           question: "Kopenhag Okulu, beş genel güvenlik sektörü veya kategorisi belirleyerek güvenlik gündemini genişletir. Bu beş sektörü listeleyin.",
-           answers: [
-             {
-               title: "Askeri güvenlik (Military Security)",
-               content: "Geleneksel askeri tehditler ve savunma konuları."
-             },
-             {
-               title: "Çevresel güvenlik (Environmental Security)",
-               content: "Çevresel tehditler ve ekolojik güvenlik meseleleri."
-             },
-             {
-               title: "Ekonomik güvenlik (Economic Security)",
-               content: "Ekonomik istikrar ve refah tehditleri."
-             },
-             {
-               title: "Toplumsal güvenlik (Societal Security)",
-               content: "Kimlik, kültür ve toplumsal bütünlük tehditleri."
-             },
-             {
-               title: "Siyasi güvenlik (Political Security)",
-               content: "Siyasi sistem ve meşruiyet tehditleri."
-             }
-           ]
-         },
-         {
-           id: 2,
-           question: "Güvenlikleştirme modeli, herhangi bir kamusal konunun üç aşamadan oluşan bir yelpazede var olabileceğini öne sürer. Bu üç aşamayı adlandırın ve tanımlayın.",
-           answers: [
-             {
-               title: "Siyasallaşmamış (Non-politicized)",
-               content: "Konunun devlet eylemi için bir mesele olmadığı ve kamu tartışmalarına dahil edilmediği; özel alanda kaldığı aşama."
-             },
-             {
-               title: "Siyasallaşmış (Politicized)",
-               content: "Konunun kamu politikasının bir parçası olduğu, hükümet kararı ve kaynak tahsisi gerektirdiği ve standart siyasi sistem içinde yönetildiği aşama."
-             },
-             {
-               title: "Güvenlikleştirilmiş (Securitized)",
-               content: "Konunun, normal siyasi prosedürlerin ötesinde olağanüstü eylemler gerektiren varoluşsal bir tehdit olarak çerçevelendiği aşama."
-             }
-           ]
-         }
-       ]
-     },
-     {
-       category: "ECONOMIC SECURITY",
-       questions: [
-         {
-           id: 1,
-           question: "Notlarda ekonomik yaptırımların en az üç farklı amaç için kullanılabileceği belirtilmektedir. Bu üç amacı adlandırın ve kısaca tanımlayın.",
-           answers: [
-             {
-               title: "Politik (Political)",
-               content: "Bir hedefin davranışını etkileyerek barış ve özgürlük gibi hedefleri ilerletmek için ekonomik gücü kullanmak."
-             },
-             {
-               title: "Ahlaki (Moral)",
-               content: "Ahlaki olarak kötü veya kınanması gereken eylemlerde ekonomik katılımı reddetmek."
-             },
-             {
-               title: "Askeri (Military)",
-               content: "Tehlikeli rejimleri izole etmek ve bölgesel ve küresel güvenliğe yönelik tehditleri zayıflatmak."
-             }
-           ]
-         }
-       ]
-     },
-     {
-       category: "INTERNATIONAL CRISIS",
-       questions: [
-         {
-           id: 1,
-           question: "Notlar, bir dış politika krizini tanımlayan beş gerekli koşulu listelemektedir. Bu koşullardan dördünü adlandırın ve kısaca tanımlayın.",
-           answers: [
-             {
-               title: "Sürpriz Unsuru (Element of Surprise)",
-               content: "Durum genellikle aniden ortaya çıkar ve karar vericiler tarafından beklenmez."
-             },
-             {
-               title: "Yüksek değerli çıkarlara yönelik tehdit (Threat to High-Value Interests)",
-               content: "Kriz, devletin bir veya daha fazla temel değerine veya yüksek öncelikli çıkarına yönelik bir tehdit oluşturur."
-             },
-             {
-               title: "Zaman Baskısı (Time Pressure)",
-               content: "Kararların ve eylemlerin sınırlı veya kısa bir süre içinde alınması gerektiği algısı vardır."
-             },
-             {
-               title: "Daha yüksek askeri çatışma olasılığı (Higher Probability of Military Conflict)",
-               content: "Askeri düşmanlıkların veya silahlı çatışmanın normal koşullara göre daha yüksek olduğu algısı."
-             }
-           ]
-         }
-       ]
-     },
-     {
-       category: "NUCLEAR SECURITY",
-       questions: [
-         {
-           id: 1,
-           question: "Notlar, \"Devletler neden nükleer silahlara sahip olmak ister?\" sorusunu cevaplamak için dört ana yaklaşım olduğunu açıklamaktadır. Bu dört yaklaşımı adlandırın.",
-           answers: [
-             {
-               title: "Güvenlik Yaklaşımı (Security Approach)",
-               content: "Devletlerin güvenlik tehditlerine karşı nükleer silahları caydırıcı olarak görmesi."
-             },
-             {
-               title: "Kişisel-Kurumsal Rekabet Yaklaşımı (Personal-Institutional Competition Approach)",
-               content: "İç politik grupların kendi çıkarları için nükleerleşmeyi desteklemesi."
-             },
-             {
-               title: "Sosyo-Psikolojik Yaklaşım (Socio-Psychological Approach)",
-               content: "Prestij, statü ve ulusal kimlik gibi faktörlerin nükleer silah arayışını etkilemesi."
-             },
-             {
-               title: "Normatif Yaklaşım (Normative Approach)",
-               content: "Uluslararası normlar ve değerlerin nükleer silah politikalarını şekillendirmesi."
-             }
-           ]
-         }
-       ]
-     },
-     {
-       category: "ETHNIC CONFLICT",
-       questions: [
-         {
-           id: 1,
-           question: "Notlar, etnik kimliğin kaynağını açıklamak için üç farklı teorik yaklaşım sunmaktadır. Bu üç yaklaşımı adlandırın ve kısaca tanımlayın.",
-           answers: [
-             {
-               title: "Primordialist Yaklaşım (Primordialist Approach)",
-               content: "Bu yaklaşım, etnik kimliği akrabalık, dil veya din gibi değişmez özelliklere dayalı, sabit, doğal ve tarihsel olarak eski olarak görür."
-             },
-             {
-               title: "Modernist Yaklaşım (Modernist Approach)",
-               content: "Bu yaklaşım, etnik ve ulusal kimliklerin sanayileşme ve devlet inşası gibi süreçler nedeniyle modern çağda ortaya çıkan yeni olgular olduğunu savunur."
-             },
-             {
-               title: "İnşacı Yaklaşım (Constructivist Approach)",
-               content: "Bu yaklaşım, etnik kimliklerin bireylerin ve grupların siyasi, sosyal ve psikolojik ihtiyaçlarını karşılamak için etkileşim yoluyla sosyal olarak nasıl inşa edildiğine odaklanır."
-             }
-           ]
-         }
-       ]
-     },
-     {
-       category: "HEALTH SECURITY",
-       questions: [
-         {
-           id: 1,
-           question: "Notlar, sağlık ve güvenlik arasındaki bağlantının üç farklı güvenlik çerçevesi aracılığıyla anlaşılabileceğini açıklamaktadır. Bu üç çerçeveyi adlandırın ve kısaca tanımlayın.",
-           answers: [
-             {
-               title: "İnsan güvenliği çerçevesi (Human Security Framework)",
-               content: "Sıradan bireylerin sağlığına ve esenliğine odaklanır, iyi sağlığı güvenliğin hem esas hem de aracı olarak görür."
-             },
-             {
-               title: "Ulusal güvenlik çerçevesi (National Security Framework)",
-               content: "Yaygın bulaşıcı hastalıkları bir devletin nüfusuna, ekonomisine ve siyasi istikrarına yönelik tehditler olarak görür."
-             },
-             {
-               title: "Biyogüvenlik çerçevesi (Biosecurity Framework)",
-               content: "Terörist grupların veya diğer aktörlerin kasten hastalığa neden olan biyolojik ajanları salma olasılığıyla ilgilenir."
-             }
-           ]
-         }
-       ]
-     },
-     {
-       category: "CYBER SECURITY",
-       questions: [
-         {
-           id: 1,
-           question: "Notlar, siber güvenlik hikayesinin birbiriyle bağlantılı ancak farklı üç söylem aracılığıyla anlatılabileceğini belirtmektedir. Bu üç söylemi adlandırın ve kısaca tanımlayın.",
-           answers: [
-             {
-               title: "Teknik Söylem (Technical Discourse)",
-               content: "Bu söylem, virüsler ve solucanlar gibi kötü amaçlı yazılımların neden olduğu bilgisayar ve ağ kesintilerine odaklanır."
-             },
-             {
-               title: "Siber Suç ve Siber Casusluk Söylemi (Cybercrime and Cyber Espionage Discourse)",
-               content: "Bu söylem, kişisel kazanç için hackleme ve devlet destekli casusluk dahil olmak üzere bilgisayarların ve ağların suç faaliyetleri için kullanımını ele alır."
-             },
-             {
-               title: "Siber Çatışmalar / Askeri-Sivil Savunma Söylemi (Cyber Conflicts / Military-Civil Defense Discourse)",
-               content: "Bu söylem, siber güvenliği ulusal güvenlik açısından ele alır, bilgi savaşı, siber savaş ve kritik ulusal altyapının korunmasına odaklanır."
-             }
-           ]
-         }
-       ]
-     }
-   ];
+    }
+  ];
 
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null);
@@ -3946,11 +3337,6 @@ function InternationalSecurityMemoryGame() {
   };
 
   const handleSubmitAnswer = () => {
-    if (isMixedMode) {
-      handleMixedSubmitAnswer();
-      return;
-    }
-
     if (!selectedCategory || selectedQuestion === null) return;
 
     const category = examQuestions.find(cat => cat.category === selectedCategory);
@@ -4009,76 +3395,6 @@ function InternationalSecurityMemoryGame() {
     }
   };
 
-  const handleMixedSubmitAnswer = () => {
-    if (currentMixedIndex >= mixedQuestions.length) return;
-
-    const currentQuestion = mixedQuestions[currentMixedIndex];
-    const currentResult = mixedResults[currentMixedIndex];
-    
-    // Kullanıcının cevabını tüm başlıklarla karşılaştır
-    let isCorrect = false;
-    let correctAnswerTitle = '';
-    
-    for (const answer of currentQuestion.answers) {
-      if (checkAnswer(userInput, answer.title) && !currentResult.answeredTitles.includes(answer.title)) {
-        isCorrect = true;
-        correctAnswerTitle = answer.title;
-        break;
-      }
-    }
-
-    if (isCorrect) {
-      const pointsEarned = currentQuestion.pointPerTitle;
-      setFeedback(`✅ Doğru! "${correctAnswerTitle}" (+${pointsEarned.toFixed(1)} puan)`);
-      
-      // Sonuçları güncelle
-      const newResults = [...mixedResults];
-      newResults[currentMixedIndex].answeredTitles.push(correctAnswerTitle);
-      newResults[currentMixedIndex].score += pointsEarned;
-      setMixedResults(newResults);
-      setMixedScore(mixedScore + pointsEarned);
-      
-      setTimeout(() => {
-        setUserInput('');
-        setFeedback('');
-      }, 2000);
-    } else {
-      setFeedback(`❌ Yanlış. Bu sorudaki başlıklardan birini yazmalısın.`);
-      setTimeout(() => {
-        setUserInput('');
-        setFeedback('');
-      }, 2000);
-    }
-  };
-
-  const skipMixedQuestion = () => {
-    if (currentMixedIndex >= mixedQuestions.length) return;
-    
-    const newResults = [...mixedResults];
-    newResults[currentMixedIndex].skipped = true;
-    setMixedResults(newResults);
-    
-    if (currentMixedIndex + 1 >= mixedQuestions.length) {
-      // Sınav bitti
-      setShowMixedResults(true);
-    } else {
-      setCurrentMixedIndex(currentMixedIndex + 1);
-      setUserInput('');
-      setFeedback('');
-    }
-  };
-
-  const nextMixedQuestion = () => {
-    if (currentMixedIndex + 1 >= mixedQuestions.length) {
-      // Sınav bitti
-      setShowMixedResults(true);
-    } else {
-      setCurrentMixedIndex(currentMixedIndex + 1);
-      setUserInput('');
-      setFeedback('');
-    }
-  };
-
   const startNewGame = () => {
     setSelectedCategory(null);
     setSelectedQuestion(null);
@@ -4089,46 +3405,6 @@ function InternationalSecurityMemoryGame() {
     setTotalQuestions(0);
     setFeedback('');
     setGameCompleted(false);
-    setIsMixedMode(false);
-    setMixedQuestions([]);
-    setCurrentMixedIndex(0);
-    setMixedResults([]);
-    setShowMixedResults(false);
-    setMixedScore(0);
-  };
-
-  const startMixedExam = () => {
-    // Tüm sorulardan rastgele 20 tane seç
-    const allQuestions: any[] = [];
-    examQuestions.forEach(category => {
-      category.questions.forEach(question => {
-        allQuestions.push({
-          ...question,
-          category: category.category,
-          pointPerTitle: 5 / question.answers.length // Her başlık için puan
-        });
-      });
-    });
-
-    // Rastgele 20 soru seç
-    const shuffled = allQuestions.sort(() => 0.5 - Math.random());
-    const selected20 = shuffled.slice(0, 20);
-
-    setMixedQuestions(selected20);
-    setCurrentMixedIndex(0);
-    setMixedResults(selected20.map(q => ({
-      question: q,
-      answeredTitles: [],
-      skipped: false,
-      score: 0
-    })));
-    setMixedScore(0);
-    setIsMixedMode(true);
-    setShowMixedResults(false);
-    setAnsweredTitles([]);
-    setAnsweredDetails([]);
-    setUserInput('');
-    setFeedback('');
   };
 
   const selectCategoryAndQuestion = (category: string, questionIndex: number) => {
@@ -4145,256 +3421,6 @@ function InternationalSecurityMemoryGame() {
       setGameCompleted(false);
     }
   };
-
-  if (showMixedResults) {
-    const percentage = Math.round((mixedScore / 100) * 100);
-    return (
-      <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
-        <h2 style={{ color: '#2c3e50', textAlign: 'center' }}>🎯 Karışık Sınav Sonuçları</h2>
-        <div style={{ 
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
-          color: 'white', 
-          padding: '30px', 
-          borderRadius: '15px', 
-          textAlign: 'center',
-          marginBottom: '20px'
-        }}>
-          <h3>Toplam Puanın: {mixedScore.toFixed(1)}/100</h3>
-          <h2>{percentage}%</h2>
-          <p>{percentage >= 80 ? '🏆 Mükemmel!' : percentage >= 60 ? '👍 İyi!' : '💪 Daha fazla çalışmalısın!'}</p>
-        </div>
-
-        <div style={{ display: 'grid', gap: '15px', marginBottom: '20px' }}>
-          {mixedResults.map((result, index) => (
-            <div key={index} style={{
-              background: result.skipped ? '#f8f9fa' : result.score > 0 ? '#d4edda' : '#f8d7da',
-              border: `2px solid ${result.skipped ? '#dee2e6' : result.score > 0 ? '#28a745' : '#dc3545'}`,
-              borderRadius: '10px',
-              padding: '15px'
-            }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                <div style={{ flex: 1 }}>
-                  <h4 style={{ margin: '0 0 10px 0', color: '#2c3e50' }}>
-                    Soru {index + 1} - {result.question.category}
-                  </h4>
-                  <p style={{ margin: '0 0 10px 0', fontSize: '14px', color: '#6c757d' }}>
-                    {result.question.question}
-                  </p>
-                  <div style={{ fontSize: '12px', color: '#495057' }}>
-                    <strong>Başlıklar ({result.question.answers.length}):</strong>
-                    {result.question.answers.map((answer: any, i: number) => (
-                      <span key={i} style={{
-                        display: 'inline-block',
-                        margin: '2px 5px',
-                        padding: '2px 8px',
-                        borderRadius: '12px',
-                        background: result.answeredTitles.includes(answer.title) ? '#28a745' : '#6c757d',
-                        color: 'white',
-                        fontSize: '11px'
-                      }}>
-                        {answer.title}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div style={{ 
-                  minWidth: '80px', 
-                  textAlign: 'center',
-                  fontSize: '16px',
-                  fontWeight: 'bold',
-                  color: result.skipped ? '#6c757d' : result.score > 0 ? '#28a745' : '#dc3545'
-                }}>
-                  {result.skipped ? 'GEÇİLDİ' : `${result.score.toFixed(1)}/5.0`}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div style={{ textAlign: 'center', display: 'flex', gap: '10px', justifyContent: 'center' }}>
-          <button 
-            onClick={startMixedExam}
-            style={{
-              background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
-              color: 'white',
-              border: 'none',
-              padding: '15px 30px',
-              borderRadius: '25px',
-              fontSize: '16px',
-              cursor: 'pointer',
-              fontWeight: 'bold'
-            }}
-          >
-            🔄 Yeni Karışık Sınav
-          </button>
-          <button 
-            onClick={startNewGame}
-            style={{
-              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-              color: 'white',
-              border: 'none',
-              padding: '15px 30px',
-              borderRadius: '25px',
-              fontSize: '16px',
-              cursor: 'pointer',
-              fontWeight: 'bold'
-            }}
-          >
-            Ana Menüye Dön
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  if (isMixedMode && !showMixedResults) {
-    const currentQuestion = mixedQuestions[currentMixedIndex];
-    const currentResult = mixedResults[currentMixedIndex];
-    
-    if (!currentQuestion) return null;
-
-    return (
-      <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
-        <div style={{ marginBottom: '20px', textAlign: 'center' }}>
-          <h2 style={{ color: '#2c3e50' }}>🎯 Karışık Sınav - Soru {currentMixedIndex + 1}/20</h2>
-          <div style={{ background: '#ecf0f1', padding: '10px', borderRadius: '10px', marginBottom: '20px' }}>
-            <strong>{currentQuestion.category}</strong> | Puan: {mixedScore.toFixed(1)}/100 | 
-            Bu soru: {currentQuestion.pointPerTitle.toFixed(1)} puan/başlık
-          </div>
-        </div>
-
-        <div style={{ 
-          background: 'linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)', 
-          color: 'white', 
-          padding: '20px', 
-          borderRadius: '15px', 
-          marginBottom: '20px' 
-        }}>
-          <h3>{currentQuestion.question}</h3>
-          <p style={{ fontSize: '18px', fontWeight: 'bold' }}>
-            Bu sorunun başlıklarından birini yazın ({currentQuestion.answers.length} başlık):
-          </p>
-          <div style={{ fontSize: '14px', marginTop: '10px' }}>
-            Cevaplanan: {currentResult.answeredTitles.length}/{currentQuestion.answers.length}
-          </div>
-        </div>
-
-        <div style={{ marginBottom: '20px' }}>
-          <input
-            type="text"
-            value={userInput}
-            onChange={(e) => setUserInput(e.target.value)}
-            onKeyPress={(e) => e.key === 'Enter' && handleSubmitAnswer()}
-            placeholder="Başlığı buraya yazın (Türkçe veya İngilizce)"
-            style={{
-              width: '100%',
-              padding: '15px',
-              fontSize: '16px',
-              border: '2px solid #ddd',
-              borderRadius: '10px',
-              marginBottom: '10px'
-            }}
-            disabled={!!feedback}
-          />
-          <div style={{ display: 'flex', gap: '10px' }}>
-            <button 
-              onClick={handleSubmitAnswer}
-              disabled={!userInput.trim() || !!feedback}
-              style={{
-                background: userInput.trim() && !feedback ? 'linear-gradient(135deg, #00b894 0%, #00a085 100%)' : '#bdc3c7',
-                color: 'white',
-                border: 'none',
-                padding: '15px 30px',
-                borderRadius: '25px',
-                fontSize: '16px',
-                cursor: userInput.trim() && !feedback ? 'pointer' : 'not-allowed',
-                fontWeight: 'bold',
-                flex: 1
-              }}
-            >
-              Cevabı Kontrol Et
-            </button>
-            <button 
-              onClick={nextMixedQuestion}
-              disabled={!!feedback}
-              style={{
-                background: !feedback ? 'linear-gradient(135deg, #f39c12 0%, #e67e22 100%)' : '#bdc3c7',
-                color: 'white',
-                border: 'none',
-                padding: '15px 30px',
-                borderRadius: '25px',
-                fontSize: '16px',
-                cursor: !feedback ? 'pointer' : 'not-allowed',
-                fontWeight: 'bold'
-              }}
-            >
-              Sonraki Soru
-            </button>
-          </div>
-        </div>
-
-        {feedback && (
-          <div style={{ 
-            background: feedback.startsWith('✅') ? '#d4edda' : '#f8d7da',
-            color: feedback.startsWith('✅') ? '#155724' : '#721c24',
-            padding: '15px',
-            borderRadius: '10px',
-            marginBottom: '20px',
-            fontSize: '16px',
-            fontWeight: 'bold',
-            textAlign: 'center'
-          }}>
-            {feedback}
-          </div>
-        )}
-
-        {/* Cevaplanan başlıklar */}
-        {currentResult.answeredTitles.length > 0 && (
-          <div style={{ 
-            background: '#f8f9fa', 
-            borderRadius: '15px', 
-            padding: '20px', 
-            marginBottom: '20px',
-            border: '2px solid #28a745'
-          }}>
-            <h4 style={{ color: '#28a745', marginBottom: '15px', textAlign: 'center' }}>
-              ✅ Bu Soruda Doğru Cevaplarınız ({currentResult.answeredTitles.length}/{currentQuestion.answers.length})
-            </h4>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-              {currentResult.answeredTitles.map((title: string, index: number) => (
-                <span key={index} style={{
-                  background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
-                  color: 'white',
-                  padding: '8px 15px',
-                  borderRadius: '20px',
-                  fontSize: '14px',
-                  fontWeight: 'bold'
-                }}>
-                  {title}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
-
-        <div style={{ textAlign: 'center', marginTop: '20px' }}>
-          <button 
-            onClick={startNewGame}
-            style={{
-              background: 'none',
-              color: '#e74c3c',
-              border: '2px solid #e74c3c',
-              padding: '10px 20px',
-              borderRadius: '20px',
-              cursor: 'pointer'
-            }}
-          >
-            Sınavı Bitir
-          </button>
-        </div>
-      </div>
-    );
-  }
 
   if (gameCompleted) {
     const percentage = Math.round((score / totalQuestions) * 100);
@@ -4578,38 +3604,6 @@ function InternationalSecurityMemoryGame() {
         <p style={{ fontSize: '18px', color: '#7f8c8d' }}>
           Bir kategori ve soru seçin, başlıkları ezberlemeye başlayın!
         </p>
-        
-        {/* KARIŞIK SINAV BUTONU */}
-        <div style={{ margin: '20px 0' }}>
-          <button
-            onClick={startMixedExam}
-            style={{
-              background: 'linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)',
-              color: 'white',
-              border: 'none',
-              padding: '20px 40px',
-              borderRadius: '30px',
-              fontSize: '20px',
-              cursor: 'pointer',
-              fontWeight: 'bold',
-              boxShadow: '0 4px 15px rgba(231, 76, 60, 0.3)',
-              transition: 'all 0.3s ease'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-2px)';
-              e.currentTarget.style.boxShadow = '0 6px 20px rgba(231, 76, 60, 0.4)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 4px 15px rgba(231, 76, 60, 0.3)';
-            }}
-          >
-            🎯 KARIŞIK SINAV (20 Rastgele Soru)
-          </button>
-          <p style={{ fontSize: '14px', color: '#7f8c8d', marginTop: '10px' }}>
-            Tüm kategorilerden rastgele 20 soru | Her soru 5 puan | 100 puan üzerinden
-          </p>
-        </div>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
@@ -4670,7 +3664,6 @@ function App() {
           <Route path="/international-security/sesli-notlar" element={<InternationalSecurityLectureNotes />} />
           <Route path="/international-security/flashcards" element={<FlashcardsApp />} />
           <Route path="/international-security/sinav-sorulari" element={<InternationalSecurityExamQuestions />} />
-          <Route path="/international-security/ezber-oyunu" element={<InternationalSecurityMemoryGame />} />
         </Routes>
       </div>
     </Router>
